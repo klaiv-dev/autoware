@@ -1,0 +1,17 @@
+name: Klaiv Diagram Diff
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths: ['architecture/**.yaml']
+permissions:
+  contents: write        # push rendered SVGs to the previews branch
+  pull-requests: write   # post the diff comment
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      # Temporarily pinned to the fix commit (klaiv-dev/diagram-diff-action#1)
+      # until v1 is re-cut. Revert to @v1 once that PR is merged and the tag moves.
+      - uses: klaiv-dev/diagram-diff-action@590396fb7084ba812bbf28b59f8697f3b11ee26c
+        with:
+          token: ${{ github.token }}
