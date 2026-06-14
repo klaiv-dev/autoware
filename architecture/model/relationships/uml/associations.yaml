@@ -47,3 +47,9 @@ associations:
       id: blk-vehicle-drive-by-wire-system
     target:
       id: uc-monitor-vehicle
+  - id: assoc-actor-passenger-to-uc-engage-autonomous-mode
+    type: uml:Association
+    source:
+      id: actor-passenger
+    target:
+      id: uc-engage-autonomous-mode

@@ -12,14 +12,17 @@ diagram:
     - elementId: actor-vehicle-drive-by-wire-system
     - elementId: blk-vehicle-drive-by-wire-system
   relationships:
-    - assoc-blk-fleet-management-system-to-uc-drive-to-goal
-    - assoc-blk-fleet-management-system-to-uc-monitor-vehicle
-    - assoc-actor-safety-operator-to-uc-drive-to-goal
-    - assoc-actor-safety-operator-to-uc-manual-remote-drive
-    - assoc-actor-remote-operator-to-uc-manual-remote-drive
-    - assoc-actor-passenger-to-uc-manage-passengers
-    - assoc-blk-vehicle-drive-by-wire-system-to-uc-drive-to-goal
-    - assoc-blk-vehicle-drive-by-wire-system-to-uc-monitor-vehicle
+    - assoc-blk-fleet-management-system-to-uc-drive-to-goal # blk-fleet-management-system → uc-drive-to-goal (Association)
+    - assoc-blk-fleet-management-system-to-uc-monitor-vehicle # blk-fleet-management-system → uc-monitor-vehicle (Association)
+    - assoc-actor-safety-operator-to-uc-drive-to-goal # actor-safety-operator → uc-drive-to-goal (Association)
+    - assoc-actor-safety-operator-to-uc-manual-remote-drive # actor-safety-operator → uc-manual-remote-drive (Association)
+    - assoc-actor-remote-operator-to-uc-manual-remote-drive # actor-remote-operator → uc-manual-remote-drive (Association)
+    - assoc-actor-passenger-to-uc-manage-passengers # actor-passenger → uc-manage-passengers (Association)
+    - assoc-blk-vehicle-drive-by-wire-system-to-uc-drive-to-goal # blk-vehicle-drive-by-wire-system → uc-drive-to-goal (Association)
+    - assoc-blk-vehicle-drive-by-wire-system-to-uc-monitor-vehicle # blk-vehicle-drive-by-wire-system → uc-monitor-vehicle (Association)
+    - inc-uc-drive-to-goal-to-uc-set-route # uc-drive-to-goal → uc-set-route (Include)
+    - ext-uc-execute-mrm-to-uc-engage-autonomous-mode # uc-execute-mrm → uc-engage-autonomous-mode (Extend)
+    - assoc-actor-passenger-to-uc-engage-autonomous-mode # actor-passenger → uc-engage-autonomous-mode (Association)
   subject:
     elementId: blk-autoware
     contains:
