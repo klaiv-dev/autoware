@@ -10,6 +10,8 @@ jobs:
   diff:
     runs-on: ubuntu-latest
     steps:
-      - uses: klaiv-dev/diagram-diff-action@v1
+      # Temporarily pinned to the fix commit (klaiv-dev/diagram-diff-action#1)
+      # until v1 is re-cut. Revert to @v1 once that PR is merged and the tag moves.
+      - uses: klaiv-dev/diagram-diff-action@590396fb7084ba812bbf28b59f8697f3b11ee26c
         with:
           token: ${{ github.token }}
