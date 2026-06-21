@@ -53,3 +53,39 @@ associations:
       id: actor-passenger
     target:
       id: uc-engage-autonomous-mode
+  - id: assoc-actor-developer-to-uc-replay-scenarios
+    type: uml:Association
+    source:
+      id: actor-developer
+    target:
+      id: uc-replay-scenarios
+  - id: assoc-actor-developer-to-uc-run-scenario-test
+    type: uml:Association
+    source:
+      id: actor-developer
+    target:
+      id: uc-run-scenario-test
+  - id: assoc-actor-developer-to-uc-evaluate-components
+    type: uml:Association
+    source:
+      id: actor-developer
+    target:
+      id: uc-evaluate-components
+  - id: assoc-actor-ci-pipeline-to-uc-run-scenario-test
+    type: uml:Association
+    source:
+      id: actor-ci-pipeline
+    target:
+      id: uc-run-scenario-test
+  - id: assoc-actor-ci-pipeline-to-uc-evaluate-components
+    type: uml:Association
+    source:
+      id: actor-ci-pipeline
+    target:
+      id: uc-evaluate-components
+  - id: assoc-actor-scenario-simulator-to-uc-run-scenario-test
+    type: uml:Association
+    source:
+      id: actor-scenario-simulator
+    target:
+      id: uc-run-scenario-test

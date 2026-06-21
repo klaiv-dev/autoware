@@ -5,3 +5,9 @@ includes:
       id: uc-drive-to-goal
     target:
       id: uc-set-route
+  - id: inc-uc-replay-scenarios-to-uc-run-planning-simulation
+    type: uml:Include
+    source:
+      id: uc-replay-scenarios
+    target:
+      id: uc-run-planning-simulation

@@ -1,0 +1,12 @@
+# Model Overview
+diagram:
+  id: diag-model-overview
+  name: Model Overview
+  type: sysml:BlockDefinitionDiagram
+  elements: []
+  relationships: []
+  diagramRefs:
+    - id: dref-diag-operating-an-autonomous-vehicle
+      target: diag-operating-an-autonomous-vehicle
+    - id: dref-diag-developing-and-testing-autoware
+      target: diag-developing-and-testing-autoware

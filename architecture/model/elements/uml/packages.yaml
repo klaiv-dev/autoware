@@ -1,2 +1,3 @@
 packages:
   - {id: pkg-context, name: Context, type: "uml:Package"}
+  - {id: pkg-requirements, name: Requirements, type: "uml:Package"}

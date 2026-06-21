@@ -7,3 +7,7 @@ usecases:
   - {id: uc-monitor-vehicle, name: Monitor vehicle, type: "uml:UseCase", package: pkg-context}
   - {id: uc-manual-remote-drive, name: Manual/Remote drive, type: "uml:UseCase", package: pkg-context}
   - {id: uc-manage-passengers, name: Manage passengers, type: "uml:UseCase", package: pkg-context}
+  - {id: uc-run-planning-simulation, name: Run planning simulation, type: "uml:UseCase", package: pkg-context}
+  - {id: uc-replay-scenarios, name: Replay scenarios, type: "uml:UseCase", package: pkg-context}
+  - {id: uc-run-scenario-test, name: Run scenario test, type: "uml:UseCase", package: pkg-context}
+  - {id: uc-evaluate-components, name: Evaluate components, type: "uml:UseCase", package: pkg-context}

@@ -5,3 +5,7 @@ pkg-context: 1
 blk-autoware: 1
 diag-operating-an-autonomous-vehicle: 2
 blk-fleet-management-system: 3
+pkg-requirements: 2
+diag-requirements: 1
+diag-model-overview: 3
+diag-developing-and-testing-autoware: 4
