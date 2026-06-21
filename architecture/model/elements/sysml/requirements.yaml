@@ -11,3 +11,39 @@ requirements:
     package: pkg-requirements
     stereotype: performance
     reqId: AW-PER-011
+  - id: req-predict-crossing-intention
+    name: Predict crossing intention
+    type: sysml:Requirement
+    package: pkg-requirements
+    reqId: AW-PER-012
+    stereotype: functional
+  - id: req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle
+    name: Yield decision based on time-to-collision vs time-to-vehicle
+    type: sysml:Requirement
+    package: pkg-requirements
+    stereotype: functional
+    reqId: AW-PLN-013
+  - id: req-stop-point-placement-before-crosswalk
+    name: Stop point placement before crosswalk
+    type: sysml:Requirement
+    package: pkg-requirements
+    stereotype: designConstraint
+    reqId: AW-PLN-014
+  - id: req-comfortable-deceleration-limits
+    name: Comfortable deceleration limits
+    type: sysml:Requirement
+    package: pkg-requirements
+    stereotype: performance
+    reqId: AW-CTL-015
+  - id: req-execute-minimum-risk-maneuver-on-failure
+    name: Execute minimum risk maneuver on failure
+    type: sysml:Requirement
+    package: pkg-requirements
+    stereotype: safety
+    reqId: AW-SYS-020
+  - {id: req-operator-override, name: Operator override, type: "sysml:Requirement", package: pkg-requirements, stereotype: safety, reqId: AW-SYS-021}
+  - id: req-test
+    name: Comfortable longitudinal deceleration limit, -1 m/s^2
+    type: sysml:Requirement
+    package: pkg-standards
+    stereotype: performance

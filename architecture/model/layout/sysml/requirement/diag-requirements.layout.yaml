@@ -1,5 +1,12 @@
 diagramId: diag-requirements
-viewport: {zoom: 1, panX: 0, panY: 0}
+viewport: {zoom: 0.6701130659014035, panX: 216.45834109008987, panY: 263.71437203402667}
 elements:
-  req-yield-to-pedestrians-at-crosswalk: {x: 71, y: 48, width: 271, height: 80}
+  req-yield-to-pedestrians-at-crosswalk: {x: 304, y: 38, width: 271, height: 80}
   req-detect-pedestrians-within-sensing-range: {x: 68, y: 230, width: 251, height: 80}
+  req-predict-crossing-intention: {x: 349, y: 228, width: 180, height: 80}
+  req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle: {x: 557, y: 235, width: 384, height: 80}
+  req-stop-point-placement-before-crosswalk: {x: 559, y: -147, width: 260, height: 80}
+  req-comfortable-deceleration-limits: {x: 153, y: -138, width: 261, height: 80}
+  req-execute-minimum-risk-maneuver-on-failure: {x: 693, y: 38, width: 287, height: 80}
+  req-operator-override: {x: -13, y: 37, width: 180, height: 80}
+  req-test: {x: -66, y: -304, width: 459.60071005200444, height: 80}

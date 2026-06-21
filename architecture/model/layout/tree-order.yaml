@@ -9,3 +9,5 @@ pkg-requirements: 2
 diag-requirements: 1
 diag-model-overview: 3
 diag-developing-and-testing-autoware: 4
+pkg-standards: 2
+req-test: 1

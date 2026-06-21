@@ -10,3 +10,5 @@ diagram:
       target: diag-operating-an-autonomous-vehicle
     - id: dref-diag-developing-and-testing-autoware
       target: diag-developing-and-testing-autoware
+    - id: dref-diag-requirements
+      target: diag-requirements
