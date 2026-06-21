@@ -7,4 +7,19 @@ diagram:
   elements:
     - elementId: req-yield-to-pedestrians-at-crosswalk
     - elementId: req-detect-pedestrians-within-sensing-range
-  relationships: []
+    - elementId: req-predict-crossing-intention
+    - elementId: req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle
+    - elementId: req-stop-point-placement-before-crosswalk
+    - elementId: req-comfortable-deceleration-limits
+    - elementId: req-execute-minimum-risk-maneuver-on-failure
+    - elementId: req-operator-override
+    - elementId: req-test
+  relationships:
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-detect-pedestrians-within-sensing-range # req-yield-to-pedestrians-at-crosswalk → req-detect-pedestrians-within-sensing-range (Containment)
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-predict-crossing-intention # req-yield-to-pedestrians-at-crosswalk → req-predict-crossing-intention (Containment)
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle # req-yield-to-pedestrians-at-crosswalk → req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle (Containment)
+    - derive-req-execute-minimum-risk-maneuver-on-failure-to-req-yield-to-pedestrians-at-crosswalk # req-execute-minimum-risk-maneuver-on-failure → req-yield-to-pedestrians-at-crosswalk (DeriveReqt: "deriveReqt")
+    - derive-req-operator-override-to-req-yield-to-pedestrians-at-crosswalk # req-operator-override → req-yield-to-pedestrians-at-crosswalk (DeriveReqt: "deriveReqt")
+    - cpy-req-comfortable-deceleration-limits-to-req-test # req-comfortable-deceleration-limits → req-test (Copy: "copy")
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-comfortable-deceleration-limits # req-yield-to-pedestrians-at-crosswalk → req-comfortable-deceleration-limits (Containment)
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-stop-point-placement-before-crosswalk # req-yield-to-pedestrians-at-crosswalk → req-stop-point-placement-before-crosswalk (Containment)

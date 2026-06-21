@@ -1,1 +1,31 @@
-containments: []
+containments:
+  - id: contain-req-yield-to-pedestrians-at-crosswalk-to-req-detect-pedestrians-within-sensing-range
+    type: sysml:Containment
+    source:
+      id: req-yield-to-pedestrians-at-crosswalk
+    target:
+      id: req-detect-pedestrians-within-sensing-range
+  - id: contain-req-yield-to-pedestrians-at-crosswalk-to-req-predict-crossing-intention
+    type: sysml:Containment
+    source:
+      id: req-yield-to-pedestrians-at-crosswalk
+    target:
+      id: req-predict-crossing-intention
+  - id: contain-req-yield-to-pedestrians-at-crosswalk-to-req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle
+    type: sysml:Containment
+    source:
+      id: req-yield-to-pedestrians-at-crosswalk
+    target:
+      id: req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle
+  - id: contain-req-yield-to-pedestrians-at-crosswalk-to-req-comfortable-deceleration-limits
+    type: sysml:Containment
+    source:
+      id: req-yield-to-pedestrians-at-crosswalk
+    target:
+      id: req-comfortable-deceleration-limits
+  - id: contain-req-yield-to-pedestrians-at-crosswalk-to-req-stop-point-placement-before-crosswalk
+    type: sysml:Containment
+    source:
+      id: req-yield-to-pedestrians-at-crosswalk
+    target:
+      id: req-stop-point-placement-before-crosswalk

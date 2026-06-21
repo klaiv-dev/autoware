@@ -1,4 +1,15 @@
-# Klaiv relationship file — derives
-# Add entries below. Each entry must have: id, type, source, target.
-
-derives: []
+derives:
+  - id: derive-req-execute-minimum-risk-maneuver-on-failure-to-req-yield-to-pedestrians-at-crosswalk
+    type: sysml:DeriveReqt
+    source:
+      id: req-execute-minimum-risk-maneuver-on-failure
+    target:
+      id: req-yield-to-pedestrians-at-crosswalk
+    label: deriveReqt
+  - id: derive-req-operator-override-to-req-yield-to-pedestrians-at-crosswalk
+    type: sysml:DeriveReqt
+    source:
+      id: req-operator-override
+    target:
+      id: req-yield-to-pedestrians-at-crosswalk
+    label: deriveReqt
