@@ -1,0 +1,25 @@
+# Developing and Testing Autoware
+diagram:
+  id: diag-developing-and-testing-autoware
+  name: Developing and Testing Autoware
+  type: uml:UseCaseDiagram
+  package: pkg-context
+  elements:
+    - elementId: actor-developer
+    - elementId: actor-ci-pipeline
+    - elementId: actor-scenario-simulator
+  relationships:
+    - assoc-actor-developer-to-uc-replay-scenarios # actor-developer → uc-replay-scenarios (Association)
+    - inc-uc-replay-scenarios-to-uc-run-planning-simulation # uc-replay-scenarios → uc-run-planning-simulation (Include)
+    - assoc-actor-developer-to-uc-run-scenario-test # actor-developer → uc-run-scenario-test (Association)
+    - assoc-actor-developer-to-uc-evaluate-components # actor-developer → uc-evaluate-components (Association)
+    - assoc-actor-ci-pipeline-to-uc-run-scenario-test # actor-ci-pipeline → uc-run-scenario-test (Association)
+    - assoc-actor-ci-pipeline-to-uc-evaluate-components # actor-ci-pipeline → uc-evaluate-components (Association)
+    - assoc-actor-scenario-simulator-to-uc-run-scenario-test # actor-scenario-simulator → uc-run-scenario-test (Association)
+  subject:
+    elementId: blk-autoware
+    contains:
+      - uc-evaluate-components
+      - uc-replay-scenarios
+      - uc-run-planning-simulation
+      - uc-run-scenario-test

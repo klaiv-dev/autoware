@@ -1,4 +1,7 @@
-# Klaiv relationship file — extends
-# Add entries below. Each entry must have: id, type, source, target.
-
-extends: []
+extends:
+  - id: ext-uc-execute-mrm-to-uc-engage-autonomous-mode
+    type: uml:Extend
+    source:
+      id: uc-execute-mrm
+    target:
+      id: uc-engage-autonomous-mode

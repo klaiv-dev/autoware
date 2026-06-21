@@ -1,0 +1,10 @@
+# Crosswalk Safety Requirements
+diagram:
+  id: diag-requirements
+  name: Crosswalk Safety Requirements
+  type: sysml:RequirementDiagram
+  package: pkg-requirements
+  elements:
+    - elementId: req-yield-to-pedestrians-at-crosswalk
+    - elementId: req-detect-pedestrians-within-sensing-range
+  relationships: []

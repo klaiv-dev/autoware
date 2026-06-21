@@ -1,0 +1,5 @@
+diagramId: diag-requirements
+viewport: {zoom: 1, panX: 0, panY: 0}
+elements:
+  req-yield-to-pedestrians-at-crosswalk: {x: 71, y: 48, width: 271, height: 80}
+  req-detect-pedestrians-within-sensing-range: {x: 68, y: 230, width: 251, height: 80}

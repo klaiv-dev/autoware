@@ -2,3 +2,6 @@ actors:
   - {id: actor-safety-operator, name: Safety Operator, type: "uml:Actor", package: pkg-context}
   - {id: actor-remote-operator, name: Remote Operator, type: "uml:Actor", package: pkg-context}
   - {id: actor-passenger, name: Passenger, type: "uml:Actor", package: pkg-context}
+  - {id: actor-developer, name: Developer, type: "uml:Actor", package: pkg-context}
+  - {id: actor-ci-pipeline, name: CI Pipeline, type: "uml:Actor", package: pkg-context}
+  - {id: actor-scenario-simulator, name: Scenario Simulator, type: "uml:Actor", package: pkg-context}

@@ -1,4 +1,13 @@
-# Klaiv relationship file — includes
-# Add entries below. Each entry must have: id, type, source, target.
-
-includes: []
+includes:
+  - id: inc-uc-drive-to-goal-to-uc-set-route
+    type: uml:Include
+    source:
+      id: uc-drive-to-goal
+    target:
+      id: uc-set-route
+  - id: inc-uc-replay-scenarios-to-uc-run-planning-simulation
+    type: uml:Include
+    source:
+      id: uc-replay-scenarios
+    target:
+      id: uc-run-planning-simulation

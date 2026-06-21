@@ -1,5 +1,13 @@
-# Klaiv element file — requirements
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-requirements: []
+requirements:
+  - id: req-yield-to-pedestrians-at-crosswalk
+    name: Yield to pedestrians at crosswalk
+    type: sysml:Requirement
+    package: pkg-requirements
+    reqId: AW-SYS-010
+    stereotype: safety
+  - id: req-detect-pedestrians-within-sensing-range
+    name: Detect pedestrians within sensing range
+    type: sysml:Requirement
+    package: pkg-requirements
+    stereotype: performance
+    reqId: AW-PER-011
