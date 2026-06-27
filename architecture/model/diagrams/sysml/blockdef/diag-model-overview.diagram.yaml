@@ -12,3 +12,5 @@ diagram:
       target: diag-developing-and-testing-autoware
     - id: dref-diag-requirements
       target: diag-requirements
+    - id: dref-diag-autoware-system-decomposition
+      target: diag-autoware-system-decomposition

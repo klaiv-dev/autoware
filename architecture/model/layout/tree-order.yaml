@@ -11,3 +11,5 @@ diag-model-overview: 3
 diag-developing-and-testing-autoware: 4
 pkg-standards: 2
 req-test: 1
+pkg-system-architecture: 4
+diag-autoware-system-decomposition: 1

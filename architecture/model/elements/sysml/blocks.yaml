@@ -1,4 +1,116 @@
 blocks:
-  - {id: blk-autoware, name: Autoware, type: "sysml:Block", package: pkg-context}
+  - id: blk-autoware
+    name: Autoware System
+    type: sysml:Block
+    package: pkg-system-architecture
+    parts:
+      - id: prt-vehicleinterface
+        name: vehicleInterface
+        typeRef: blk-vehicle-interface
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-vehicle-interface
+      - id: prt-control
+        name: control
+        typeRef: blk-control
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-control
+      - id: prt-sensing
+        name: sensing
+        typeRef: blk-sensing
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-sensing
+      - id: prt-map
+        name: map
+        typeRef: blk-map
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-map
+      - id: prt-localization
+        name: localization
+        typeRef: blk-localization
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-localization
+      - id: prt-perception
+        name: perception
+        typeRef: blk-perception
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-perception
+      - id: prt-planning
+        name: planning
+        typeRef: blk-planning
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-planning
+      - id: prt-safetysystem
+        name: safetySystem
+        typeRef: blk-safety-system
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-safety-system
+      - id: prt-adapi
+        name: adApi
+        typeRef: blk-ad-api
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-autoware-to-blk-ad-api
   - {id: blk-fleet-management-system, name: Fleet Management System, type: "sysml:Block", package: pkg-context, stereotype: externalSystem}
   - {id: blk-vehicle-drive-by-wire-system, name: Vehicle Drive-by-Wire System, type: "sysml:Block", package: pkg-context, stereotype: system}
+  - {id: blk-sensing, name: Sensing, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-localization, name: Localization, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-perception, name: Perception, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-planning, name: Planning, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-control, name: Control, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-vehicle-interface, name: Vehicle Interface, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-map, name: Map, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - id: blk-ego-vehicle
+    name: Ego Vehicle
+    type: sysml:Block
+    package: pkg-system-architecture
+    parts:
+      - id: prt-sensorkit
+        name: sensorKit
+        typeRef: blk-sensor-kit
+        aggregation: shared
+        relationshipId: aggr-blk-ego-vehicle-to-blk-sensor-kit
+  - id: blk-sensor-kit
+    name: Sensor Kit
+    type: sysml:Block
+    package: pkg-system-architecture
+    parts:
+      - id: prt-lidar
+        name: lidar
+        typeRef: blk-lidar
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-sensor-kit-to-blk-lidar
+      - id: prt-camera
+        name: camera
+        typeRef: blk-camera
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-sensor-kit-to-blk-camera
+      - id: prt-gnss
+        name: gnss
+        typeRef: blk-gnss
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-sensor-kit-to-blk-gnss
+      - id: prt-imu
+        name: imu
+        typeRef: blk-imu
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-sensor-kit-to-blk-imu
+  - {id: blk-lidar, name: LIDAR, type: "sysml:Block", package: pkg-system-architecture}
+  - {id: blk-camera, name: Camera, type: "sysml:Block", package: pkg-system-architecture}
+  - {id: blk-gnss, name: GNSS, type: "sysml:Block", package: pkg-system-architecture}
+  - {id: blk-imu, name: IMU, type: "sysml:Block", package: pkg-system-architecture}
+  - {id: blk-vls-128, name: VLS-128, type: "sysml:Block", package: pkg-system-architecture}
+  - {id: blk-vlp-16, name: VLP-16, type: "sysml:Block", package: pkg-system-architecture}

@@ -1,0 +1,42 @@
+# Autoware System Decomposition
+diagram:
+  id: diag-autoware-system-decomposition
+  name: Autoware System Decomposition
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-system-architecture
+  elements:
+    - elementId: blk-autoware
+    - elementId: blk-sensing
+    - elementId: blk-localization
+    - elementId: blk-perception
+    - elementId: blk-planning
+    - elementId: blk-control
+    - elementId: blk-map
+    - elementId: blk-safety-system
+    - elementId: blk-ad-api
+    - elementId: blk-ego-vehicle
+    - elementId: blk-sensor-kit
+    - elementId: blk-lidar
+    - elementId: blk-camera
+    - elementId: blk-gnss
+    - elementId: blk-imu
+    - elementId: blk-vls-128
+    - elementId: blk-vlp-16
+    - elementId: blk-vehicle-interface
+  relationships:
+    - gen-blk-vls-128-to-blk-lidar # blk-vls-128 → blk-lidar (Generalization)
+    - gen-blk-vlp-16-to-blk-lidar # blk-vlp-16 → blk-lidar (Generalization)
+    - compos-blk-autoware-to-blk-vehicle-interface # blk-autoware → blk-vehicle-interface (Composition)
+    - compos-blk-autoware-to-blk-control # blk-autoware → blk-control (Composition)
+    - compos-blk-autoware-to-blk-sensing # blk-autoware → blk-sensing (Composition)
+    - compos-blk-autoware-to-blk-map # blk-autoware → blk-map (Composition)
+    - compos-blk-autoware-to-blk-localization # blk-autoware → blk-localization (Composition)
+    - compos-blk-autoware-to-blk-perception # blk-autoware → blk-perception (Composition)
+    - compos-blk-autoware-to-blk-planning # blk-autoware → blk-planning (Composition)
+    - compos-blk-autoware-to-blk-safety-system # blk-autoware → blk-safety-system (Composition)
+    - compos-blk-autoware-to-blk-ad-api # blk-autoware → blk-ad-api (Composition)
+    - compos-blk-sensor-kit-to-blk-lidar # blk-sensor-kit → blk-lidar (Composition)
+    - compos-blk-sensor-kit-to-blk-camera # blk-sensor-kit → blk-camera (Composition)
+    - compos-blk-sensor-kit-to-blk-gnss # blk-sensor-kit → blk-gnss (Composition)
+    - compos-blk-sensor-kit-to-blk-imu # blk-sensor-kit → blk-imu (Composition)
+    - aggr-blk-ego-vehicle-to-blk-sensor-kit # blk-ego-vehicle → blk-sensor-kit (Aggregation)

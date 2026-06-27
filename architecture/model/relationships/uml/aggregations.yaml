@@ -1,4 +1,8 @@
-# Klaiv relationship file — aggregations
-# Add entries below. Each entry must have: id, type, source, target.
-
-aggregations: []
+aggregations:
+  - id: aggr-blk-ego-vehicle-to-blk-sensor-kit
+    type: uml:Aggregation
+    source:
+      id: blk-ego-vehicle
+    target:
+      id: blk-sensor-kit
+    targetRole: sensorKit
