@@ -1,4 +1,105 @@
-# Klaiv relationship file — compositions
-# Add entries below. Each entry must have: id, type, source, target.
-
-compositions: []
+compositions:
+  - id: compos-blk-autoware-to-blk-vehicle-interface
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-vehicle-interface
+    targetMultiplicity: "1"
+    targetRole: vehicleInterface
+  - id: compos-blk-autoware-to-blk-control
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-control
+    targetMultiplicity: "1"
+    targetRole: control
+  - id: compos-blk-autoware-to-blk-sensing
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-sensing
+    targetMultiplicity: "1"
+    targetRole: sensing
+  - id: compos-blk-autoware-to-blk-map
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-map
+    targetMultiplicity: "1"
+    targetRole: map
+  - id: compos-blk-autoware-to-blk-localization
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-localization
+    targetMultiplicity: "1"
+    targetRole: localization
+  - id: compos-blk-autoware-to-blk-perception
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-perception
+    targetMultiplicity: "1"
+    targetRole: perception
+  - id: compos-blk-autoware-to-blk-planning
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-planning
+    targetMultiplicity: "1"
+    targetRole: planning
+  - id: compos-blk-autoware-to-blk-safety-system
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-safety-system
+    targetMultiplicity: "1"
+    targetRole: safetySystem
+  - id: compos-blk-autoware-to-blk-ad-api
+    type: uml:Composition
+    source:
+      id: blk-autoware
+    target:
+      id: blk-ad-api
+    targetMultiplicity: "1"
+    targetRole: adApi
+  - id: compos-blk-sensor-kit-to-blk-lidar
+    type: uml:Composition
+    source:
+      id: blk-sensor-kit
+    target:
+      id: blk-lidar
+    targetMultiplicity: "1"
+    targetRole: lidar
+  - id: compos-blk-sensor-kit-to-blk-camera
+    type: uml:Composition
+    source:
+      id: blk-sensor-kit
+    target:
+      id: blk-camera
+    targetMultiplicity: "1"
+    targetRole: camera
+  - id: compos-blk-sensor-kit-to-blk-gnss
+    type: uml:Composition
+    source:
+      id: blk-sensor-kit
+    target:
+      id: blk-gnss
+    targetMultiplicity: "1"
+    targetRole: gnss
+  - id: compos-blk-sensor-kit-to-blk-imu
+    type: uml:Composition
+    source:
+      id: blk-sensor-kit
+    target:
+      id: blk-imu
+    targetMultiplicity: "1"
+    targetRole: imu

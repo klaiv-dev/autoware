@@ -6,3 +6,7 @@ stereotypeExtensions:
   - elementTypeId: sysml:Requirement
     stereotypes:
       - safety
+  - elementTypeId: sysml:Block
+    stereotypes:
+      - externalSystem
+      - system

@@ -1,4 +1,13 @@
-# Klaiv relationship file — generalizations
-# Add entries below. Each entry must have: id, type, source, target.
-
-generalizations: []
+generalizations:
+  - id: gen-blk-vls-128-to-blk-lidar
+    type: uml:Generalization
+    source:
+      id: blk-vls-128
+    target:
+      id: blk-lidar
+  - id: gen-blk-vlp-16-to-blk-lidar
+    type: uml:Generalization
+    source:
+      id: blk-vlp-16
+    target:
+      id: blk-lidar
