@@ -1,0 +1,10 @@
+diagramId: diag-logical-interfaces
+viewport: {zoom: 0.9697270925820022, panX: 207.86649544008316, panY: -60.246159480168274}
+elements:
+  blk-pointcloud: {x: 260, y: 124, width: 180, height: 80}
+  blk-predictedobject: {x: 458, y: 125, width: 207.15199463365437, height: 100}
+  blk-predictedpath: {x: 471, y: 237, width: 180, height: 82}
+  blk-route: {x: -135, y: 128, width: 180, height: 80}
+  blk-trajectory: {x: 63, y: 126, width: 180, height: 82}
+  blk-trajectorypoint: {x: 64, y: 228, width: 180, height: 172}
+  enum-objectclass: {x: 473, y: 335, width: 180, height: 192}

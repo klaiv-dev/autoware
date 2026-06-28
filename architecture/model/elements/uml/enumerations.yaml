@@ -1,5 +1,30 @@
-# Klaiv element file — enumerations
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-enumerations: []
+enumerations:
+  - id: enum-objectclass
+    name: ObjectClass
+    type: uml:Enumeration
+    package: pkg-logical-interfaces
+    literals:
+      - id: lit-unknown
+        name: UNKNOWN
+        description: "0"
+      - id: lit-car
+        name: CAR
+        description: "1"
+      - id: lit-truck
+        name: TRUCK
+        description: "2"
+      - id: lit-bus
+        name: BUS
+        description: "3"
+      - id: lit-trailer
+        name: TRAILER
+        description: "4"
+      - id: lit-moto
+        name: MOTORCYCLE
+        description: "5"
+      - id: lit-bicycle
+        name: BICYCLE
+        description: "6"
+      - id: lit-pedestrian
+        name: PEDESTRIAN
+        description: "7"

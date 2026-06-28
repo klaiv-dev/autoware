@@ -10,3 +10,4 @@ stereotypeExtensions:
     stereotypes:
       - externalSystem
       - system
+      - logical

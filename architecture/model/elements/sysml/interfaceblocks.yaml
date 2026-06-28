@@ -1,5 +1,58 @@
-# Klaiv element file — interfaceblocks
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-interfaceblocks: []
+interfaceblocks:
+  - id: ifblk-ipointcloud
+    name: IPointCloud
+    type: sysml:InterfaceBlock
+    package: pkg-interfaces
+    attributes:
+      - id: att-cloud 
+        name: cloud
+        type: ""
+        visibility: public
+  - {id: ifblk-ipointcloud-2, name: IPointCloud, type: "sysml:InterfaceBlock", package: pkg-system-interfaces}
+  - {id: ifblk-iroute, name: IRoute, type: "sysml:InterfaceBlock", package: pkg-system-interfaces}
+  - id: ifblk-ipredictedobjects
+    name: IPredictedObjects
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-objects
+        name: objects
+        type: ""
+        visibility: public
+        typeRef: blk-predictedobject
+        direction: out
+  - id: ifblk-itrajectory
+    name: ITrajectory
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-trajectory
+        name: trajectory
+        type: ""
+        visibility: public
+        typeRef: blk-trajectory
+        direction: out
+  - {id: ifblk-icontrolcmd, name: IControlCmd, type: "sysml:InterfaceBlock", package: pkg-system-interfaces}
+  - id: ifblk-ivehiclestatus
+    name: IVehicleStatus
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-veloc
+        name: velocity
+        type: ""
+        visibility: public
+        typeRef: vt-speed
+        direction: out
+      - id: att-steerang
+        name: steeringAngle
+        type: ""
+        visibility: public
+        typeRef: vt-steeringangle
+        direction: out
+      - id: att-headrate
+        name: headingRate
+        type: ""
+        visibility: public
+        typeRef: vt-headingrate
+        direction: out

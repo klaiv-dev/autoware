@@ -21,3 +21,8 @@ pkg-quantity-kinds: 2
 diag-quantity-kinds: 1
 pkg-value-types: 3
 diag-value-types: 1
+diag-interfaces: 1
+pkg-logical-interfaces: 4
+diag-logical-interfaces: 1
+pkg-system-interfaces: 4
+diag-system-interfaces: 1

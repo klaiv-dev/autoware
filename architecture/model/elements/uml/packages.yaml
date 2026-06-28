@@ -8,3 +8,5 @@ packages:
   - {id: pkg-units, name: Units, type: "uml:Package", package: pkg-interfaces-and-value-types}
   - {id: pkg-quantity-kinds, name: Quantity Kinds, type: "uml:Package", package: pkg-interfaces-and-value-types}
   - {id: pkg-value-types, name: Value Types, type: "uml:Package", package: pkg-interfaces-and-value-types}
+  - {id: pkg-logical-interfaces, name: Logical Interfaces, type: "uml:Package", package: pkg-interfaces-and-value-types}
+  - {id: pkg-system-interfaces, name: System Interfaces, type: "uml:Package", package: pkg-system-architecture}

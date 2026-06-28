@@ -1,7 +1,8 @@
 diagramId: diag-value-types
-viewport: {zoom: 1.0981481642950148, panX: -84.95555768694194, panY: 30.528704325358078}
+viewport: {zoom: 1.0981481642950148, panX: -84.95555768694194, panY: -25.471295674641922}
 elements:
   vt-acceleration: {x: 325, y: 65, width: 180, height: 80}
+  vt-angle: {x: 421, y: 256, width: 180, height: 80}
   vt-confidence: {x: 707, y: 154, width: 180, height: 80}
   vt-distance: {x: 325, y: 156, width: 180, height: 80}
   vt-duration: {x: 517, y: 154, width: 180, height: 80}
