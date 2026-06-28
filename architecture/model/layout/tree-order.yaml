@@ -15,3 +15,9 @@ pkg-system-architecture: 4
 diag-autoware-system-decomposition: 1
 pkg-system-decomposition: 2
 pkg-interfaces-and-value-types: 3
+pkg-units: 1
+diag-units: 1
+pkg-quantity-kinds: 2
+diag-quantity-kinds: 1
+pkg-value-types: 3
+diag-value-types: 1

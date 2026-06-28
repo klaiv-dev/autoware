@@ -1,0 +1,10 @@
+diagramId: diag-quantity-kinds
+viewport: {zoom: 1, panX: 3, panY: -52}
+elements:
+  qk-acceleration: {x: 126, y: 187, width: 180, height: 80}
+  qk-angularvelocity: {x: 522, y: 89, width: 180, height: 80}
+  qk-jerk: {x: 326, y: 90, width: 180, height: 80}
+  qk-length: {x: 522, y: 185, width: 180, height: 80}
+  qk-plane-angle: {x: 325, y: 187, width: 180, height: 80}
+  qk-time: {x: 325, y: 285, width: 180, height: 80}
+  qk-velocity: {x: 126, y: 90, width: 180, height: 80}

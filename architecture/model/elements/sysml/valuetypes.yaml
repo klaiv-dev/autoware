@@ -1,5 +1,19 @@
-# Klaiv element file — valuetypes
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-valuetypes: []
+valuetypes:
+  - {id: vt-speed, name: Speed, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-velocity, unit: u-meter-per-second}
+  - id: vt-acceleration
+    name: Acceleration
+    type: sysml:ValueType
+    package: pkg-value-types
+    quantityKind: qk-acceleration
+    unit: u-meter-per-second-square
+  - {id: vt-jerk, name: Jerk, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-jerk, unit: u-meter-per-second-cube}
+  - {id: vt-steeringangle, name: SteeringAngle, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-plane-angle, unit: u-radians}
+  - id: vt-headingrate
+    name: HeadingRate
+    type: sysml:ValueType
+    package: pkg-value-types
+    quantityKind: qk-angularvelocity
+    unit: u-radians-per-second
+  - {id: vt-distance, name: Distance, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-length, unit: u-meters}
+  - {id: vt-duration, name: Duration, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-time, unit: u-second}
+  - {id: vt-confidence, name: Confidence, type: "sysml:ValueType", package: pkg-value-types}

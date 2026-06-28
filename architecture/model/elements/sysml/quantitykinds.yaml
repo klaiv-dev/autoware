@@ -1,5 +1,8 @@
-# Klaiv element file — quantitykinds
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-quantitykinds: []
+quantitykinds:
+  - {id: qk-velocity, name: Velocity, type: "sysml:QuantityKind", package: pkg-quantity-kinds}
+  - {id: qk-acceleration, name: Acceleration, type: "sysml:QuantityKind", package: pkg-quantity-kinds}
+  - {id: qk-jerk, name: Jerk, type: "sysml:QuantityKind", package: pkg-quantity-kinds}
+  - {id: qk-plane-angle, name: PlaneAngle, type: "sysml:QuantityKind", package: pkg-quantity-kinds}
+  - {id: qk-angularvelocity, name: AngularVelocity, type: "sysml:QuantityKind", package: pkg-quantity-kinds}
+  - {id: qk-length, name: Length, type: "sysml:QuantityKind", package: pkg-quantity-kinds}
+  - {id: qk-time, name: Time, type: "sysml:QuantityKind", package: pkg-quantity-kinds}

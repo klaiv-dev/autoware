@@ -1,0 +1,16 @@
+# Value Types
+diagram:
+  id: diag-value-types
+  name: Value Types
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-value-types
+  elements:
+    - elementId: vt-acceleration # Acceleration (ValueType)
+    - elementId: vt-confidence # Confidence (ValueType)
+    - elementId: vt-distance # Distance (ValueType)
+    - elementId: vt-duration # Duration (ValueType)
+    - elementId: vt-headingrate # HeadingRate (ValueType)
+    - elementId: vt-jerk # Jerk (ValueType)
+    - elementId: vt-speed # Speed (ValueType)
+    - elementId: vt-steeringangle # SteeringAngle (ValueType)
+  relationships: []

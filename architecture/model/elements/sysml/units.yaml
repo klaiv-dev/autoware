@@ -1,5 +1,8 @@
-# Klaiv element file — units
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-units: []
+units:
+  - {id: u-meter-per-second, name: Meter per Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-velocity}
+  - {id: u-meter-per-second-square, name: Meter per Second Square, type: "sysml:Unit", package: pkg-units, quantityKind: qk-acceleration}
+  - {id: u-meter-per-second-cube, name: Meter per Second Cube, type: "sysml:Unit", package: pkg-units, quantityKind: qk-jerk}
+  - {id: u-radians, name: Radians, type: "sysml:Unit", package: pkg-units, quantityKind: qk-plane-angle}
+  - {id: u-radians-per-second, name: Radians per Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-angularvelocity}
+  - {id: u-meters, name: Meter, type: "sysml:Unit", package: pkg-units, quantityKind: qk-length}
+  - {id: u-second, name: Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-time}
