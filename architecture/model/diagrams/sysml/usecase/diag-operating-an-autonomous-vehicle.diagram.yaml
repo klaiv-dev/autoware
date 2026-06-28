@@ -5,23 +5,23 @@ diagram:
   type: sysml:UseCaseDiagram
   package: pkg-context
   elements:
-    - elementId: blk-fleet-management-system
-    - elementId: actor-safety-operator
-    - elementId: actor-remote-operator
-    - elementId: actor-passenger
-    - elementId: blk-vehicle-drive-by-wire-system
+    - elementId: actor-passenger # Passenger (Actor)
+    - elementId: actor-remote-operator # Remote Operator (Actor)
+    - elementId: actor-safety-operator # Safety Operator (Actor)
+    - elementId: blk-fleet-management-system # Fleet Management System (Block)
+    - elementId: blk-vehicle-drive-by-wire-system # Vehicle Drive-by-Wire System (Block)
   relationships:
-    - assoc-blk-fleet-management-system-to-uc-drive-to-goal
-    - assoc-blk-fleet-management-system-to-uc-monitor-vehicle
-    - assoc-actor-safety-operator-to-uc-drive-to-goal
-    - assoc-actor-safety-operator-to-uc-manual-remote-drive
-    - assoc-actor-remote-operator-to-uc-manual-remote-drive
-    - assoc-actor-passenger-to-uc-manage-passengers
-    - assoc-blk-vehicle-drive-by-wire-system-to-uc-drive-to-goal
-    - assoc-blk-vehicle-drive-by-wire-system-to-uc-monitor-vehicle
-    - inc-uc-drive-to-goal-to-uc-set-route
-    - ext-uc-execute-mrm-to-uc-engage-autonomous-mode
-    - assoc-actor-passenger-to-uc-engage-autonomous-mode
+    - assoc-actor-passenger-to-uc-engage-autonomous-mode # Passenger → Engage Autonomous Mode (Association)
+    - assoc-actor-passenger-to-uc-manage-passengers # Passenger → Manage passengers (Association)
+    - assoc-actor-remote-operator-to-uc-manual-remote-drive # Remote Operator → Manual/Remote drive (Association)
+    - assoc-actor-safety-operator-to-uc-drive-to-goal # Safety Operator → Drive to goal (Association)
+    - assoc-actor-safety-operator-to-uc-manual-remote-drive # Safety Operator → Manual/Remote drive (Association)
+    - assoc-blk-fleet-management-system-to-uc-drive-to-goal # Fleet Management System → Drive to goal (Association)
+    - assoc-blk-fleet-management-system-to-uc-monitor-vehicle # Fleet Management System → Monitor vehicle (Association)
+    - assoc-blk-vehicle-drive-by-wire-system-to-uc-drive-to-goal # Vehicle Drive-by-Wire System → Drive to goal (Association)
+    - assoc-blk-vehicle-drive-by-wire-system-to-uc-monitor-vehicle # Vehicle Drive-by-Wire System → Monitor vehicle (Association)
+    - inc-uc-drive-to-goal-to-uc-set-route # Drive to goal → Set route (Include)
+    - ext-uc-execute-mrm-to-uc-engage-autonomous-mode # Execute MRM → Engage Autonomous Mode (Extend)
   subject:
     elementId: blk-autoware
     contains:

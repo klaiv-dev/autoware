@@ -13,3 +13,5 @@ pkg-standards: 2
 req-test: 1
 pkg-system-architecture: 4
 diag-autoware-system-decomposition: 1
+pkg-system-decomposition: 2
+pkg-interfaces-and-value-types: 3

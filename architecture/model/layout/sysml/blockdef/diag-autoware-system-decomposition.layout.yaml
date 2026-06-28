@@ -1,23 +1,23 @@
 diagramId: diag-autoware-system-decomposition
 viewport: {zoom: 0.5143978001356793, panX: 161.33636662672882, panY: 84.91613077115612}
 elements:
-  blk-autoware: {x: 191, y: 2, width: 180, height: 80}
-  blk-sensing: {x: -197, y: 205, width: 180, height: 80}
-  blk-localization: {x: 204, y: 246, width: 180, height: 80}
-  blk-perception: {x: 399, y: 243, width: 180, height: 80}
-  blk-planning: {x: 598, y: 203, width: 180, height: 80}
-  blk-control: {x: -189, y: 105, width: 180, height: 80}
-  blk-map: {x: 5, y: 244, width: 180, height: 80}
-  blk-safety-system: {x: 595, y: 106, width: 180, height: 80}
   blk-ad-api: {x: 595, y: 14, width: 180, height: 80}
-  blk-ego-vehicle: {x: 1107, y: -41, width: 180, height: 80}
-  blk-sensor-kit: {x: 1107, y: 102, width: 180, height: 80}
-  blk-lidar: {x: 816, y: 248, width: 180, height: 80}
+  blk-autoware: {x: 191, y: 2, width: 180, height: 80}
   blk-camera: {x: 1016, y: 248, width: 180, height: 80}
+  blk-control: {x: -199, y: 107, width: 180, height: 80}
+  blk-ego-vehicle: {x: 1107, y: -41, width: 180, height: 80}
   blk-gnss: {x: 1211, y: 246, width: 180, height: 80}
   blk-imu: {x: 1408, y: 249, width: 180, height: 80}
-  blk-vls-128: {x: 701, y: 437, width: 180, height: 80}
+  blk-lidar: {x: 816, y: 248, width: 180, height: 80}
+  blk-localization: {x: 204, y: 246, width: 180, height: 80}
+  blk-map: {x: 5, y: 244, width: 180, height: 80}
+  blk-perception: {x: 399, y: 243, width: 180, height: 80}
+  blk-planning: {x: 598, y: 203, width: 180, height: 80}
+  blk-safety-system: {x: 595, y: 106, width: 180, height: 80}
+  blk-sensing: {x: -197, y: 205, width: 180, height: 80}
+  blk-sensor-kit: {x: 1107, y: 102, width: 180, height: 80}
+  blk-vehicle-interface: {x: -199, y: 7, width: 180, height: 80}
   blk-vlp-16: {x: 912, y: 438, width: 180, height: 80}
-  blk-vehicle-interface: {x: -191, y: -1, width: 180, height: 80}
+  blk-vls-128: {x: 701, y: 437, width: 180, height: 80}
 edgeAnchors:
   compos-blk-autoware-to-blk-vehicle-interface: {}

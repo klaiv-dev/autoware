@@ -1,11 +1,11 @@
 diagramId: diag-developing-and-testing-autoware
-viewport: {zoom: 1, panX: -26, panY: 15}
+viewport: {zoom: 1, panX: -26, panY: -105}
 elements:
   uc-evaluate-components: {x: 408, y: 215, width: 160, height: 70}
   uc-replay-scenarios: {x: 345, y: 111, width: 139, height: 76}
   uc-run-planning-simulation: {x: 565, y: 116, width: 148, height: 72}
   uc-run-scenario-test: {x: 322, y: 322, width: 180, height: 80}
-  actor-developer: {x: 26, y: 127, width: 180, height: 88}
   actor-ci-pipeline: {x: 25, y: 310, width: 180, height: 88}
-  actor-scenario-simulator: {x: 749, y: 334, width: 180, height: 88}
+  actor-developer: {x: 26, y: 127, width: 180, height: 88}
+  actor-scenario-simulator: {x: 804, y: 327, width: 180, height: 88}
   blk-autoware: {x: 250, y: 53.20000076293945, width: 500, height: 400}

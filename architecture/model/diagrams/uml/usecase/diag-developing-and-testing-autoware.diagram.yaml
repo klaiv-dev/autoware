@@ -5,17 +5,17 @@ diagram:
   type: uml:UseCaseDiagram
   package: pkg-context
   elements:
-    - elementId: actor-developer
-    - elementId: actor-ci-pipeline
-    - elementId: actor-scenario-simulator
+    - elementId: actor-ci-pipeline # CI Pipeline (Actor)
+    - elementId: actor-developer # Developer (Actor)
+    - elementId: actor-scenario-simulator # Scenario Simulator (Actor)
   relationships:
-    - assoc-actor-developer-to-uc-replay-scenarios # actor-developer → uc-replay-scenarios (Association)
-    - inc-uc-replay-scenarios-to-uc-run-planning-simulation # uc-replay-scenarios → uc-run-planning-simulation (Include)
-    - assoc-actor-developer-to-uc-run-scenario-test # actor-developer → uc-run-scenario-test (Association)
-    - assoc-actor-developer-to-uc-evaluate-components # actor-developer → uc-evaluate-components (Association)
-    - assoc-actor-ci-pipeline-to-uc-run-scenario-test # actor-ci-pipeline → uc-run-scenario-test (Association)
-    - assoc-actor-ci-pipeline-to-uc-evaluate-components # actor-ci-pipeline → uc-evaluate-components (Association)
-    - assoc-actor-scenario-simulator-to-uc-run-scenario-test # actor-scenario-simulator → uc-run-scenario-test (Association)
+    - assoc-actor-ci-pipeline-to-uc-evaluate-components # CI Pipeline → Evaluate components (Association)
+    - assoc-actor-ci-pipeline-to-uc-run-scenario-test # CI Pipeline → Run scenario test (Association)
+    - assoc-actor-developer-to-uc-evaluate-components # Developer → Evaluate components (Association)
+    - assoc-actor-developer-to-uc-replay-scenarios # Developer → Replay scenarios (Association)
+    - assoc-actor-developer-to-uc-run-scenario-test # Developer → Run scenario test (Association)
+    - assoc-actor-scenario-simulator-to-uc-run-scenario-test # Scenario Simulator → Run scenario test (Association)
+    - inc-uc-replay-scenarios-to-uc-run-planning-simulation # Replay scenarios → Run planning simulation (Include)
   subject:
     elementId: blk-autoware
     contains:

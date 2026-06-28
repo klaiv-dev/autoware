@@ -60,19 +60,19 @@ blocks:
         relationshipId: compos-blk-autoware-to-blk-ad-api
   - {id: blk-fleet-management-system, name: Fleet Management System, type: "sysml:Block", package: pkg-context, stereotype: externalSystem}
   - {id: blk-vehicle-drive-by-wire-system, name: Vehicle Drive-by-Wire System, type: "sysml:Block", package: pkg-context, stereotype: system}
-  - {id: blk-sensing, name: Sensing, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-localization, name: Localization, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-perception, name: Perception, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-planning, name: Planning, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-control, name: Control, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-vehicle-interface, name: Vehicle Interface, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-map, name: Map, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
-  - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-system-architecture, stereotype: subsystem}
+  - {id: blk-sensing, name: Sensing, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-localization, name: Localization, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-perception, name: Perception, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-planning, name: Planning, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-control, name: Control, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-vehicle-interface, name: Vehicle Interface, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-map, name: Map, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
   - id: blk-ego-vehicle
     name: Ego Vehicle
     type: sysml:Block
-    package: pkg-system-architecture
+    package: pkg-system-decomposition
     parts:
       - id: prt-sensorkit
         name: sensorKit
@@ -82,7 +82,7 @@ blocks:
   - id: blk-sensor-kit
     name: Sensor Kit
     type: sysml:Block
-    package: pkg-system-architecture
+    package: pkg-system-decomposition
     parts:
       - id: prt-lidar
         name: lidar
@@ -108,9 +108,9 @@ blocks:
         multiplicity: "1"
         aggregation: composite
         relationshipId: compos-blk-sensor-kit-to-blk-imu
-  - {id: blk-lidar, name: LIDAR, type: "sysml:Block", package: pkg-system-architecture}
-  - {id: blk-camera, name: Camera, type: "sysml:Block", package: pkg-system-architecture}
-  - {id: blk-gnss, name: GNSS, type: "sysml:Block", package: pkg-system-architecture}
-  - {id: blk-imu, name: IMU, type: "sysml:Block", package: pkg-system-architecture}
-  - {id: blk-vls-128, name: VLS-128, type: "sysml:Block", package: pkg-system-architecture}
-  - {id: blk-vlp-16, name: VLP-16, type: "sysml:Block", package: pkg-system-architecture}
+  - {id: blk-lidar, name: LIDAR, type: "sysml:Block", package: pkg-system-decomposition}
+  - {id: blk-camera, name: Camera, type: "sysml:Block", package: pkg-system-decomposition}
+  - {id: blk-gnss, name: GNSS, type: "sysml:Block", package: pkg-system-decomposition}
+  - {id: blk-imu, name: IMU, type: "sysml:Block", package: pkg-system-decomposition}
+  - {id: blk-vls-128, name: VLS-128, type: "sysml:Block", package: pkg-system-decomposition}
+  - {id: blk-vlp-16, name: VLP-16, type: "sysml:Block", package: pkg-system-decomposition}
