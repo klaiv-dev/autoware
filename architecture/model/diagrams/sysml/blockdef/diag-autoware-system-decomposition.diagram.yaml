@@ -5,38 +5,38 @@ diagram:
   type: sysml:BlockDefinitionDiagram
   package: pkg-system-decomposition
   elements:
-    - elementId: blk-autoware
-    - elementId: blk-sensing
-    - elementId: blk-localization
-    - elementId: blk-perception
-    - elementId: blk-planning
-    - elementId: blk-control
-    - elementId: blk-map
-    - elementId: blk-safety-system
-    - elementId: blk-ad-api
-    - elementId: blk-ego-vehicle
-    - elementId: blk-sensor-kit
-    - elementId: blk-lidar
-    - elementId: blk-camera
-    - elementId: blk-gnss
-    - elementId: blk-imu
-    - elementId: blk-vls-128
-    - elementId: blk-vlp-16
-    - elementId: blk-vehicle-interface
+    - elementId: blk-ad-api # AD API (Block)
+    - elementId: blk-autoware # Autoware System (Block)
+    - elementId: blk-camera # Camera (Block)
+    - elementId: blk-control # Control (Block)
+    - elementId: blk-ego-vehicle # Ego Vehicle (Block)
+    - elementId: blk-gnss # GNSS (Block)
+    - elementId: blk-imu # IMU (Block)
+    - elementId: blk-lidar # LIDAR (Block)
+    - elementId: blk-localization # Localization (Block)
+    - elementId: blk-map # Map (Block)
+    - elementId: blk-perception # Perception (Block)
+    - elementId: blk-planning # Planning (Block)
+    - elementId: blk-safety-system # Safety System (Block)
+    - elementId: blk-sensing # Sensing (Block)
+    - elementId: blk-sensor-kit # Sensor Kit (Block)
+    - elementId: blk-vehicle-interface # Vehicle Interface (Block)
+    - elementId: blk-vlp-16 # VLP-16 (Block)
+    - elementId: blk-vls-128 # VLS-128 (Block)
   relationships:
-    - gen-blk-vls-128-to-blk-lidar
-    - gen-blk-vlp-16-to-blk-lidar
-    - compos-blk-autoware-to-blk-vehicle-interface
-    - compos-blk-autoware-to-blk-control
-    - compos-blk-autoware-to-blk-sensing
-    - compos-blk-autoware-to-blk-map
-    - compos-blk-autoware-to-blk-localization
-    - compos-blk-autoware-to-blk-perception
-    - compos-blk-autoware-to-blk-planning
-    - compos-blk-autoware-to-blk-safety-system
-    - compos-blk-autoware-to-blk-ad-api
-    - compos-blk-sensor-kit-to-blk-lidar
-    - compos-blk-sensor-kit-to-blk-camera
-    - compos-blk-sensor-kit-to-blk-gnss
-    - compos-blk-sensor-kit-to-blk-imu
-    - aggr-blk-ego-vehicle-to-blk-sensor-kit
+    - compos-blk-autoware-to-blk-ad-api # Autoware System → AD API (Composition)
+    - compos-blk-autoware-to-blk-control # Autoware System → Control (Composition)
+    - compos-blk-autoware-to-blk-localization # Autoware System → Localization (Composition)
+    - compos-blk-autoware-to-blk-map # Autoware System → Map (Composition)
+    - compos-blk-autoware-to-blk-perception # Autoware System → Perception (Composition)
+    - compos-blk-autoware-to-blk-planning # Autoware System → Planning (Composition)
+    - compos-blk-autoware-to-blk-safety-system # Autoware System → Safety System (Composition)
+    - compos-blk-autoware-to-blk-sensing # Autoware System → Sensing (Composition)
+    - compos-blk-autoware-to-blk-vehicle-interface # Autoware System → Vehicle Interface (Composition)
+    - aggr-blk-ego-vehicle-to-blk-sensor-kit # Ego Vehicle → Sensor Kit (Aggregation)
+    - compos-blk-sensor-kit-to-blk-camera # Sensor Kit → Camera (Composition)
+    - compos-blk-sensor-kit-to-blk-gnss # Sensor Kit → GNSS (Composition)
+    - compos-blk-sensor-kit-to-blk-imu # Sensor Kit → IMU (Composition)
+    - compos-blk-sensor-kit-to-blk-lidar # Sensor Kit → LIDAR (Composition)
+    - gen-blk-vlp-16-to-blk-lidar # VLP-16 → LIDAR (Generalization)
+    - gen-blk-vls-128-to-blk-lidar # VLS-128 → LIDAR (Generalization)
