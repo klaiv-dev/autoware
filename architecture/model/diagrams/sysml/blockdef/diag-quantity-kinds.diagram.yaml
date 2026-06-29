@@ -1,0 +1,15 @@
+# Quantity Kinds
+diagram:
+  id: diag-quantity-kinds
+  name: Quantity Kinds
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-quantity-kinds
+  elements:
+    - elementId: qk-acceleration # Acceleration (QuantityKind)
+    - elementId: qk-angularvelocity # AngularVelocity (QuantityKind)
+    - elementId: qk-jerk # Jerk (QuantityKind)
+    - elementId: qk-length # Length (QuantityKind)
+    - elementId: qk-plane-angle # PlaneAngle (QuantityKind)
+    - elementId: qk-time # Time (QuantityKind)
+    - elementId: qk-velocity # Velocity (QuantityKind)
+  relationships: []

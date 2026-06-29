@@ -1,0 +1,14 @@
+# System Interfaces
+diagram:
+  id: diag-system-interfaces
+  name: System Interfaces
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-system-interfaces
+  elements:
+    - elementId: ifblk-icontrolcmd # IControlCmd (InterfaceBlock)
+    - elementId: ifblk-ipointcloud-2 # IPointCloud (InterfaceBlock)
+    - elementId: ifblk-ipredictedobjects # IPredictedObjects (InterfaceBlock)
+    - elementId: ifblk-iroute # IRoute (InterfaceBlock)
+    - elementId: ifblk-itrajectory # ITrajectory (InterfaceBlock)
+    - elementId: ifblk-ivehiclestatus # IVehicleStatus (InterfaceBlock)
+  relationships: []

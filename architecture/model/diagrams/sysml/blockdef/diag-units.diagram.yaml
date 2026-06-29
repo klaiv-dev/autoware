@@ -1,0 +1,15 @@
+# Units
+diagram:
+  id: diag-units
+  name: Units
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-units
+  elements:
+    - elementId: u-meter-per-second # Meter per Second (Unit)
+    - elementId: u-meter-per-second-cube # Meter per Second Cube (Unit)
+    - elementId: u-meter-per-second-square # Meter per Second Square (Unit)
+    - elementId: u-meters # Meter (Unit)
+    - elementId: u-radians # Radians (Unit)
+    - elementId: u-radians-per-second # Radians per Second (Unit)
+    - elementId: u-second # Second (Unit)
+  relationships: []

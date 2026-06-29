@@ -114,3 +114,78 @@ blocks:
   - {id: blk-imu, name: IMU, type: "sysml:Block", package: pkg-system-decomposition}
   - {id: blk-vls-128, name: VLS-128, type: "sysml:Block", package: pkg-system-decomposition}
   - {id: blk-vlp-16, name: VLP-16, type: "sysml:Block", package: pkg-system-decomposition}
+  - id: blk-trajectory
+    name: Trajectory
+    type: sysml:Block
+    package: pkg-logical-interfaces
+    attributes:
+      - id: att-points
+        name: points
+        type: ""
+        visibility: public
+        typeRef: blk-trajectorypoint
+    stereotype: logical
+  - id: blk-trajectorypoint
+    name: TrajectoryPoint
+    type: sysml:Block
+    package: pkg-logical-interfaces
+    attributes:
+      - id: att-x
+        name: x
+        type: ""
+        visibility: public
+        typeRef: vt-distance
+      - id: att-y
+        name: "y"
+        type: ""
+        visibility: public
+        typeRef: vt-distance
+      - id: att-heading
+        name: heading
+        type: ""
+        visibility: public
+        typeRef: vt-steeringangle
+      - id: att-longvel
+        name: longitudinalVelocity
+        type: ""
+        visibility: public
+        typeRef: vt-speed
+      - id: att-acceleration
+        name: acceleration
+        type: ""
+        visibility: public
+        typeRef: vt-acceleration
+      - id: att-headingrate
+        name: headingRate
+        type: ""
+        visibility: public
+        typeRef: vt-headingrate
+  - {id: blk-pointcloud, name: PointCloud, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - id: blk-predictedpath
+    name: PredictedPath
+    type: sysml:Block
+    package: pkg-logical-interfaces
+    attributes:
+      - id: att-conf
+        name: confidence
+        type: ""
+        visibility: public
+        typeRef: vt-confidence
+    stereotype: logical
+  - id: blk-predictedobject
+    name: PredictedObject
+    type: sysml:Block
+    package: pkg-logical-interfaces
+    attributes:
+      - id: att-classif
+        name: classification
+        type: ""
+        visibility: public
+        typeRef: enum-objectclass
+      - id: att-predpaths
+        name: predictedPaths
+        type: ""
+        visibility: public
+        typeRef: blk-predictedpath
+    stereotype: logical
+  - {id: blk-route, name: Route, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}

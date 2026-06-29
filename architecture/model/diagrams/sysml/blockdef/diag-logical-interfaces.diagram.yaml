@@ -1,0 +1,15 @@
+# Logical Interfaces
+diagram:
+  id: diag-logical-interfaces
+  name: Logical Interfaces
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-logical-interfaces
+  elements:
+    - elementId: blk-pointcloud # PointCloud (Block)
+    - elementId: blk-predictedobject # PredictedObject (Block)
+    - elementId: blk-predictedpath # PredictedPath (Block)
+    - elementId: blk-route # Route (Block)
+    - elementId: blk-trajectory # Trajectory (Block)
+    - elementId: blk-trajectorypoint # TrajectoryPoint (Block)
+    - elementId: enum-objectclass # ObjectClass (Enumeration)
+  relationships: []
