@@ -1,4 +1,81 @@
-# Klaiv relationship file — itemflows
-# Add entries below. Each entry must have: id, type, source, target.
-
-itemflows: []
+itemflows:
+  - id: itemflow-prt-sensing-to-prt-perception
+    type: sysml:ItemFlow
+    source:
+      id: prt-sensing
+      port: port-pointcloud
+    target:
+      id: prt-perception
+      port: port-pointcloud
+    conveyed:
+      - blk-pointcloud
+  - id: itemflow-prt-sensing-to-prt-localization
+    type: sysml:ItemFlow
+    source:
+      id: prt-sensing
+      port: port-pointcloud
+    target:
+      id: prt-localization
+      port: port-pointcloud
+    conveyed:
+      - blk-pointcloud
+  - id: itemflow-prt-localization-to-prt-control
+    type: sysml:ItemFlow
+    source:
+      id: prt-localization
+      port: port-kinematicstate
+    target:
+      id: prt-control
+      port: port-kinematicstate
+    conveyed:
+      - blk-kinematicstate
+  - id: itemflow-prt-control-to-prt-vehicleinterface
+    type: sysml:ItemFlow
+    source:
+      id: prt-control
+      port: port-controlcmd
+    target:
+      id: prt-vehicleinterface
+      port: port-controlcmd
+    conveyed:
+      - blk-control
+  - id: itemflow-prt-map-to-prt-planning
+    type: sysml:ItemFlow
+    source:
+      id: prt-map
+      port: port-map
+    target:
+      id: prt-planning
+      port: port-vectormap
+    conveyed:
+      - blk-map
+  - id: itemflow-prt-perception-to-prt-planning
+    type: sysml:ItemFlow
+    source:
+      id: prt-perception
+      port: port-objects
+    target:
+      id: prt-planning
+      port: port-objects
+    conveyed:
+      - blk-predictedobject
+  - id: itemflow-prt-planning-to-prt-control
+    type: sysml:ItemFlow
+    source:
+      id: prt-planning
+      port: port-trajectory
+    target:
+      id: prt-control
+      port: port-trajectory
+    conveyed:
+      - blk-trajectory
+  - id: itemflow-prt-localization-to-prt-planning
+    type: sysml:ItemFlow
+    source:
+      id: prt-localization
+      port: port-kinematicstate
+    target:
+      id: prt-planning
+      port: port-kinematicstate
+    conveyed:
+      - blk-kinematicstate

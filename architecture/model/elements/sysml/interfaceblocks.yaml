@@ -89,3 +89,25 @@ interfaceblocks:
         visibility: public
         typeRef: vt-headingrate
         direction: out
+  - id: ifblk-ikinematicstate
+    name: IKinematicState
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-kinematicstate
+        name: kinematicState
+        type: ""
+        visibility: public
+        typeRef: blk-kinematicstate
+        direction: out
+  - id: ifblk-imap
+    name: IMap
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-map
+        name: map
+        type: ""
+        visibility: public
+        typeRef: blk-laneletmap
+        direction: out

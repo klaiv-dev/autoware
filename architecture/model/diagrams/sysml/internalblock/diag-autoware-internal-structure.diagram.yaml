@@ -1,0 +1,25 @@
+# Autoware Internal Structure
+diagram:
+  id: diag-autoware-internal-structure
+  name: Autoware Internal Structure
+  type: sysml:InternalBlockDiagram
+  package: pkg-system-architecture
+  owner: blk-autoware
+  subject: blk-autoware
+  elements:
+    - elementId: prt-control
+    - elementId: prt-localization
+    - elementId: prt-map
+    - elementId: prt-perception
+    - elementId: prt-planning
+    - elementId: prt-sensing
+    - elementId: prt-vehicleinterface
+  relationships:
+    - itemflow-prt-control-to-prt-vehicleinterface # prt-control → prt-vehicleinterface (ItemFlow)
+    - itemflow-prt-localization-to-prt-control # prt-localization → prt-control (ItemFlow)
+    - itemflow-prt-localization-to-prt-planning # prt-localization → prt-planning (ItemFlow)
+    - itemflow-prt-map-to-prt-planning # prt-map → prt-planning (ItemFlow)
+    - itemflow-prt-perception-to-prt-planning # prt-perception → prt-planning (ItemFlow)
+    - itemflow-prt-planning-to-prt-control # prt-planning → prt-control (ItemFlow)
+    - itemflow-prt-sensing-to-prt-localization # prt-sensing → prt-localization (ItemFlow)
+    - itemflow-prt-sensing-to-prt-perception # prt-sensing → prt-perception (ItemFlow)
