@@ -6,6 +6,8 @@ diagram:
   package: pkg-system-interfaces
   elements:
     - elementId: ifblk-icontrolcmd # IControlCmd (InterfaceBlock)
+    - elementId: ifblk-ikinematicstate # IKinematicState (InterfaceBlock)
+    - elementId: ifblk-imap # IMap (InterfaceBlock)
     - elementId: ifblk-ipointcloud-2 # IPointCloud (InterfaceBlock)
     - elementId: ifblk-ipredictedobjects # IPredictedObjects (InterfaceBlock)
     - elementId: ifblk-iroute # IRoute (InterfaceBlock)

@@ -1,6 +1,8 @@
 diagramId: diag-logical-interfaces
 viewport: {zoom: 0.9697270925820022, panX: 201.86649544008316, panY: -67.4128258925218}
 elements:
+  blk-kinematicstate: {x: -168, y: 231, width: 180, height: 80}
+  blk-laneletmap: {x: -168, y: 327, width: 180, height: 80}
   blk-pointcloud: {x: 260, y: 124, width: 180, height: 80}
   blk-predictedobject: {x: 458, y: 125, width: 207.15199463365437, height: 100}
   blk-predictedpath: {x: 471, y: 237, width: 180, height: 82}

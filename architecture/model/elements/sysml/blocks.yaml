@@ -58,15 +58,108 @@ blocks:
         multiplicity: "1"
         aggregation: composite
         relationshipId: compos-blk-autoware-to-blk-ad-api
+    linkedDiagram: diag-autoware-internal-structure
   - {id: blk-fleet-management-system, name: Fleet Management System, type: "sysml:Block", package: pkg-context, stereotype: externalSystem}
   - {id: blk-vehicle-drive-by-wire-system, name: Vehicle Drive-by-Wire System, type: "sysml:Block", package: pkg-context, stereotype: system}
-  - {id: blk-sensing, name: Sensing, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-localization, name: Localization, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-perception, name: Perception, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-planning, name: Planning, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-control, name: Control, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-vehicle-interface, name: Vehicle Interface, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-map, name: Map, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - id: blk-sensing
+    name: Sensing
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-pointcloud
+        name: pointCloud
+        kind: proxy
+        typeRef: ifblk-ipointcloud-2
+  - id: blk-localization
+    name: Localization
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-pointcloud
+        name: pointCloud
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ipointcloud-2
+      - id: port-kinematicstate
+        name: kinematicState
+        kind: proxy
+        typeRef: ifblk-ikinematicstate
+  - id: blk-perception
+    name: Perception
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-pointcloud
+        name: pointCloud
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ipointcloud-2
+      - id: port-objects
+        name: objects
+        kind: proxy
+        typeRef: ifblk-ipredictedobjects
+  - id: blk-planning
+    name: Planning
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-objects
+        name: objects
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ipredictedobjects
+      - id: port-kinematicstate
+        name: kinematicState
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ikinematicstate
+      - id: port-vectormap
+        name: vectorMap
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-imap
+      - id: port-trajectory
+        name: trajectory
+        kind: proxy
+        typeRef: ifblk-itrajectory
+  - id: blk-control
+    name: Control
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-trajectory
+        name: trajectory
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-itrajectory
+      - id: port-kinematicstate
+        name: kinematicState
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ikinematicstate
+      - id: port-controlcmd
+        name: controlCmd
+        kind: proxy
+        typeRef: ifblk-icontrolcmd
+  - id: blk-vehicle-interface
+    name: Vehicle Interface
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-controlcmd
+        name: controlCmd
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-icontrolcmd
+  - id: blk-map
+    name: Map
+    type: sysml:Block
+    package: pkg-system-decomposition
+    ports:
+      - id: port-map
+        name: vectorMap
+        kind: proxy
+        typeRef: ifblk-imap
   - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
   - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
   - id: blk-ego-vehicle
@@ -144,7 +237,7 @@ blocks:
         name: heading
         type: ""
         visibility: public
-        typeRef: vt-steeringangle
+        typeRef: vt-angle
       - id: att-longvel
         name: longitudinalVelocity
         type: ""
@@ -189,3 +282,5 @@ blocks:
         typeRef: blk-predictedpath
     stereotype: logical
   - {id: blk-route, name: Route, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - {id: blk-kinematicstate, name: KinematicState, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - {id: blk-laneletmap, name: LaneletMap, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}

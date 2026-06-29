@@ -26,3 +26,4 @@ pkg-logical-interfaces: 4
 diag-logical-interfaces: 1
 pkg-system-interfaces: 4
 diag-system-interfaces: 1
+diag-autoware-internal-structure: 5

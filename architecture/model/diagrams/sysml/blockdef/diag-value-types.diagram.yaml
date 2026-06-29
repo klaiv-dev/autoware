@@ -6,6 +6,7 @@ diagram:
   package: pkg-value-types
   elements:
     - elementId: vt-acceleration # Acceleration (ValueType)
+    - elementId: vt-angle # Angle (ValueType)
     - elementId: vt-confidence # Confidence (ValueType)
     - elementId: vt-distance # Distance (ValueType)
     - elementId: vt-duration # Duration (ValueType)

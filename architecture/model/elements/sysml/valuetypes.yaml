@@ -17,3 +17,4 @@ valuetypes:
   - {id: vt-distance, name: Distance, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-length, unit: u-meters}
   - {id: vt-duration, name: Duration, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-time, unit: u-second}
   - {id: vt-confidence, name: Confidence, type: "sysml:ValueType", package: pkg-value-types}
+  - {id: vt-angle, name: Angle, type: "sysml:ValueType", package: pkg-value-types, quantityKind: qk-plane-angle, unit: u-radians}

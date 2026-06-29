@@ -1,5 +1,5 @@
 diagramId: diag-autoware-system-decomposition
-viewport: {zoom: 0.5143978001356793, panX: 161.33636662672882, panY: 84.91613077115612}
+viewport: {zoom: 1.1814462687205214, panX: 91.40677080993942, panY: 45.17065403459753}
 elements:
   blk-ad-api: {x: 595, y: 14, width: 180, height: 80}
   blk-autoware: {x: 191, y: 2, width: 180, height: 80}
@@ -19,5 +19,89 @@ elements:
   blk-vehicle-interface: {x: -199, y: 7, width: 180, height: 80}
   blk-vlp-16: {x: 912, y: 438, width: 180, height: 80}
   blk-vls-128: {x: 701, y: 437, width: 180, height: 80}
+  blk-sensing.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-perception.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-localization.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.7082199292667305
+  port-objects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-localization.port-kinematicstate:
+    portPos:
+      side: S
+      offset: 0.9055670695490117
+  port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-map.port-map:
+    portPos:
+      side: E
+      offset: 0.5
+  port-map:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-planning.port-objects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-planning.port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.8061703290640793
+  blk-planning.port-vectormap:
+    portPos:
+      side: E
+      offset: 0.21367618139701355
+  port-vectormap:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-planning.port-trajectory:
+    portPos:
+      side: S
+      offset: 0.5082676271772015
+  port-trajectory:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-control.port-trajectory:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-control.port-kinematicstate:
+    portPos:
+      side: S
+      offset: 0.5440649770102248
+  blk-control.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5
+  port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-vehicle-interface.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5
 edgeAnchors:
   compos-blk-autoware-to-blk-vehicle-interface: {}

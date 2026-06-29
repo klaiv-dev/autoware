@@ -5,6 +5,8 @@ diagram:
   type: sysml:BlockDefinitionDiagram
   package: pkg-logical-interfaces
   elements:
+    - elementId: blk-kinematicstate # KinematicState (Block)
+    - elementId: blk-laneletmap # LaneletMap (Block)
     - elementId: blk-pointcloud # PointCloud (Block)
     - elementId: blk-predictedobject # PredictedObject (Block)
     - elementId: blk-predictedpath # PredictedPath (Block)
