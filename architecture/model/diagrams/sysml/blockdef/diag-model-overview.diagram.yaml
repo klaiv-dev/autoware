@@ -14,3 +14,5 @@ diagram:
       target: diag-requirements
     - id: dref-diag-autoware-system-decomposition
       target: diag-autoware-system-decomposition
+    - id: dref-diag-system-interfaces
+      target: diag-system-interfaces

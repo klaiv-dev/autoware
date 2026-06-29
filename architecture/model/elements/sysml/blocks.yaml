@@ -119,7 +119,7 @@ blocks:
     type: sysml:Block
     package: pkg-logical-interfaces
     attributes:
-      - id: att-points 
+      - id: att-points
         name: points
         type: ""
         visibility: public
@@ -144,7 +144,7 @@ blocks:
         name: heading
         type: ""
         visibility: public
-        typeRef: qk-plane-angle
+        typeRef: vt-steeringangle
       - id: att-longvel
         name: longitudinalVelocity
         type: ""
@@ -160,7 +160,6 @@ blocks:
         type: ""
         visibility: public
         typeRef: vt-headingrate
-    stereotype: logical
   - {id: blk-pointcloud, name: PointCloud, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
   - id: blk-predictedpath
     name: PredictedPath

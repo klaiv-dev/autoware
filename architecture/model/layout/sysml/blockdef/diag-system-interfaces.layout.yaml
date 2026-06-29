@@ -1,9 +1,9 @@
 diagramId: diag-system-interfaces
-viewport: {zoom: 1, panX: 0, panY: 0}
+viewport: {zoom: 1, panX: 0, panY: -75}
 elements:
-  ifblk-icontrolcmd: {x: 334, y: 296, width: 180, height: 80}
-  ifblk-ipointcloud-2: {x: 100, y: 127, width: 180, height: 80}
-  ifblk-ipredictedobjects: {x: 548, y: 170, width: 180, height: 80}
-  ifblk-iroute: {x: 315, y: 151, width: 180, height: 80}
-  ifblk-itrajectory: {x: 66, y: 282, width: 180, height: 80}
-  ifblk-ivehiclestatus: {x: 580, y: 339, width: 228, height: 102}
+  ifblk-icontrolcmd: {x: 491, y: 252, width: 251, height: 102}
+  ifblk-ipointcloud-2: {x: 61, y: 140, width: 180, height: 80}
+  ifblk-ipredictedobjects: {x: 263, y: 238, width: 180, height: 80}
+  ifblk-iroute: {x: 265, y: 139, width: 180, height: 80}
+  ifblk-itrajectory: {x: 59, y: 240, width: 180, height: 80}
+  ifblk-ivehiclestatus: {x: 484, y: 131, width: 265, height: 102}

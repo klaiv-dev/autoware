@@ -5,3 +5,4 @@ elements:
   dref-diag-developing-and-testing-autoware: {x: 311, y: 27, width: 262, height: 138}
   dref-diag-requirements: {x: 593, y: 25, width: 295, height: 140}
   dref-diag-autoware-system-decomposition: {x: 33, y: 190, width: 260, height: 140}
+  dref-diag-system-interfaces: {x: 313, y: 189, width: 263, height: 140}

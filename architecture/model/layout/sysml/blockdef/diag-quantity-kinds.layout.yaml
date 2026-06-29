@@ -1,5 +1,5 @@
 diagramId: diag-quantity-kinds
-viewport: {zoom: 1, panX: 3, panY: -94}
+viewport: {zoom: 1, panX: 3, panY: 8}
 elements:
   qk-acceleration: {x: 126, y: 187, width: 180, height: 80}
   qk-angularvelocity: {x: 522, y: 89, width: 180, height: 80}

@@ -1,8 +1,8 @@
 units:
-  - {id: u-meter-per-second, name: Meter per Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-velocity}
-  - {id: u-meter-per-second-square, name: Meter per Second Square, type: "sysml:Unit", package: pkg-units, quantityKind: qk-acceleration}
-  - {id: u-meter-per-second-cube, name: Meter per Second Cube, type: "sysml:Unit", package: pkg-units, quantityKind: qk-jerk}
-  - {id: u-radians, name: Radians, type: "sysml:Unit", package: pkg-units, quantityKind: qk-plane-angle}
-  - {id: u-radians-per-second, name: Radians per Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-angularvelocity}
-  - {id: u-meters, name: Meter, type: "sysml:Unit", package: pkg-units, quantityKind: qk-length}
-  - {id: u-second, name: Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-time}
+  - {id: u-meter-per-second, name: Meter per Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-velocity, symbol: m/s}
+  - {id: u-meter-per-second-square, name: Meter per Second Square, type: "sysml:Unit", package: pkg-units, quantityKind: qk-acceleration, symbol: m/s^2}
+  - {id: u-meter-per-second-cube, name: Meter per Second Cube, type: "sysml:Unit", package: pkg-units, quantityKind: qk-jerk, symbol: m/s^3}
+  - {id: u-radians, name: Radians, type: "sysml:Unit", package: pkg-units, quantityKind: qk-plane-angle, symbol: rad}
+  - {id: u-radians-per-second, name: Radians per Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-angularvelocity, symbol: rad/s}
+  - {id: u-meters, name: Meter, type: "sysml:Unit", package: pkg-units, quantityKind: qk-length, symbol: m}
+  - {id: u-second, name: Second, type: "sysml:Unit", package: pkg-units, quantityKind: qk-time, symbol: s}

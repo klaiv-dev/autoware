@@ -1,15 +1,26 @@
 interfaceblocks:
-  - id: ifblk-ipointcloud
+  - id: ifblk-ipointcloud-2
     name: IPointCloud
     type: sysml:InterfaceBlock
-    package: pkg-interfaces
+    package: pkg-system-interfaces
     attributes:
-      - id: att-cloud 
+      - id: att-cloud
         name: cloud
         type: ""
         visibility: public
-  - {id: ifblk-ipointcloud-2, name: IPointCloud, type: "sysml:InterfaceBlock", package: pkg-system-interfaces}
-  - {id: ifblk-iroute, name: IRoute, type: "sysml:InterfaceBlock", package: pkg-system-interfaces}
+        typeRef: blk-pointcloud
+        direction: out
+  - id: ifblk-iroute
+    name: IRoute
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-route
+        name: route
+        type: ""
+        visibility: public
+        typeRef: blk-route
+        direction: out
   - id: ifblk-ipredictedobjects
     name: IPredictedObjects
     type: sysml:InterfaceBlock
@@ -32,7 +43,29 @@ interfaceblocks:
         visibility: public
         typeRef: blk-trajectory
         direction: out
-  - {id: ifblk-icontrolcmd, name: IControlCmd, type: "sysml:InterfaceBlock", package: pkg-system-interfaces}
+  - id: ifblk-icontrolcmd
+    name: IControlCmd
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-acceleration
+        name: acceleration
+        type: ""
+        visibility: public
+        typeRef: vt-acceleration
+        direction: in
+      - id: att-jerk
+        name: jerk
+        type: ""
+        visibility: public
+        typeRef: vt-jerk
+        direction: in
+      - id: att-steeringangle
+        name: steeringAngle
+        type: ""
+        visibility: public
+        typeRef: vt-steeringangle
+        direction: in
   - id: ifblk-ivehiclestatus
     name: IVehicleStatus
     type: sysml:InterfaceBlock
