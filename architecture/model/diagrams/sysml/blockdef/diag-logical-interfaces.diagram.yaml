@@ -5,12 +5,14 @@ diagram:
   type: sysml:BlockDefinitionDiagram
   package: pkg-logical-interfaces
   elements:
+    - elementId: blk-detectedobjects # DetectedObjects (Block)
     - elementId: blk-kinematicstate # KinematicState (Block)
     - elementId: blk-laneletmap # LaneletMap (Block)
     - elementId: blk-pointcloud # PointCloud (Block)
     - elementId: blk-predictedobject # PredictedObject (Block)
     - elementId: blk-predictedpath # PredictedPath (Block)
     - elementId: blk-route # Route (Block)
+    - elementId: blk-trackedobjects # TrackedObjects (Block)
     - elementId: blk-trajectory # Trajectory (Block)
     - elementId: blk-trajectorypoint # TrajectoryPoint (Block)
     - elementId: enum-objectclass # ObjectClass (Enumeration)

@@ -1,0 +1,40 @@
+diagramId: diag-perception-internals
+viewport: {zoom: 0.8608899440363363, panX: -21.181969814613197, panY: 16.955502798183183}
+elements:
+  prt-detection: {x: 266, y: 152, width: 180, height: 80}
+  prt-tracking: {x: 637, y: 147, width: 268, height: 80}
+  prt-prediction: {x: 743, y: 338, width: 180, height: 102}
+  prt-trafficlightrecongnition: {x: 214, y: 322, width: 424, height: 80}
+  blk-perception: {x: 100, y: 50, width: 1018, height: 427}
+  blk-perception.port-pointcloud:
+    portPos:
+      side: W
+      offset: 0.3389553765106139
+  blk-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.7929742353023913
+  prt-detection.port-pointcloud:
+    portPos:
+      side: W
+      offset: 0.5449999809265137
+  prt-detection.port-detection:
+    portPos:
+      side: E
+      offset: 0.5
+  prt-tracking.port-detectedobjects:
+    portPos:
+      side: W
+      offset: 0.5574999809265136
+  prt-tracking.port-trackedobjects:
+    portPos:
+      side: S
+      offset: 0.5298507462686567
+  prt-prediction.port-trackedobjects:
+    portPos:
+      side: "N"
+      offset: 0.20555555555555555
+  prt-prediction.port-predictedobjects:
+    portPos:
+      side: E
+      offset: 0.5

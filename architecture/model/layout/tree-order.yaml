@@ -27,3 +27,9 @@ diag-logical-interfaces: 1
 pkg-system-interfaces: 4
 diag-system-interfaces: 1
 diag-autoware-internal-structure: 5
+pkg-perception: 2
+blk-detection: 1
+blk-tracking: 2
+blk-prediction: 3
+blk-traffic-light-recongnition: 4
+diag-perception-internals: 5

@@ -103,3 +103,35 @@ compositions:
       id: blk-imu
     targetMultiplicity: "1"
     targetRole: imu
+  - id: compos-blk-perception-to-blk-detection
+    type: uml:Composition
+    source:
+      id: blk-perception
+    target:
+      id: blk-detection
+    targetMultiplicity: "1"
+    targetRole: detection
+  - id: compos-blk-perception-to-blk-tracking
+    type: uml:Composition
+    source:
+      id: blk-perception
+    target:
+      id: blk-tracking
+    targetMultiplicity: "1"
+    targetRole: tracking
+  - id: compos-blk-perception-to-blk-prediction
+    type: uml:Composition
+    source:
+      id: blk-perception
+    target:
+      id: blk-prediction
+    targetMultiplicity: "1"
+    targetRole: prediction
+  - id: compos-blk-perception-to-blk-traffic-light-recongnition
+    type: uml:Composition
+    source:
+      id: blk-perception
+    target:
+      id: blk-traffic-light-recongnition
+    targetMultiplicity: "1"
+    targetRole: trafficLightRecongnition
