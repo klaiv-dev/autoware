@@ -16,3 +16,9 @@ diagram:
       target: diag-autoware-system-decomposition
     - id: dref-diag-system-interfaces
       target: diag-system-interfaces
+    - id: dref-diag-autoware-internal-structure
+      target: diag-autoware-internal-structure
+    - id: dref-diag-logical-interfaces
+      target: diag-logical-interfaces
+    - id: dref-diag-perception-internals
+      target: diag-perception-internals

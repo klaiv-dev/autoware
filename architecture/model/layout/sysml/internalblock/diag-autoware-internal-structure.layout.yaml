@@ -1,5 +1,5 @@
 diagramId: diag-autoware-internal-structure
-viewport: {zoom: 0.5288240925489318, panX: 9.653223431523749, panY: -1.5998369462352287}
+viewport: {zoom: 0.5288240925489318, panX: 9.653223431523749, panY: 45.40016305376477}
 elements:
   prt-vehicleinterface: {x: 1369, y: 437, width: 240.90355706870432, height: 80}
   prt-control: {x: 985, y: 434, width: 180, height: 80}
@@ -9,31 +9,103 @@ elements:
   prt-perception: {x: 552, y: 113, width: 205, height: 114}
   prt-planning: {x: 921, y: 142, width: 377.0339692927973, height: 110.66770854206885}
   blk-autoware: {x: 100, y: -80.17819848070087, width: 1666.2038648563785, height: 695.1271912209669}
+  blk-control.port-trajectory:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-control.port-kinematicstate:
+    portPos:
+      side: S
+      offset: 0.5440649770102248
+  blk-control.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-localization.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-localization.port-kinematicstate:
+    portPos:
+      side: S
+      offset: 0.9055670695490117
+  blk-map.port-map:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-perception.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.7082199292667305
+  blk-planning.port-objects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-planning.port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.8061703290640793
+  blk-planning.port-vectormap:
+    portPos:
+      side: E
+      offset: 0.21367618139701355
+  blk-planning.port-trajectory:
+    portPos:
+      side: S
+      offset: 0.5082676271772015
+  blk-sensing.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-vehicle-interface.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5
+  prt-vehicleinterface.port-controlcmd:
+    portPos:
+      side: W
+      offset: 0.5473429773358894
+  prt-control.port-trajectory:
+    portPos:
+      side: "N"
+      offset: 0.5996127793067975
+  prt-control.port-kinematicstate:
+    portPos:
+      side: W
+      offset: 0.5574999809265136
+  prt-control.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5473429773358894
   prt-sensing.port-pointcloud:
     portPos:
       side: E
       offset: 0.5
       length: 50
-  prt-perception.port-pointcloud:
-    portPos:
-      side: W
-      offset: 0.5044776005531425
-  prt-localization.port-pointcloud:
-    portPos:
-      side: W
-      offset: 0.551999991280692
-  prt-perception.port-objects:
-    portPos:
-      side: E
-      offset: 0.732020503737234
-  prt-localization.port-kinematicstate:
-    portPos:
-      side: E
-      offset: 0.5965217258619225
   prt-map.port-map:
     portPos:
       side: S
       offset: 0.4102883973701359
+  prt-localization.port-pointcloud:
+    portPos:
+      side: W
+      offset: 0.551999991280692
+  prt-localization.port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.5965217258619225
+  prt-perception.port-pointcloud:
+    portPos:
+      side: W
+      offset: 0.5044776005531425
+  prt-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.732020503737234
   prt-planning.port-objects:
     portPos:
       side: W
@@ -50,21 +122,5 @@ elements:
     portPos:
       side: S
       offset: 0.44944532560110234
-  prt-control.port-trajectory:
-    portPos:
-      side: "N"
-      offset: 0.5996127793067975
-  prt-control.port-kinematicstate:
-    portPos:
-      side: W
-      offset: 0.5574999809265136
-  prt-control.port-controlcmd:
-    portPos:
-      side: E
-      offset: 0.5473429773358894
-  prt-vehicleinterface.port-controlcmd:
-    portPos:
-      side: W
-      offset: 0.5473429773358894
 edgeAnchors:
   itemflow-prt-sensing-to-prt-localization: {routeMode: orthogonal}

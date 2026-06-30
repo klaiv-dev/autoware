@@ -111,3 +111,25 @@ interfaceblocks:
         visibility: public
         typeRef: blk-laneletmap
         direction: out
+  - id: ifblk-idetectedobjects
+    name: IDetectedObjects
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-detectedobjects
+        name: detectedObjects
+        type: ""
+        visibility: public
+        typeRef: blk-detectedobjects
+        direction: out
+  - id: ifblk-itrackedobjects
+    name: ITrackedObjects
+    type: sysml:InterfaceBlock
+    package: pkg-system-interfaces
+    attributes:
+      - id: att-trackedobjects
+        name: trackedObjects
+        type: ""
+        visibility: public
+        typeRef: blk-trackedobjects
+        direction: out

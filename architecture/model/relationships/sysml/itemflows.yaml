@@ -79,3 +79,43 @@ itemflows:
       port: port-kinematicstate
     conveyed:
       - blk-kinematicstate
+  - id: itemflow-blk-perception-to-prt-detection
+    type: sysml:ItemFlow
+    source:
+      id: blk-perception
+      port: port-pointcloud
+    target:
+      id: prt-detection
+      port: port-pointcloud
+    conveyed:
+      - blk-pointcloud
+  - id: itemflow-prt-detection-to-prt-tracking
+    type: sysml:ItemFlow
+    source:
+      id: prt-detection
+      port: port-detection
+    target:
+      id: prt-tracking
+      port: port-detectedobjects
+    conveyed:
+      - blk-detectedobjects
+  - id: itemflow-prt-tracking-to-prt-prediction
+    type: sysml:ItemFlow
+    source:
+      id: prt-tracking
+      port: port-trackedobjects
+    target:
+      id: prt-prediction
+      port: port-trackedobjects
+    conveyed:
+      - blk-trackedobjects
+  - id: itemflow-prt-prediction-to-blk-perception
+    type: sysml:ItemFlow
+    source:
+      id: prt-prediction
+      port: port-predictedobjects
+    target:
+      id: blk-perception
+      port: port-objects
+    conveyed:
+      - blk-predictedobject

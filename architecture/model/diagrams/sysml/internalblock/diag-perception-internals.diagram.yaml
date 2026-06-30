@@ -1,0 +1,18 @@
+# Perception Internals
+diagram:
+  id: diag-perception-internals
+  name: Perception Internals
+  type: sysml:InternalBlockDiagram
+  package: pkg-perception
+  owner: blk-perception
+  subject: blk-perception
+  elements:
+    - elementId: prt-detection
+    - elementId: prt-prediction
+    - elementId: prt-tracking
+    - elementId: prt-trafficlightrecongnition
+  relationships:
+    - itemflow-blk-perception-to-prt-detection # Perception → prt-detection (ItemFlow)
+    - itemflow-prt-detection-to-prt-tracking # prt-detection → prt-tracking (ItemFlow)
+    - itemflow-prt-prediction-to-blk-perception # prt-prediction → Perception (ItemFlow)
+    - itemflow-prt-tracking-to-prt-prediction # prt-tracking → prt-prediction (ItemFlow)

@@ -87,7 +87,7 @@ blocks:
   - id: blk-perception
     name: Perception
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-perception
     ports:
       - id: port-pointcloud
         name: pointCloud
@@ -98,6 +98,32 @@ blocks:
         name: objects
         kind: proxy
         typeRef: ifblk-ipredictedobjects
+    parts:
+      - id: prt-detection
+        name: detection
+        typeRef: blk-detection
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-perception-to-blk-detection
+      - id: prt-tracking
+        name: tracking
+        typeRef: blk-tracking
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-perception-to-blk-tracking
+      - id: prt-prediction
+        name: prediction
+        typeRef: blk-prediction
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-perception-to-blk-prediction
+      - id: prt-trafficlightrecongnition
+        name: trafficLightRecongnition
+        typeRef: blk-traffic-light-recongnition
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-perception-to-blk-traffic-light-recongnition
+    linkedDiagram: diag-perception-internals
   - id: blk-planning
     name: Planning
     type: sysml:Block
@@ -253,6 +279,7 @@ blocks:
         type: ""
         visibility: public
         typeRef: vt-headingrate
+    stereotype: logical
   - {id: blk-pointcloud, name: PointCloud, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
   - id: blk-predictedpath
     name: PredictedPath
@@ -284,3 +311,48 @@ blocks:
   - {id: blk-route, name: Route, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
   - {id: blk-kinematicstate, name: KinematicState, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
   - {id: blk-laneletmap, name: LaneletMap, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - id: blk-detection
+    name: Detection
+    type: sysml:Block
+    package: pkg-perception
+    ports:
+      - id: port-pointcloud
+        name: pointCloud
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ipointcloud-2
+      - id: port-detection
+        name: detection
+        kind: proxy
+        typeRef: ifblk-idetectedobjects
+  - id: blk-tracking
+    name: Tracking
+    type: sysml:Block
+    package: pkg-perception
+    ports:
+      - id: port-detectedobjects
+        name: detectedObjects
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-idetectedobjects
+      - id: port-trackedobjects
+        name: trackedObjects
+        kind: proxy
+        typeRef: ifblk-itrackedobjects
+  - id: blk-prediction
+    name: Prediction
+    type: sysml:Block
+    package: pkg-perception
+    ports:
+      - id: port-trackedobjects
+        name: trackedObjects
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-itrackedobjects
+      - id: port-predictedobjects
+        name: predictedObjects
+        kind: proxy
+        typeRef: ifblk-ipredictedobjects
+  - {id: blk-traffic-light-recongnition, name: Traffic Light Recongnition, type: "sysml:Block", package: pkg-perception}
+  - {id: blk-detectedobjects, name: DetectedObjects, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - {id: blk-trackedobjects, name: TrackedObjects, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}

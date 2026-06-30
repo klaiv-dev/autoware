@@ -1,88 +1,28 @@
 diagramId: diag-autoware-system-decomposition
-viewport: {zoom: 1.1814462687205214, panX: 91.40677080993942, panY: 45.17065403459753}
+viewport: {zoom: 0.9492576183287126, panX: 145.65777724323107, panY: -340.0400516327185}
 elements:
   blk-ad-api: {x: 595, y: 14, width: 180, height: 80}
   blk-autoware: {x: 191, y: 2, width: 180, height: 80}
-  blk-camera: {x: 1016, y: 248, width: 180, height: 80}
+  blk-camera: {x: 1237, y: 211, width: 180, height: 80}
   blk-control: {x: -199, y: 107, width: 180, height: 80}
-  blk-ego-vehicle: {x: 1107, y: -41, width: 180, height: 80}
-  blk-gnss: {x: 1211, y: 246, width: 180, height: 80}
-  blk-imu: {x: 1408, y: 249, width: 180, height: 80}
-  blk-lidar: {x: 816, y: 248, width: 180, height: 80}
-  blk-localization: {x: 204, y: 246, width: 180, height: 80}
-  blk-map: {x: 5, y: 244, width: 180, height: 80}
-  blk-perception: {x: 399, y: 243, width: 180, height: 80}
-  blk-planning: {x: 598, y: 203, width: 180, height: 80}
+  blk-detection: {x: 56, y: 556, width: 180, height: 80}
+  blk-ego-vehicle: {x: 1328, y: -78, width: 180, height: 80}
+  blk-gnss: {x: 1432, y: 209, width: 180, height: 80}
+  blk-imu: {x: 1629, y: 212, width: 180, height: 80}
+  blk-lidar: {x: 1037, y: 211, width: 180, height: 80}
+  blk-localization: {x: 74, y: 364, width: 180, height: 80}
+  blk-map: {x: -161, y: 367, width: 180, height: 80}
+  blk-perception: {x: 338, y: 353, width: 180, height: 80}
+  blk-planning: {x: 598, y: 342, width: 180, height: 80}
+  blk-prediction: {x: 490, y: 660, width: 180, height: 80}
   blk-safety-system: {x: 595, y: 106, width: 180, height: 80}
-  blk-sensing: {x: -197, y: 205, width: 180, height: 80}
-  blk-sensor-kit: {x: 1107, y: 102, width: 180, height: 80}
-  blk-vehicle-interface: {x: -199, y: 7, width: 180, height: 80}
-  blk-vlp-16: {x: 912, y: 438, width: 180, height: 80}
-  blk-vls-128: {x: 701, y: 437, width: 180, height: 80}
-  blk-sensing.port-pointcloud:
-    portPos:
-      side: E
-      offset: 0.5
-  port-pointcloud:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-perception.port-pointcloud:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-localization.port-pointcloud:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-perception.port-objects:
-    portPos:
-      side: E
-      offset: 0.7082199292667305
-  port-objects:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-localization.port-kinematicstate:
-    portPos:
-      side: S
-      offset: 0.9055670695490117
-  port-kinematicstate:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-map.port-map:
-    portPos:
-      side: E
-      offset: 0.5
-  port-map:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-planning.port-objects:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-planning.port-kinematicstate:
-    portPos:
-      side: E
-      offset: 0.8061703290640793
-  blk-planning.port-vectormap:
-    portPos:
-      side: E
-      offset: 0.21367618139701355
-  port-vectormap:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-planning.port-trajectory:
-    portPos:
-      side: S
-      offset: 0.5082676271772015
-  port-trajectory:
-    portPos:
-      side: E
-      offset: 0.5
+  blk-sensing: {x: -268, y: 260, width: 180, height: 80}
+  blk-sensor-kit: {x: 1328, y: 65, width: 180, height: 80}
+  blk-tracking: {x: 195, y: 689, width: 180, height: 80}
+  blk-traffic-light-recongnition: {x: 663, y: 541, width: 180, height: 80}
+  blk-vehicle-interface: {x: -268, y: 2, width: 180, height: 80}
+  blk-vlp-16: {x: 1133, y: 401, width: 180, height: 80}
+  blk-vls-128: {x: 922, y: 400, width: 180, height: 80}
   blk-control.port-trajectory:
     portPos:
       side: E
@@ -95,11 +35,148 @@ elements:
     portPos:
       side: E
       offset: 0.5
-  port-controlcmd:
+  blk-localization.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-localization.port-kinematicstate:
+    portPos:
+      side: S
+      offset: 0.9055670695490117
+  blk-map.port-map:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-perception.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.7082199292667305
+  blk-planning.port-objects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-planning.port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.8061703290640793
+  blk-planning.port-vectormap:
+    portPos:
+      side: E
+      offset: 0.21367618139701355
+  blk-planning.port-trajectory:
+    portPos:
+      side: S
+      offset: 0.5082676271772015
+  blk-sensing.port-pointcloud:
     portPos:
       side: E
       offset: 0.5
   blk-vehicle-interface.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5
+  prt-vehicleinterface.port-controlcmd:
+    portPos:
+      side: W
+      offset: 0.5473429773358894
+  prt-control.port-trajectory:
+    portPos:
+      side: "N"
+      offset: 0.5996127793067975
+  prt-control.port-kinematicstate:
+    portPos:
+      side: W
+      offset: 0.5574999809265136
+  prt-control.port-controlcmd:
+    portPos:
+      side: E
+      offset: 0.5473429773358894
+  prt-sensing.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+      length: 50
+  prt-map.port-map:
+    portPos:
+      side: S
+      offset: 0.4102883973701359
+  prt-localization.port-pointcloud:
+    portPos:
+      side: W
+      offset: 0.551999991280692
+  prt-localization.port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.5965217258619225
+  prt-perception.port-pointcloud:
+    portPos:
+      side: W
+      offset: 0.5044776005531425
+  prt-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.732020503737234
+  prt-planning.port-objects:
+    portPos:
+      side: W
+      offset: 0.5081107626765408
+  prt-planning.port-kinematicstate:
+    portPos:
+      side: W
+      offset: 1
+  prt-planning.port-vectormap:
+    portPos:
+      side: "N"
+      offset: 0.43446509562633806
+  prt-planning.port-trajectory:
+    portPos:
+      side: S
+      offset: 0.44944532560110234
+  blk-detection.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-detection.port-detection:
+    portPos:
+      side: W
+      offset: 0.5721947309914384
+  port-detection:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-tracking.port-detectedobjects:
+    portPos:
+      side: E
+      offset: 0.5
+  port-detectedobjects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-tracking.port-trackedobjects:
+    portPos:
+      side: W
+      offset: 0.6215587904666918
+  port-trackedobjects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-prediction.port-trackedobjects:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-prediction.port-predictedobjects:
+    portPos:
+      side: S
+      offset: 0.40502990289720436
+  port-predictedobjects:
     portPos:
       side: E
       offset: 0.5

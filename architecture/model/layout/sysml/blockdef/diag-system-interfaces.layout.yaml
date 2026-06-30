@@ -1,11 +1,13 @@
 diagramId: diag-system-interfaces
-viewport: {zoom: 1, panX: 0, panY: -84}
+viewport: {zoom: 1, panX: 0, panY: -206}
 elements:
   ifblk-icontrolcmd: {x: 491, y: 252, width: 251, height: 102}
+  ifblk-idetectedobjects: {x: 528, y: 426, width: 249, height: 80}
   ifblk-ikinematicstate: {x: 202, y: 427, width: 306, height: 80}
   ifblk-imap: {x: 264, y: 332, width: 180, height: 80}
   ifblk-ipointcloud-2: {x: 61, y: 140, width: 180, height: 80}
   ifblk-ipredictedobjects: {x: 263, y: 238, width: 180, height: 80}
   ifblk-iroute: {x: 265, y: 139, width: 180, height: 80}
+  ifblk-itrackedobjects: {x: 201, y: 534, width: 294, height: 80}
   ifblk-itrajectory: {x: 59, y: 240, width: 180, height: 80}
   ifblk-ivehiclestatus: {x: 484, y: 131, width: 265, height: 102}
