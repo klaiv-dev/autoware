@@ -24,3 +24,5 @@ diagram:
       target: diag-perception-internals
     - id: dref-diag-ego-vehicle-composition
       target: diag-ego-vehicle-composition
+    - id: dref-diag-system-to-software-allocation
+      target: diag-system-to-software-allocation
