@@ -1,4 +1,15 @@
-# Klaiv relationship file — allocations
-# Add entries below. Each entry must have: id, type, source, target.
-
-allocations: []
+allocations:
+  - id: alloc-blk-behavior-velocity-planning-to-comp-autoware-behavior-velocity-planner
+    type: sysml:Allocate
+    source:
+      id: blk-behavior-velocity-planning
+    target:
+      id: comp-autoware-behavior-velocity-planner
+    label: allocate
+  - id: alloc-blk-behavior-velocity-planning-to-comp-crosswalk-module
+    type: sysml:Allocate
+    source:
+      id: blk-behavior-velocity-planning
+    target:
+      id: comp-crosswalk-module
+    label: allocate

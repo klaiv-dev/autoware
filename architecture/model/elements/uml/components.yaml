@@ -1,5 +1,3 @@
-# Klaiv element file — components
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-components: []
+components:
+  - {id: comp-autoware-behavior-velocity-planner, name: Autoware Behavior Velocity Planner, type: "uml:Component", package: pkg-software-planning}
+  - {id: comp-crosswalk-module, name: Crosswalk Module, type: "uml:Component", package: pkg-software-planning}

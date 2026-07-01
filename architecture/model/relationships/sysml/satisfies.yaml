@@ -1,4 +1,22 @@
-# Klaiv relationship file — satisfies
-# Add entries below. Each entry must have: id, type, source, target.
-
-satisfies: []
+satisfies:
+  - id: sat-blk-planning-to-req-yield-to-pedestrians-at-crosswalk
+    type: sysml:Satisfy
+    source:
+      id: blk-planning
+    target:
+      id: req-yield-to-pedestrians-at-crosswalk
+    label: satisfy
+  - id: sat-comp-crosswalk-module-to-req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle
+    type: sysml:Satisfy
+    source:
+      id: comp-crosswalk-module
+    target:
+      id: req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle
+    label: satisfy
+  - id: sat-blk-perception-to-req-detect-pedestrians-within-sensing-range
+    type: sysml:Satisfy
+    source:
+      id: blk-perception
+    target:
+      id: req-detect-pedestrians-within-sensing-range
+    label: satisfy

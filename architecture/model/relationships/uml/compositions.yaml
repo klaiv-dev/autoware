@@ -135,3 +135,11 @@ compositions:
       id: blk-traffic-light-recongnition
     targetMultiplicity: "1"
     targetRole: trafficLightRecongnition
+  - id: compos-blk-planning-to-blk-behavior-velocity-planning
+    type: uml:Composition
+    source:
+      id: blk-planning
+    target:
+      id: blk-behavior-velocity-planning
+    targetMultiplicity: "1"
+    targetRole: behaviorVelocityPlanning

@@ -1,0 +1,28 @@
+# System to Software Allocation
+diagram:
+  id: diag-system-to-software-allocation
+  name: System to Software Allocation
+  type: sysml:BlockDefinitionDiagram
+  package: pkg-system-architecture
+  elements:
+    - elementId: blk-behavior-velocity-planning # Behavior Velocity Planning (Block)
+    - elementId: blk-perception # Perception (Block)
+    - elementId: blk-planning # Planning (Block)
+    - elementId: cls-cross-walk-scenario-test # Cross Walk Scenario Test (Class)
+    - elementId: comp-autoware-behavior-velocity-planner # Autoware Behavior Velocity Planner (Component)
+    - elementId: comp-crosswalk-module # Crosswalk Module (Component)
+    - elementId: req-detect-pedestrians-within-sensing-range # Detect pedestrians within sensing range (Requirement)
+    - elementId: req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle # Yield decision based on time-to-collision vs time-to-vehicle (Requirement)
+    - elementId: req-yield-to-pedestrians-at-crosswalk # Yield to pedestrians at crosswalk (Requirement)
+    - elementId: uc-drive-to-goal # Drive to goal (UseCase)
+  relationships:
+    - alloc-blk-behavior-velocity-planning-to-comp-autoware-behavior-velocity-planner # Behavior Velocity Planning → Autoware Behavior Velocity Planner (Allocate: "allocate")
+    - alloc-blk-behavior-velocity-planning-to-comp-crosswalk-module # Behavior Velocity Planning → Crosswalk Module (Allocate: "allocate")
+    - sat-blk-perception-to-req-detect-pedestrians-within-sensing-range # Perception → Detect pedestrians within sensing range (Satisfy: "satisfy")
+    - compos-blk-planning-to-blk-behavior-velocity-planning # Planning → Behavior Velocity Planning (Composition)
+    - sat-blk-planning-to-req-yield-to-pedestrians-at-crosswalk # Planning → Yield to pedestrians at crosswalk (Satisfy: "satisfy")
+    - ver-cls-cross-walk-scenario-test-to-req-yield-to-pedestrians-at-crosswalk # Cross Walk Scenario Test → Yield to pedestrians at crosswalk (Verify: "verify")
+    - sat-comp-crosswalk-module-to-req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle # Crosswalk Module → Yield decision based on time-to-collision vs time-to-vehicle (Satisfy: "satisfy")
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-detect-pedestrians-within-sensing-range # Yield to pedestrians at crosswalk → Detect pedestrians within sensing range (Containment)
+    - contain-req-yield-to-pedestrians-at-crosswalk-to-req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle # Yield to pedestrians at crosswalk → Yield decision based on time-to-collision vs time-to-vehicle (Containment)
+    - ref-uc-drive-to-goal-to-req-yield-to-pedestrians-at-crosswalk # Drive to goal → Yield to pedestrians at crosswalk (Refine: "refine")

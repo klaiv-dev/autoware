@@ -1,4 +1,8 @@
-# Klaiv relationship file — verifies
-# Add entries below. Each entry must have: id, type, source, target.
-
-verifies: []
+verifies:
+  - id: ver-cls-cross-walk-scenario-test-to-req-yield-to-pedestrians-at-crosswalk
+    type: sysml:Verify
+    source:
+      id: cls-cross-walk-scenario-test
+    target:
+      id: req-yield-to-pedestrians-at-crosswalk
+    label: verify

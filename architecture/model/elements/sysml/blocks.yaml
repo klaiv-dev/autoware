@@ -64,7 +64,7 @@ blocks:
   - id: blk-sensing
     name: Sensing
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-subsystems
     ports:
       - id: port-pointcloud
         name: pointCloud
@@ -73,7 +73,7 @@ blocks:
   - id: blk-localization
     name: Localization
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-subsystems
     ports:
       - id: port-pointcloud
         name: pointCloud
@@ -127,7 +127,7 @@ blocks:
   - id: blk-planning
     name: Planning
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-planning
     ports:
       - id: port-objects
         name: objects
@@ -148,10 +148,17 @@ blocks:
         name: trajectory
         kind: proxy
         typeRef: ifblk-itrajectory
+    parts:
+      - id: prt-behaviorvelocityplanning
+        name: behaviorVelocityPlanning
+        typeRef: blk-behavior-velocity-planning
+        multiplicity: "1"
+        aggregation: composite
+        relationshipId: compos-blk-planning-to-blk-behavior-velocity-planning
   - id: blk-control
     name: Control
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-subsystems
     ports:
       - id: port-trajectory
         name: trajectory
@@ -170,7 +177,7 @@ blocks:
   - id: blk-vehicle-interface
     name: Vehicle Interface
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-subsystems
     ports:
       - id: port-controlcmd
         name: controlCmd
@@ -180,14 +187,14 @@ blocks:
   - id: blk-map
     name: Map
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-subsystems
     ports:
       - id: port-map
         name: vectorMap
         kind: proxy
         typeRef: ifblk-imap
-  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
-  - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-system-decomposition, stereotype: subsystem}
+  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-subsystems, stereotype: subsystem}
+  - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-subsystems, stereotype: subsystem}
   - id: blk-ego-vehicle
     name: Ego Vehicle
     type: sysml:Block
@@ -410,3 +417,4 @@ blocks:
   - {id: blk-autoware-runtime, name: Autoware Runtime, type: "sysml:Block", package: pkg-ego-vehicle}
   - {id: blk-vehiclestatus, name: VehicleStatus, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
   - {id: blk-controlcmd, name: ControlCmd, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - {id: blk-behavior-velocity-planning, name: Behavior Velocity Planning, type: "sysml:Block", package: pkg-planning}

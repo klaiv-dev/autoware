@@ -1,4 +1,8 @@
-# Klaiv relationship file — refines
-# Add entries below. Each entry must have: id, type, source, target.
-
-refines: []
+refines:
+  - id: ref-uc-drive-to-goal-to-req-yield-to-pedestrians-at-crosswalk
+    type: sysml:Refine
+    source:
+      id: uc-drive-to-goal
+    target:
+      id: req-yield-to-pedestrians-at-crosswalk
+    label: refine

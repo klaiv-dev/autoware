@@ -1,5 +1,5 @@
 diagramId: diag-model-overview
-viewport: {zoom: 1, panX: 0, panY: -23}
+viewport: {zoom: 0.5034782741380774, panX: 44.955646282693635, panY: 10.909564872409987}
 elements:
   dref-diag-operating-an-autonomous-vehicle: {x: 31, y: 27, width: 262, height: 137}
   dref-diag-developing-and-testing-autoware: {x: 311, y: 27, width: 262, height: 138}
@@ -9,3 +9,5 @@ elements:
   dref-diag-autoware-internal-structure: {x: 33, y: 346, width: 263, height: 140}
   dref-diag-logical-interfaces: {x: 312, y: 188, width: 263, height: 140}
   dref-diag-perception-internals: {x: 313, y: 345, width: 265, height: 140}
+  dref-diag-ego-vehicle-composition: {x: 594, y: 343, width: 261.5716736796042, height: 140}
+  dref-diag-system-to-software-allocation: {x: 32, y: 500, width: 265.5440397234496, height: 140}
