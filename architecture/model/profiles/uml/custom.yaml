@@ -6,3 +6,7 @@ stereotypeExtensions:
   - elementTypeId: uml:Class
     stereotypes:
       - scenario
+  - elementTypeId: uml:Component
+    stereotypes:
+      - core
+      - universe

@@ -1,3 +1,44 @@
 components:
-  - {id: comp-autoware-behavior-velocity-planner, name: Autoware Behavior Velocity Planner, type: "uml:Component", package: pkg-software-planning}
+  - id: comp-autoware-behavior-velocity-planner
+    name: Behavior Velocity Planner
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - core
   - {id: comp-crosswalk-module, name: Crosswalk Module, type: "uml:Component", package: pkg-software-planning}
+  - id: comp-mission-planner
+    name: Mission Planner
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - core
+  - id: comp-behavior-path-planner
+    name: Behavior Path Planner
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - universe
+  - id: comp-motion-velocity-planner
+    name: Motion Velocity Planner
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - core
+  - id: comp-velocity-smoother
+    name: Velocity Smoother
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - core
+  - id: comp-planning-validator
+    name: Planning Validator
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - universe
+  - id: comp-scenario-selector
+    name: Scenario Selector
+    type: uml:Component
+    package: pkg-software-planning
+    tags:
+      - universe

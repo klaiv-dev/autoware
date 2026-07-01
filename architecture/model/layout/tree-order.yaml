@@ -48,3 +48,12 @@ comp-crosswalk-module: 2
 pkg-scenarios: 6
 cls-cross-walk-scenario-test: 1
 diag-system-to-software-allocation: 6
+comp-mission-planner: 3
+comp-behavior-path-planner: 4
+comp-motion-velocity-planner: 5
+comp-velocity-smoother: 6
+comp-planning-validator: 7
+comp-scenario-selector: 8
+iface-ipathwithlaneid: 9
+iface-itrajectorysource: 10
+diag-planning-pipeline: 11

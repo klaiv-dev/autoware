@@ -1,4 +1,13 @@
-# Klaiv relationship file — realizations
-# Add entries below. Each entry must have: id, type, source, target.
-
-realizations: []
+realizations:
+  - id: real-comp-velocity-smoother-to-iface-itrajectorysource
+    type: uml:Realization
+    source:
+      id: comp-velocity-smoother
+    target:
+      id: iface-itrajectorysource
+  - id: real-comp-behavior-path-planner-to-iface-ipathwithlaneid
+    type: uml:Realization
+    source:
+      id: comp-behavior-path-planner
+    target:
+      id: iface-ipathwithlaneid

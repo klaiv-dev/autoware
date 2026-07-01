@@ -1,0 +1,25 @@
+# Planning Pipeline
+diagram:
+  id: diag-planning-pipeline
+  name: Planning Pipeline
+  type: uml:ComponentDiagram
+  package: pkg-software-planning
+  elements:
+    - elementId: comp-autoware-behavior-velocity-planner # Behavior Velocity Planner (Component)
+    - elementId: comp-behavior-path-planner # Behavior Path Planner (Component)
+    - elementId: comp-mission-planner # Mission Planner (Component)
+    - elementId: comp-motion-velocity-planner # Motion Velocity Planner (Component)
+    - elementId: comp-planning-validator # Planning Validator (Component)
+    - elementId: comp-scenario-selector # Scenario Selector (Component)
+    - elementId: comp-velocity-smoother # Velocity Smoother (Component)
+    - elementId: iface-ipathwithlaneid # IPathWithLaneId (Interface)
+    - elementId: iface-itrajectorysource # ITrajectorySource (Interface)
+  relationships:
+    - dep-comp-autoware-behavior-velocity-planner-to-comp-behavior-path-planner # Behavior Velocity Planner → Behavior Path Planner (Dependency)
+    - dep-comp-behavior-path-planner-to-comp-mission-planner # Behavior Path Planner → Mission Planner (Dependency)
+    - real-comp-behavior-path-planner-to-iface-ipathwithlaneid # Behavior Path Planner → IPathWithLaneId (Realization)
+    - dep-comp-motion-velocity-planner-to-comp-autoware-behavior-velocity-planner # Motion Velocity Planner → Behavior Velocity Planner (Dependency)
+    - dep-comp-planning-validator-to-comp-velocity-smoother # Planning Validator → Velocity Smoother (Dependency)
+    - dep-comp-scenario-selector-to-comp-mission-planner # Scenario Selector → Mission Planner (Dependency)
+    - dep-comp-velocity-smoother-to-comp-motion-velocity-planner # Velocity Smoother → Motion Velocity Planner (Dependency)
+    - real-comp-velocity-smoother-to-iface-itrajectorysource # Velocity Smoother → ITrajectorySource (Realization)

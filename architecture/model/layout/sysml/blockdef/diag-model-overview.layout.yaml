@@ -11,3 +11,4 @@ elements:
   dref-diag-perception-internals: {x: 313, y: 345, width: 265, height: 140}
   dref-diag-ego-vehicle-composition: {x: 594, y: 343, width: 261.5716736796042, height: 140}
   dref-diag-system-to-software-allocation: {x: 32, y: 500, width: 265.5440397234496, height: 140}
+  dref-diag-planning-pipeline: {x: 312, y: 499, width: 271.5025887892177, height: 140}

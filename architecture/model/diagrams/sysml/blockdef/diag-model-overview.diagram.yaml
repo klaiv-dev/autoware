@@ -26,3 +26,5 @@ diagram:
       target: diag-ego-vehicle-composition
     - id: dref-diag-system-to-software-allocation
       target: diag-system-to-software-allocation
+    - id: dref-diag-planning-pipeline
+      target: diag-planning-pipeline
