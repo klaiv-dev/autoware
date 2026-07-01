@@ -1,0 +1,32 @@
+diagramId: diag-ego-vehicle-composition
+viewport: {zoom: 1, panX: 0, panY: 0}
+elements:
+  prt-sensorkit: {x: 149, y: 132, width: 180, height: 80}
+  prt-adcomputer: {x: 489, y: 131, width: 180, height: 80}
+  prt-dbwcontroller: {x: 472, y: 321, width: 215, height: 80}
+  prt-autowareruntime: {x: 754, y: 130, width: 250, height: 80}
+  blk-ego-vehicle: {x: 100, y: 50, width: 953, height: 400}
+  prt-sensorkit.port-sensordata:
+    portPos:
+      side: E
+      offset: 0.5
+  prt-adcomputer.port-sensordata:
+    portPos:
+      side: W
+      offset: 0.49499998092651365
+  prt-adcomputer.port-controlcnd:
+    portPos:
+      side: S
+      offset: 0.12222222222222222
+  prt-dbwcontroller.port-controlcmd:
+    portPos:
+      side: "N"
+      offset: 0.1813953488372093
+  prt-dbwcontroller.port-vehiclestatus:
+    portPos:
+      side: "N"
+      offset: 0.786046511627907
+  prt-adcomputer.port-vehiclestatus:
+    portPos:
+      side: S
+      offset: 0.8444444444444444

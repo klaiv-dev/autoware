@@ -5,6 +5,7 @@ diagram:
   type: sysml:BlockDefinitionDiagram
   package: pkg-logical-interfaces
   elements:
+    - elementId: blk-controlcmd # ControlCmd (Block)
     - elementId: blk-detectedobjects # DetectedObjects (Block)
     - elementId: blk-kinematicstate # KinematicState (Block)
     - elementId: blk-laneletmap # LaneletMap (Block)
@@ -15,5 +16,6 @@ diagram:
     - elementId: blk-trackedobjects # TrackedObjects (Block)
     - elementId: blk-trajectory # Trajectory (Block)
     - elementId: blk-trajectorypoint # TrajectoryPoint (Block)
+    - elementId: blk-vehiclestatus # VehicleStatus (Block)
     - elementId: enum-objectclass # ObjectClass (Enumeration)
   relationships: []

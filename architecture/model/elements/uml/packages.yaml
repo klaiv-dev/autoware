@@ -11,3 +11,4 @@ packages:
   - {id: pkg-logical-interfaces, name: Logical Interfaces, type: "uml:Package", package: pkg-interfaces-and-value-types}
   - {id: pkg-system-interfaces, name: System Interfaces, type: "uml:Package", package: pkg-system-architecture}
   - {id: pkg-perception, name: Perception, type: "uml:Package", package: pkg-system-decomposition}
+  - {id: pkg-ego-vehicle, name: Ego Vehicle, type: "uml:Package", package: pkg-system-architecture}

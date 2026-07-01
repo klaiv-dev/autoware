@@ -7,6 +7,7 @@ diagram:
   elements:
     - elementId: blk-ad-api # AD API (Block)
     - elementId: blk-autoware # Autoware System (Block)
+    - elementId: blk-autoware-runtime # Autoware Runtime (Block)
     - elementId: blk-camera # Camera (Block)
     - elementId: blk-control # Control (Block)
     - elementId: blk-detection # Detection (Block)

@@ -191,13 +191,26 @@ blocks:
   - id: blk-ego-vehicle
     name: Ego Vehicle
     type: sysml:Block
-    package: pkg-system-decomposition
+    package: pkg-ego-vehicle
     parts:
       - id: prt-sensorkit
         name: sensorKit
         typeRef: blk-sensor-kit
         aggregation: shared
         relationshipId: aggr-blk-ego-vehicle-to-blk-sensor-kit
+      - id: prt-adcomputer
+        name: adComputer
+        typeRef: blk-ad-computer
+        aggregation: composite
+      - id: prt-dbwcontroller
+        name: dbwController
+        typeRef: blk-dbw-controller
+        aggregation: composite
+      - id: prt-autowareruntime
+        name: autowareRuntime
+        typeRef: blk-autoware-runtime
+        aggregation: composite
+    linkedDiagram: diag-ego-vehicle-composition
   - id: blk-sensor-kit
     name: Sensor Kit
     type: sysml:Block
@@ -227,6 +240,11 @@ blocks:
         multiplicity: "1"
         aggregation: composite
         relationshipId: compos-blk-sensor-kit-to-blk-imu
+    ports:
+      - id: port-sensordata
+        name: sensorData
+        kind: proxy
+        typeRef: ifblk-ipointcloud-2
   - {id: blk-lidar, name: LIDAR, type: "sysml:Block", package: pkg-system-decomposition}
   - {id: blk-camera, name: Camera, type: "sysml:Block", package: pkg-system-decomposition}
   - {id: blk-gnss, name: GNSS, type: "sysml:Block", package: pkg-system-decomposition}
@@ -356,3 +374,39 @@ blocks:
   - {id: blk-traffic-light-recongnition, name: Traffic Light Recongnition, type: "sysml:Block", package: pkg-perception}
   - {id: blk-detectedobjects, name: DetectedObjects, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
   - {id: blk-trackedobjects, name: TrackedObjects, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - id: blk-ad-computer
+    name: AD Computer
+    type: sysml:Block
+    package: pkg-ego-vehicle
+    ports:
+      - id: port-sensordata
+        name: sensorData
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ipointcloud-2
+      - id: port-controlcnd
+        name: controlCnd
+        kind: proxy
+        typeRef: ifblk-icontrolcmd
+      - id: port-vehiclestatus
+        name: vehicleStatus
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-ivehiclestatus
+  - id: blk-dbw-controller
+    name: DBW Controller
+    type: sysml:Block
+    package: pkg-ego-vehicle
+    ports:
+      - id: port-controlcmd
+        name: controlCmd
+        kind: proxy
+        isConjugated: true
+        typeRef: ifblk-icontrolcmd
+      - id: port-vehiclestatus
+        name: vehicleStatus
+        kind: proxy
+        typeRef: ifblk-ivehiclestatus
+  - {id: blk-autoware-runtime, name: Autoware Runtime, type: "sysml:Block", package: pkg-ego-vehicle}
+  - {id: blk-vehiclestatus, name: VehicleStatus, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
+  - {id: blk-controlcmd, name: ControlCmd, type: "sysml:Block", package: pkg-logical-interfaces, stereotype: logical}
