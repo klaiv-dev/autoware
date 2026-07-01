@@ -1,4 +1,46 @@
-# Klaiv relationship file — dependencies
-# Add entries below. Each entry must have: id, type, source, target.
-
-dependencies: []
+dependencies:
+  - id: dep-comp-scenario-selector-to-comp-mission-planner
+    type: uml:Dependency
+    source:
+      id: comp-scenario-selector
+    target:
+      id: comp-mission-planner
+    stereotype: use
+  - id: dep-comp-behavior-path-planner-to-comp-mission-planner
+    type: uml:Dependency
+    source:
+      id: comp-behavior-path-planner
+    target:
+      id: comp-mission-planner
+    stereotype: use
+  - id: dep-comp-autoware-behavior-velocity-planner-to-comp-behavior-path-planner
+    type: uml:Dependency
+    source:
+      id: comp-autoware-behavior-velocity-planner
+    target:
+      id: comp-behavior-path-planner
+    stereotype: use
+    description: path_with_lane_id
+  - id: dep-comp-motion-velocity-planner-to-comp-autoware-behavior-velocity-planner
+    type: uml:Dependency
+    source:
+      id: comp-motion-velocity-planner
+    target:
+      id: comp-autoware-behavior-velocity-planner
+    stereotype: use
+    description: path
+  - id: dep-comp-velocity-smoother-to-comp-motion-velocity-planner
+    type: uml:Dependency
+    source:
+      id: comp-velocity-smoother
+    target:
+      id: comp-motion-velocity-planner
+    stereotype: use
+  - id: dep-comp-planning-validator-to-comp-velocity-smoother
+    type: uml:Dependency
+    source:
+      id: comp-planning-validator
+    target:
+      id: comp-velocity-smoother
+    stereotype: use
+    description: trajectory

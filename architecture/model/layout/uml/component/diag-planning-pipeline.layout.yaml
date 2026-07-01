@@ -1,0 +1,12 @@
+diagramId: diag-planning-pipeline
+viewport: {zoom: 0.4635293997970282, panX: 40.9953022377164, panY: 184.73882278741576}
+elements:
+  comp-autoware-behavior-velocity-planner: {x: 114, y: -61, width: 180, height: 80}
+  comp-behavior-path-planner: {x: 437, y: -62, width: 180, height: 80}
+  comp-mission-planner: {x: 436, y: 108, width: 180, height: 80}
+  comp-motion-velocity-planner: {x: 114, y: 366, width: 180, height: 80}
+  comp-planning-validator: {x: 800, y: 52, width: 180, height: 80}
+  comp-scenario-selector: {x: 437, y: 283, width: 180, height: 80}
+  comp-velocity-smoother: {x: 801, y: 368, width: 180, height: 80}
+  iface-ipathwithlaneid: {x: 723, y: -62, width: 180, height: 80}
+  iface-itrajectorysource: {x: 1063, y: 368, width: 180, height: 80}

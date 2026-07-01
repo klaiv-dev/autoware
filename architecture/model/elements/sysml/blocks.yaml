@@ -155,6 +155,7 @@ blocks:
         multiplicity: "1"
         aggregation: composite
         relationshipId: compos-blk-planning-to-blk-behavior-velocity-planning
+    linkedDiagram: diag-planning-pipeline
   - id: blk-control
     name: Control
     type: sysml:Block
