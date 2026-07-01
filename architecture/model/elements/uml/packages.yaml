@@ -10,5 +10,10 @@ packages:
   - {id: pkg-value-types, name: Value Types, type: "uml:Package", package: pkg-interfaces-and-value-types}
   - {id: pkg-logical-interfaces, name: Logical Interfaces, type: "uml:Package", package: pkg-interfaces-and-value-types}
   - {id: pkg-system-interfaces, name: System Interfaces, type: "uml:Package", package: pkg-system-architecture}
-  - {id: pkg-perception, name: Perception, type: "uml:Package", package: pkg-system-decomposition}
+  - {id: pkg-perception, name: Perception, type: "uml:Package", package: pkg-subsystems}
   - {id: pkg-ego-vehicle, name: Ego Vehicle, type: "uml:Package", package: pkg-system-architecture}
+  - {id: pkg-subsystems, name: Subsystems, type: "uml:Package", package: pkg-system-decomposition}
+  - {id: pkg-planning, name: Planning, type: "uml:Package", package: pkg-subsystems}
+  - {id: pkg-software, name: Software, type: "uml:Package"}
+  - {id: pkg-software-planning, name: Software Planning, type: "uml:Package", package: pkg-software}
+  - {id: pkg-scenarios, name: Scenarios, type: "uml:Package"}

@@ -38,3 +38,13 @@ blk-ad-computer: 1
 blk-dbw-controller: 2
 blk-autoware-runtime: 3
 diag-ego-vehicle-composition: 4
+blk-behavior-velocity-planning: 3
+pkg-subsystems: 4
+pkg-planning: 3
+pkg-software: 5
+pkg-software-planning: 1
+comp-autoware-behavior-velocity-planner: 1
+comp-crosswalk-module: 2
+pkg-scenarios: 6
+cls-cross-walk-scenario-test: 1
+diag-system-to-software-allocation: 6

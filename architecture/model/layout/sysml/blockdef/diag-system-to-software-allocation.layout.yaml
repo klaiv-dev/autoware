@@ -1,0 +1,43 @@
+diagramId: diag-system-to-software-allocation
+viewport: {zoom: 0.6305014177168999, panX: 157.72771974611948, panY: 34.73453520518083}
+elements:
+  blk-behavior-velocity-planning: {x: 595, y: 215, width: 180, height: 80}
+  blk-perception: {x: -155, y: 519, width: 180, height: 80}
+  blk-planning: {x: 422, y: 60, width: 180, height: 80}
+  cls-cross-walk-scenario-test: {x: -60, y: 352, width: 180, height: 80}
+  comp-autoware-behavior-velocity-planner: {x: 881, y: 130, width: 301.031093526444, height: 80}
+  comp-crosswalk-module: {x: 860, y: 342, width: 180, height: 80}
+  req-detect-pedestrians-within-sensing-range: {x: 135, y: 520, width: 322, height: 80}
+  req-yield-decision-based-on-time-to-collision-vs-time-to-vehicle: {x: 507, y: 520, width: 418, height: 80}
+  req-yield-to-pedestrians-at-crosswalk: {x: 367, y: 352, width: 301, height: 80}
+  uc-drive-to-goal: {x: 107, y: 197, width: 180, height: 80}
+  blk-planning.port-objects:
+    portPos:
+      side: E
+      offset: 0.5
+    hidden: true
+  blk-planning.port-kinematicstate:
+    portPos:
+      side: E
+      offset: 0.5
+    hidden: true
+  blk-planning.port-vectormap:
+    portPos:
+      side: E
+      offset: 0.5
+    hidden: true
+  blk-planning.port-trajectory:
+    portPos:
+      side: E
+      offset: 0.5
+    hidden: true
+  blk-perception.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+    hidden: true
+  blk-perception.port-objects:
+    portPos:
+      side: E
+      offset: 0.5
+    hidden: true

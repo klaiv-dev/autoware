@@ -1,17 +1,17 @@
 diagramId: diag-autoware-system-decomposition
-viewport: {zoom: 1.122179291927616, panX: -673.7651559754054, panY: -370.32893765375263}
+viewport: {zoom: 0.7127710421230555, panX: -97.68030330832732, panY: -43.262714165633895}
 elements:
   blk-ad-api: {x: 595, y: 14, width: 180, height: 80}
-  blk-ad-computer: {x: 1218, y: 596, width: 180, height: 80}
   blk-autoware: {x: 191, y: 2, width: 180, height: 80}
-  blk-autoware-runtime: {x: 1020, y: 682, width: 180, height: 80}
-  blk-camera: {x: 1237, y: 211, width: 180, height: 80}
+  blk-autoware-runtime: {x: 1197, y: 673, width: 180, height: 80}
+  blk-behavior-velocity-planning: {x: 901, y: 534, width: 180, height: 80}
+  blk-camera: {x: 1414, y: 202, width: 180, height: 80}
   blk-control: {x: -199, y: 107, width: 180, height: 80}
   blk-detection: {x: 56, y: 556, width: 180, height: 80}
-  blk-ego-vehicle: {x: 1328, y: -78, width: 180, height: 80}
-  blk-gnss: {x: 1432, y: 209, width: 180, height: 80}
-  blk-imu: {x: 1629, y: 212, width: 180, height: 80}
-  blk-lidar: {x: 1037, y: 211, width: 180, height: 80}
+  blk-ego-vehicle: {x: 1505, y: -87, width: 180, height: 80}
+  blk-gnss: {x: 1609, y: 200, width: 180, height: 80}
+  blk-imu: {x: 1806, y: 203, width: 180, height: 80}
+  blk-lidar: {x: 1214, y: 202, width: 180, height: 80}
   blk-localization: {x: 74, y: 364, width: 180, height: 80}
   blk-map: {x: -161, y: 367, width: 180, height: 80}
   blk-perception: {x: 338, y: 353, width: 180, height: 80}
@@ -19,12 +19,12 @@ elements:
   blk-prediction: {x: 490, y: 660, width: 180, height: 80}
   blk-safety-system: {x: 595, y: 106, width: 180, height: 80}
   blk-sensing: {x: -268, y: 260, width: 180, height: 80}
-  blk-sensor-kit: {x: 1328, y: 65, width: 180, height: 80}
+  blk-sensor-kit: {x: 1505, y: 56, width: 180, height: 80}
   blk-tracking: {x: 195, y: 689, width: 180, height: 80}
   blk-traffic-light-recongnition: {x: 663, y: 541, width: 180, height: 80}
   blk-vehicle-interface: {x: -268, y: 2, width: 180, height: 80}
-  blk-vlp-16: {x: 1133, y: 401, width: 180, height: 80}
-  blk-vls-128: {x: 922, y: 400, width: 180, height: 80}
+  blk-vlp-16: {x: 1310, y: 392, width: 180, height: 80}
+  blk-vls-128: {x: 1099, y: 391, width: 180, height: 80}
   blk-control.port-trajectory:
     portPos:
       side: E
@@ -80,7 +80,7 @@ elements:
   blk-planning.port-trajectory:
     portPos:
       side: S
-      offset: 0.5082676271772015
+      offset: 0.2450780768182003
   blk-prediction.port-trackedobjects:
     portPos:
       side: E
@@ -90,6 +90,10 @@ elements:
       side: S
       offset: 0.40502990289720436
   blk-sensing.port-pointcloud:
+    portPos:
+      side: E
+      offset: 0.5
+  blk-sensor-kit.port-sensordata:
     portPos:
       side: E
       offset: 0.5
@@ -105,45 +109,5 @@ elements:
     portPos:
       side: E
       offset: 0.5
-  blk-sensor-kit.port-sensordata:
-    portPos:
-      side: E
-      offset: 0.5
-  port-sensordata:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-ad-computer.port-sensordata:
-    portPos:
-      side: W
-      offset: 0.5648616133871769
-  blk-ad-computer.port-controlcnd:
-    portPos:
-      side: E
-      offset: 0.5
-  port-controlcnd:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-dbw-controller.port-controlcmd:
-    portPos:
-      side: W
-      offset: 0.6392608228818503
-  port-controlcmd:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-dbw-controller.port-vehiclestatus:
-    portPos:
-      side: E
-      offset: 0.5
-  port-vehiclestatus:
-    portPos:
-      side: E
-      offset: 0.5
-  blk-ad-computer.port-vehiclestatus:
-    portPos:
-      side: S
-      offset: 0.49482476308259166
 edgeAnchors:
   compos-blk-autoware-to-blk-vehicle-interface: {}
