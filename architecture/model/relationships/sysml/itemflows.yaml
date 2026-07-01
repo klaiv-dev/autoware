@@ -119,3 +119,33 @@ itemflows:
       port: port-objects
     conveyed:
       - blk-predictedobject
+  - id: itemflow-prt-sensorkit-to-prt-adcomputer
+    type: sysml:ItemFlow
+    source:
+      id: prt-sensorkit
+      port: port-sensordata
+    target:
+      id: prt-adcomputer
+      port: port-sensordata
+    conveyed:
+      - blk-pointcloud
+  - id: itemflow-prt-adcomputer-to-prt-dbwcontroller
+    type: sysml:ItemFlow
+    source:
+      id: prt-adcomputer
+      port: port-controlcnd
+    target:
+      id: prt-dbwcontroller
+      port: port-controlcmd
+    conveyed:
+      - blk-controlcmd
+  - id: itemflow-prt-dbwcontroller-to-prt-adcomputer
+    type: sysml:ItemFlow
+    source:
+      id: prt-dbwcontroller
+      port: port-vehiclestatus
+    target:
+      id: prt-adcomputer
+      port: port-vehiclestatus
+    conveyed:
+      - blk-vehiclestatus

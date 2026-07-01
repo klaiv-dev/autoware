@@ -1,0 +1,16 @@
+# Ego Vehicle Composition
+diagram:
+  id: diag-ego-vehicle-composition
+  name: Ego Vehicle Composition
+  type: uml:CompositeStructureDiagram
+  package: pkg-ego-vehicle
+  subject: blk-ego-vehicle
+  elements:
+    - elementId: prt-adcomputer
+    - elementId: prt-autowareruntime
+    - elementId: prt-dbwcontroller
+    - elementId: prt-sensorkit
+  relationships:
+    - itemflow-prt-adcomputer-to-prt-dbwcontroller # prt-adcomputer → prt-dbwcontroller (ItemFlow)
+    - itemflow-prt-dbwcontroller-to-prt-adcomputer # prt-dbwcontroller → prt-adcomputer (ItemFlow)
+    - itemflow-prt-sensorkit-to-prt-adcomputer # prt-sensorkit → prt-adcomputer (ItemFlow)

@@ -33,3 +33,8 @@ blk-tracking: 2
 blk-prediction: 3
 blk-traffic-light-recongnition: 4
 diag-perception-internals: 5
+pkg-ego-vehicle: 5
+blk-ad-computer: 1
+blk-dbw-controller: 2
+blk-autoware-runtime: 3
+diag-ego-vehicle-composition: 4
