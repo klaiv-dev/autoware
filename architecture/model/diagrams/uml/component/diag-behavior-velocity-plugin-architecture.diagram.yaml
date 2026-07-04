@@ -1,0 +1,21 @@
+# Behavior Velocity Plugin Architecture
+diagram:
+  id: diag-behavior-velocity-plugin-architecture
+  name: Behavior Velocity Plugin Architecture
+  type: uml:ComponentDiagram
+  package: pkg-software-planning
+  elements:
+    - elementId: comp-autoware-behavior-velocity-planner # Behavior Velocity Planner (Component)
+    - elementId: comp-crosswalk-module # Crosswalk (Component)
+    - elementId: comp-intersection # Intersection (Component)
+    - elementId: comp-stop-line # Stop Line (Component)
+    - elementId: comp-traffic-light # Traffic Light (Component)
+    - elementId: comp-walkway # Walkway (Component)
+    - elementId: iface-plugininterface # PluginInterface (Interface)
+  relationships:
+    - dep-comp-autoware-behavior-velocity-planner-to-iface-plugininterface # Behavior Velocity Planner → PluginInterface (Dependency: "use")
+    - real-comp-crosswalk-module-to-iface-plugininterface # Crosswalk → PluginInterface (Realization)
+    - real-comp-intersection-to-iface-plugininterface # Intersection → PluginInterface (Realization)
+    - real-comp-stop-line-to-iface-plugininterface # Stop Line → PluginInterface (Realization)
+    - real-comp-traffic-light-to-iface-plugininterface # Traffic Light → PluginInterface (Realization)
+    - real-comp-walkway-to-iface-plugininterface # Walkway → PluginInterface (Realization)

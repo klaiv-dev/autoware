@@ -1,0 +1,10 @@
+diagramId: diag-behavior-velocity-plugin-architecture
+viewport: {zoom: 0.8225881422459241, panX: 173.9706813233255, panY: -7.930241001654849}
+elements:
+  comp-autoware-behavior-velocity-planner: {x: -57, y: 40, width: 180, height: 80}
+  comp-crosswalk-module: {x: 309, y: 106, width: 180, height: 80}
+  comp-intersection: {x: 309, y: 194, width: 180, height: 80}
+  comp-stop-line: {x: 308, y: 464, width: 180, height: 80}
+  comp-traffic-light: {x: 310, y: 282, width: 180, height: 80}
+  comp-walkway: {x: 310, y: 372, width: 180, height: 80}
+  iface-plugininterface: {x: -57, y: 244, width: 180, height: 80}

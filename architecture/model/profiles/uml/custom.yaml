@@ -8,5 +8,5 @@ stereotypeExtensions:
       - scenario
   - elementTypeId: uml:Component
     stereotypes:
-      - core
-      - universe
+      - plugin
+      - pluginHost
