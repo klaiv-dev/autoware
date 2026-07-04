@@ -5,7 +5,15 @@ components:
     package: pkg-software-planning
     tags:
       - core
-  - {id: comp-crosswalk-module, name: Crosswalk Module, type: "uml:Component", package: pkg-software-planning}
+    stereotype: pluginHost
+    linkedDiagram: diag-behavior-velocity-plugin-architecture
+  - id: comp-crosswalk-module
+    name: Crosswalk
+    type: uml:Component
+    package: pkg-software-planning
+    stereotype: plugin
+    tags:
+      - universe
   - id: comp-mission-planner
     name: Mission Planner
     type: uml:Component
@@ -42,3 +50,31 @@ components:
     package: pkg-software-planning
     tags:
       - universe
+  - id: comp-intersection
+    name: Intersection
+    type: uml:Component
+    package: pkg-software-planning
+    stereotype: plugin
+    tags:
+      - universe
+  - id: comp-traffic-light
+    name: Traffic Light
+    type: uml:Component
+    package: pkg-software-planning
+    stereotype: plugin
+    tags:
+      - universe
+  - id: comp-walkway
+    name: Walkway
+    type: uml:Component
+    package: pkg-software-planning
+    stereotype: plugin
+    tags:
+      - universe
+  - id: comp-stop-line
+    name: Stop Line
+    type: uml:Component
+    package: pkg-software-planning
+    stereotype: plugin
+    tags:
+      - core

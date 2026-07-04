@@ -1,3 +1,4 @@
 interfaces:
   - {id: iface-ipathwithlaneid, name: IPathWithLaneId, type: "uml:Interface", package: pkg-software-planning}
   - {id: iface-itrajectorysource, name: ITrajectorySource, type: "uml:Interface", package: pkg-software-planning}
+  - {id: iface-plugininterface, name: PluginInterface, type: "uml:Interface", package: pkg-software-planning}

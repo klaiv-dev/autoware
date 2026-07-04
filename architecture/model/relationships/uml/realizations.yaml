@@ -11,3 +11,33 @@ realizations:
       id: comp-behavior-path-planner
     target:
       id: iface-ipathwithlaneid
+  - id: real-comp-crosswalk-module-to-iface-plugininterface
+    type: uml:Realization
+    source:
+      id: comp-crosswalk-module
+    target:
+      id: iface-plugininterface
+  - id: real-comp-intersection-to-iface-plugininterface
+    type: uml:Realization
+    source:
+      id: comp-intersection
+    target:
+      id: iface-plugininterface
+  - id: real-comp-traffic-light-to-iface-plugininterface
+    type: uml:Realization
+    source:
+      id: comp-traffic-light
+    target:
+      id: iface-plugininterface
+  - id: real-comp-walkway-to-iface-plugininterface
+    type: uml:Realization
+    source:
+      id: comp-walkway
+    target:
+      id: iface-plugininterface
+  - id: real-comp-stop-line-to-iface-plugininterface
+    type: uml:Realization
+    source:
+      id: comp-stop-line
+    target:
+      id: iface-plugininterface

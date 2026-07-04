@@ -44,3 +44,10 @@ dependencies:
       id: comp-velocity-smoother
     stereotype: use
     description: trajectory
+  - id: dep-comp-autoware-behavior-velocity-planner-to-iface-plugininterface
+    type: uml:Dependency
+    source:
+      id: comp-autoware-behavior-velocity-planner
+    target:
+      id: iface-plugininterface
+    label: use

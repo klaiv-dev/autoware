@@ -28,3 +28,5 @@ diagram:
       target: diag-system-to-software-allocation
     - id: dref-diag-planning-pipeline
       target: diag-planning-pipeline
+    - id: dref-diag-behavior-velocity-plugin-architecture
+      target: diag-behavior-velocity-plugin-architecture
