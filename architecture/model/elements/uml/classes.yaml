@@ -8,13 +8,11 @@ classes:
     attributes:
       - id: att-collisionstate
         name: collisionState
-        type: ""
         visibility: public
         typeRef: enum-collisionstate
         multiplicity: "1"
       - id: att-collisionpoint
         name: collisionPoint
-        type: ""
         visibility: public
         typeRef: cls-collisionpoint
         multiplicity: 0..1
@@ -62,7 +60,6 @@ classes:
     attributes:
       - id: att-objects
         name: objects
-        type: ""
         visibility: public
         typeRef: cls-objectinfo
         multiplicity: "*"
@@ -73,25 +70,21 @@ classes:
     attributes:
       - id: att-collisionpoint
         name: collisionPoint
-        type: ""
         visibility: public
         typeRef: dt-point
         multiplicity: "1"
       - id: att-crosswalkpassagedirection
         name: crosswalkPassageDirection
-        type: ""
         visibility: public
         typeRef: vt-angle
         multiplicity: 0..1
       - id: att-timetocollision
         name: timeToCollision
-        type: ""
         visibility: public
         typeRef: vt-duration
         multiplicity: "1"
       - id: att-timetovehicle
         name: timeToVehicle
-        type: ""
         visibility: public
         typeRef: vt-duration
         multiplicity: "1"
