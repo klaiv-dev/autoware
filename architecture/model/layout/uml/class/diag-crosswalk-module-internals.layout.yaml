@@ -1,0 +1,9 @@
+diagramId: diag-crosswalk-module-internals
+viewport: {zoom: 0.9920880642015583, panX: -57.354703785561725, panY: -239.91959919973868}
+elements:
+  cls-collisionpoint: {x: 348, y: 509, width: 324.4263277557854, height: 120}
+  cls-crosswalkmodule: {x: 260, y: 165, width: 728, height: 130}
+  cls-objectinfo: {x: 292, y: 352, width: 664.1720701908233, height: 112}
+  cls-scenemoduleinterfacewithrtc: {x: 490, y: 0, width: 267, height: 80}
+  dt-stopposewithobjectuuids: {x: 154, y: 525, width: 180, height: 84}
+  enum-collisionstate: {x: 686, y: 505, width: 180, height: 120}

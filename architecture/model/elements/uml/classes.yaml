@@ -1,2 +1,90 @@
 classes:
   - {id: cls-cross-walk-scenario-test, name: Cross Walk Scenario Test, type: "uml:Class", package: pkg-scenarios, stereotype: scenario}
+  - {id: cls-scenemoduleinterfacewithrtc, name: SceneModuleInterfaceWithRTC, type: "uml:Class", package: pkg-crosswalk}
+  - id: cls-objectinfo
+    name: ObjectInfo
+    type: uml:Class
+    package: pkg-crosswalk
+    attributes:
+      - id: att-collisionstate
+        name: collisionState
+        visibility: public
+        typeRef: enum-collisionstate
+        multiplicity: "1"
+      - id: att-collisionpoint
+        name: collisionPoint
+        visibility: public
+        typeRef: cls-collisionpoint
+        multiplicity: 0..1
+    operations:
+      - id: op-transitstate
+        name: transitState
+        visibility: public
+        returnType: void
+        parameters:
+          - name: isEgoYielding
+            type: bool
+          - name: collisionPoint
+            typeRef: cls-collisionpoint
+            multiplicity: 0..1
+          - name: hasTrafficLight
+            type: bool
+  - id: cls-crosswalkmodule
+    name: CrosswalkModule
+    type: uml:Class
+    package: pkg-crosswalk
+    operations:
+      - id: op-modifypathvelocity
+        name: modifyPathVelocity
+        visibility: public
+        returnType: bool
+        parameters:
+          - name: path
+            typeRef: dt-pathwithlaneid
+      - id: op-checkstopforcrosswalkusers
+        name: checkStopForCrosswalkUsers
+        visibility: public
+        returnTypeRef: dt-stopposewithobjectuuids
+        parameters:
+          - name: egoPath
+            typeRef: dt-pathwithlaneid
+          - name: objects
+            typeRef: blk-predictedobject
+            multiplicity: "*"
+        returnMultiplicity: 0..1
+      - id: op-calcstoppose
+        name: calcStopPose
+        visibility: public
+        returnTypeRef: dt-pose
+        returnMultiplicity: 0..1
+    attributes:
+      - id: att-objects
+        name: objects
+        visibility: public
+        typeRef: cls-objectinfo
+        multiplicity: "*"
+  - id: cls-collisionpoint
+    name: CollisionPoint
+    type: uml:Class
+    package: pkg-crosswalk
+    attributes:
+      - id: att-collisionpoint
+        name: collisionPoint
+        visibility: public
+        typeRef: dt-point
+        multiplicity: "1"
+      - id: att-crosswalkpassagedirection
+        name: crosswalkPassageDirection
+        visibility: public
+        typeRef: vt-angle
+        multiplicity: 0..1
+      - id: att-timetocollision
+        name: timeToCollision
+        visibility: public
+        typeRef: vt-duration
+        multiplicity: "1"
+      - id: att-timetovehicle
+        name: timeToVehicle
+        visibility: public
+        typeRef: vt-duration
+        multiplicity: "1"

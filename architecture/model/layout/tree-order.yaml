@@ -44,7 +44,7 @@ pkg-planning: 3
 pkg-software: 5
 pkg-software-planning: 1
 comp-autoware-behavior-velocity-planner: 3
-comp-crosswalk-module: 4
+comp-crosswalk-module: 5
 pkg-scenarios: 6
 cls-cross-walk-scenario-test: 1
 diag-system-to-software-allocation: 1
@@ -63,3 +63,8 @@ comp-traffic-light: 15
 comp-walkwaz: 15
 comp-stop-line: 16
 diag-behavior-velocity-plugin-architecture: 2
+pkg-crosswalk: 17
+enum-collisionstate: 6
+diag-crosswalk-module-internals: 4
+pkg-software-messages: 2
+diag-software-messages: 1

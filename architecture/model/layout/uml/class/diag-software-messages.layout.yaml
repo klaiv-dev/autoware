@@ -1,0 +1,8 @@
+diagramId: diag-software-messages
+viewport: {zoom: 1, panX: 0, panY: 0}
+elements:
+  dt-pathwithlaneid: {x: 75, y: 157, width: 180, height: 80}
+  dt-point: {x: 76, y: 52, width: 180, height: 80}
+  dt-pose: {x: 269, y: 52, width: 180, height: 80}
+  dt-stopposewithobjectuuids: {x: 172, y: 258, width: 180, height: 80}
+  dt-uuid: {x: 268, y: 156, width: 180, height: 80}

@@ -1,0 +1,13 @@
+# Software Messages
+diagram:
+  id: diag-software-messages
+  name: Software Messages
+  type: uml:ClassDiagram
+  package: pkg-software-messages
+  elements:
+    - elementId: dt-pathwithlaneid # PathWithLaneID (DataType)
+    - elementId: dt-point # Point (DataType)
+    - elementId: dt-pose # Pose (DataType)
+    - elementId: dt-stopposewithobjectuuids # StopPoseWithObjectUuids (DataType)
+    - elementId: dt-uuid # UUID (DataType)
+  relationships: []

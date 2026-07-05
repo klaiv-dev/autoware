@@ -11,3 +11,9 @@ generalizations:
       id: blk-vlp-16
     target:
       id: blk-lidar
+  - id: gen-cls-crosswalkmodule-to-cls-scenemoduleinterfacewithrtc
+    type: uml:Generalization
+    source:
+      id: cls-crosswalkmodule
+    target:
+      id: cls-scenemoduleinterfacewithrtc

@@ -1,0 +1,16 @@
+# Crosswalk Module Internals
+diagram:
+  id: diag-crosswalk-module-internals
+  name: Crosswalk Module Internals
+  type: uml:ClassDiagram
+  package: pkg-crosswalk
+  elements:
+    - elementId: cls-collisionpoint # CollisionPoint (Class)
+    - elementId: cls-crosswalkmodule # CrosswalkModule (Class)
+    - elementId: cls-objectinfo # ObjectInfo (Class)
+    - elementId: cls-scenemoduleinterfacewithrtc # SceneModuleInterfaceWithRTC (Class)
+    - elementId: dt-stopposewithobjectuuids # StopPoseWithObjectUuids (DataType)
+    - elementId: enum-collisionstate # CollisionState (Enumeration)
+  relationships:
+    - assoc-cls-crosswalkmodule-to-cls-objectinfo # CrosswalkModule → ObjectInfo (Association)
+    - gen-cls-crosswalkmodule-to-cls-scenemoduleinterfacewithrtc # CrosswalkModule → SceneModuleInterfaceWithRTC (Generalization)

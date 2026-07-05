@@ -8,12 +8,13 @@ components:
     stereotype: pluginHost
     linkedDiagram: diag-behavior-velocity-plugin-architecture
   - id: comp-crosswalk-module
-    name: Crosswalk
+    name: Crosswalk Module
     type: uml:Component
-    package: pkg-software-planning
+    package: pkg-crosswalk
     stereotype: plugin
     tags:
       - universe
+    linkedDiagram: diag-crosswalk-module-internals
   - id: comp-mission-planner
     name: Mission Planner
     type: uml:Component
