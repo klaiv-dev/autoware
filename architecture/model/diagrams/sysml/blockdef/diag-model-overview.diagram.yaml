@@ -30,3 +30,5 @@ diagram:
       target: diag-planning-pipeline
     - id: dref-diag-behavior-velocity-plugin-architecture
       target: diag-behavior-velocity-plugin-architecture
+    - id: dref-diag-crosswalk-module-internals
+      target: diag-crosswalk-module-internals

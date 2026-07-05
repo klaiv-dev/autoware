@@ -1,5 +1,22 @@
-# Klaiv element file — datatypes
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-datatypes: []
+datatypes:
+  - {id: dt-point, name: Point, type: "uml:DataType", package: pkg-software-messages}
+  - {id: dt-pose, name: Pose, type: "uml:DataType", package: pkg-software-messages}
+  - {id: dt-pathwithlaneid, name: PathWithLaneID, type: "uml:DataType", package: pkg-software-messages}
+  - {id: dt-uuid, name: UUID, type: "uml:DataType", package: pkg-software-messages}
+  - id: dt-stopposewithobjectuuids
+    name: StopPoseWithObjectUuids
+    type: uml:DataType
+    package: pkg-software-messages
+    attributes:
+      - id: att-stoppose
+        name: stopPose
+        type: ""
+        visibility: public
+        typeRef: dt-pose
+        multiplicity: "1"
+      - id: att-targetobjectids
+        name: targetObjectIds
+        type: ""
+        visibility: public
+        typeRef: dt-uuid
+        multiplicity: "*"

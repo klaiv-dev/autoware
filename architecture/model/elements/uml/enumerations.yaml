@@ -28,3 +28,16 @@ enumerations:
       - id: lit-pedestrian
         name: PEDESTRIAN
         description: "7"
+  - id: enum-collisionstate
+    name: CollisionState
+    type: uml:Enumeration
+    package: pkg-crosswalk
+    literals:
+      - name: YIELD
+        id: lit-yield
+      - name: EGO_PASS_FIRST
+        id: lit-ego-pass-first
+      - name: EGO_PASS_LATER
+        id: lit-ego-pass-later
+      - name: IGNORE
+        id: lit-ignore

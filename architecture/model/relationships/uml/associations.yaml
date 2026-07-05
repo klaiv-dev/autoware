@@ -89,3 +89,9 @@ associations:
       id: actor-scenario-simulator
     target:
       id: uc-run-scenario-test
+  - id: assoc-cls-crosswalkmodule-to-cls-objectinfo
+    type: uml:Association
+    source:
+      id: cls-crosswalkmodule
+    target:
+      id: cls-objectinfo
