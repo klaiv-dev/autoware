@@ -20,3 +20,42 @@ datatypes:
         visibility: public
         typeRef: dt-uuid
         multiplicity: "*"
+  - {id: dt-detectedobjects, name: DetectedObjects, type: "uml:DataType", package: pkg-software-messages}
+  - {id: dt-trackedobjects, name: TrackedObjects, type: "uml:DataType", package: pkg-software-messages}
+  - {id: dt-predictedobjects, name: PredictedObjects, type: "uml:DataType", package: pkg-software-messages}
+  - id: dt-predictedobject
+    name: PredictedObject
+    type: uml:DataType
+    package: pkg-software-messages
+    attributes:
+      - id: att-classification
+        name: classification
+        visibility: public
+        typeRef: enum-objectclassification
+  - id: dt-predictedpath
+    name: PredictedPath
+    type: uml:DataType
+    package: pkg-software-messages
+    attributes:
+      - id: att-confidence
+        name: confidence
+        visibility: public
+        typeRef: vt-confidence
+  - {id: dt-trajectory, name: Trajectory, type: "uml:DataType", package: pkg-software-messages}
+  - id: dt-trajectorypoint
+    name: TrajectoryPoint
+    type: uml:DataType
+    package: pkg-software-messages
+    attributes:
+      - id: att-longitudinalvelocity
+        name: longitudinalVelocity
+        visibility: public
+        typeRef: vt-speed
+      - id: att-acceleration
+        name: acceleration
+        visibility: public
+        typeRef: vt-acceleration
+      - id: att-heading
+        name: heading
+        visibility: public
+        typeRef: vt-angle

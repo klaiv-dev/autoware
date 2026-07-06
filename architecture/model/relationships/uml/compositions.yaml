@@ -143,3 +143,21 @@ compositions:
       id: blk-behavior-velocity-planning
     targetMultiplicity: "1"
     targetRole: behaviorVelocityPlanning
+  - id: compos-dt-predictedobjects-to-dt-predictedobject
+    type: uml:Composition
+    source:
+      id: dt-predictedobjects
+    target:
+      id: dt-predictedobject
+  - id: compos-dt-predictedobject-to-dt-predictedpath
+    type: uml:Composition
+    source:
+      id: dt-predictedobject
+    target:
+      id: dt-predictedpath
+  - id: compos-dt-trajectory-to-dt-trajectorypoint
+    type: uml:Composition
+    source:
+      id: dt-trajectory
+    target:
+      id: dt-trajectorypoint

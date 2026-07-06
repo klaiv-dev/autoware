@@ -1,4 +1,8 @@
-# Klaiv relationship file — traces
-# Add entries below. Each entry must have: id, type, source, target.
-
-traces: []
+traces:
+  - id: trc-cls-crosswalkmodule-to-comp-crosswalk-module
+    type: sysml:Trace
+    source:
+      id: cls-crosswalkmodule
+    target:
+      id: comp-crosswalk-module
+    label: trace
