@@ -68,3 +68,4 @@ enum-collisionstate: 6
 diag-crosswalk-module-internals: 4
 pkg-software-messages: 2
 diag-software-messages: 1
+enum-objectclassification: 2

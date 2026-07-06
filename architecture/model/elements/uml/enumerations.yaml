@@ -41,3 +41,24 @@ enumerations:
         id: lit-ego-pass-later
       - name: IGNORE
         id: lit-ignore
+  - id: enum-objectclassification
+    name: ObjectClassification
+    type: uml:Enumeration
+    package: pkg-software-messages
+    literals:
+      - name: UNKNOWN
+        id: lit-unknown
+      - name: CAR
+        id: lit-car
+      - name: TRUCK
+        id: lit-truck
+      - name: BUS
+        id: lit-bus
+      - name: TRAILER
+        id: lit-trailer
+      - name: MOTORCYCLE
+        id: lit-motorcycle
+      - name: BICYCLE
+        id: lit-bicycle
+      - name: PEDESTRIAN
+        id: lit-pedestrian

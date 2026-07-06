@@ -1,8 +1,18 @@
 diagramId: diag-software-messages
-viewport: {zoom: 1, panX: 0, panY: 0}
+viewport: {zoom: 0.7086055260707138, panX: 54.32766844788358, panY: 14.177503331530943}
 elements:
-  dt-pathwithlaneid: {x: 75, y: 157, width: 180, height: 80}
-  dt-point: {x: 76, y: 52, width: 180, height: 80}
-  dt-pose: {x: 269, y: 52, width: 180, height: 80}
-  dt-stopposewithobjectuuids: {x: 172, y: 258, width: 180, height: 80}
-  dt-uuid: {x: 268, y: 156, width: 180, height: 80}
+  blk-detectedobjects: {x: 340, y: 264, width: 180, height: 80}
+  blk-predictedobject: {x: 982, y: 87, width: 235.3278184006442, height: 100}
+  blk-predictedpath: {x: 946, y: 239, width: 180, height: 82}
+  blk-trackedobjects: {x: 643, y: 563, width: 180, height: 80}
+  blk-trajectory: {x: -355, y: 306, width: 180, height: 82}
+  blk-trajectorypoint: {x: -392, y: 431, width: 262.99172760096627, height: 172}
+  cls-crosswalkmodule: {x: -291, y: 18, width: 713, height: 130}
+  comp-crosswalk-module: {x: -26, y: -159, width: 180, height: 80}
+  dt-detectedobjects: {x: 340, y: 457, width: 180, height: 80}
+  dt-predictedobject: {x: 599, y: 100, width: 245.9254499619948, height: 80}
+  dt-predictedobjects: {x: 630, y: -27, width: 180, height: 80}
+  dt-predictedpath: {x: 632, y: 241, width: 180, height: 80}
+  dt-trackedobjects: {x: 343, y: 568, width: 180, height: 80}
+  dt-trajectory: {x: 83, y: 311, width: 180, height: 80}
+  dt-trajectorypoint: {x: 53, y: 469, width: 239, height: 102}

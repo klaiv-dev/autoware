@@ -1,4 +1,43 @@
-# Klaiv relationship file — abstractions
-# Add entries below. Each entry must have: id, type, source, target.
-
-abstractions: []
+abstractions:
+  - id: abs-dt-detectedobjects-to-blk-detectedobjects
+    type: uml:Abstraction
+    source:
+      id: dt-detectedobjects
+    target:
+      id: blk-detectedobjects
+    label: realize
+  - id: abs-dt-predictedobject-to-blk-predictedobject
+    type: uml:Abstraction
+    source:
+      id: dt-predictedobject
+    target:
+      id: blk-predictedobject
+    label: realize
+  - id: abs-dt-predictedpath-to-blk-predictedpath
+    type: uml:Abstraction
+    source:
+      id: dt-predictedpath
+    target:
+      id: blk-predictedpath
+    label: realize
+  - id: abs-dt-trackedobjects-to-blk-trackedobjects
+    type: uml:Abstraction
+    source:
+      id: dt-trackedobjects
+    target:
+      id: blk-trackedobjects
+    label: realize
+  - id: abs-dt-trajectory-to-blk-trajectory
+    type: uml:Abstraction
+    source:
+      id: dt-trajectory
+    target:
+      id: blk-trajectory
+    label: realize
+  - id: abs-dt-trajectorypoint-to-blk-trajectorypoint
+    type: uml:Abstraction
+    source:
+      id: dt-trajectorypoint
+    target:
+      id: blk-trajectorypoint
+    label: realize
