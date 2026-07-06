@@ -1,0 +1,9 @@
+diagramId: diag-software-package-structure
+viewport: {zoom: 0.5207142966134207, panX: 329.62285352434435, panY: 9.751428440638954}
+elements:
+  pkg-ad-api-msgs: {x: 27, y: 598, width: 180, height: 80}
+  pkg-autoware-core: {x: 339, y: 455, width: 180, height: 80}
+  pkg-autoware-internal-msgs: {x: 871, y: 477, width: 180, height: 80}
+  pkg-autoware-msgs: {x: -278, y: 486, width: 180, height: 80}
+  pkg-autoware-universe: {x: 204, y: 172, width: 180, height: 80}
+  pkg-launch: {x: 204, y: 12, width: 180, height: 80}

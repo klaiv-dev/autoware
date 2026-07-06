@@ -19,3 +19,10 @@ packages:
   - {id: pkg-scenarios, name: Scenarios, type: "uml:Package"}
   - {id: pkg-crosswalk, name: Crosswalk, type: "uml:Package", package: pkg-software-planning}
   - {id: pkg-software-messages, name: Software Messages, type: "uml:Package", package: pkg-software}
+  - {id: pkg-autoware-repo, name: Autoware Repo, type: "uml:Package", package: pkg-software}
+  - {id: pkg-autoware-msgs, name: Autoware Msgs, type: "uml:Package", package: pkg-autoware-repo}
+  - {id: pkg-ad-api-msgs, name: AD API Msgs, type: "uml:Package", package: pkg-autoware-repo}
+  - {id: pkg-autoware-internal-msgs, name: Autoware Internal Msgs, type: "uml:Package", package: pkg-autoware-repo}
+  - {id: pkg-autoware-core, name: Autoware Core, type: "uml:Package", package: pkg-autoware-repo}
+  - {id: pkg-autoware-universe, name: Autoware Universe, type: "uml:Package", package: pkg-autoware-repo}
+  - {id: pkg-launch, name: Launch, type: "uml:Package", package: pkg-autoware-repo}

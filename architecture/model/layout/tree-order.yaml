@@ -69,3 +69,11 @@ diag-crosswalk-module-internals: 4
 pkg-software-messages: 2
 diag-software-messages: 1
 enum-objectclassification: 2
+pkg-autoware-repo: 3
+pkg-autoware-msgs: 1
+pkg-ad-api-msgs: 2
+pkg-autoware-internal-msgs: 3
+pkg-autoware-core: 4
+pkg-autoware-universe: 5
+pkg-launch: 6
+diag-software-package-structure: 7

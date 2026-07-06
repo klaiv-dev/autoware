@@ -51,3 +51,87 @@ dependencies:
     target:
       id: iface-plugininterface
     label: use
+  - id: dep-pkg-autoware-core-to-pkg-autoware-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-core
+    target:
+      id: pkg-autoware-msgs
+    label: import
+  - id: dep-pkg-autoware-core-to-pkg-ad-api-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-core
+    target:
+      id: pkg-ad-api-msgs
+    label: import
+  - id: dep-pkg-autoware-core-to-pkg-autoware-internal-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-core
+    target:
+      id: pkg-autoware-internal-msgs
+    label: import
+  - id: dep-pkg-autoware-universe-to-pkg-autoware-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-universe
+    target:
+      id: pkg-autoware-msgs
+    label: import
+    stereotype: import
+  - id: dep-pkg-autoware-universe-to-pkg-autoware-core
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-universe
+    target:
+      id: pkg-autoware-core
+    label: import
+  - id: dep-pkg-autoware-universe-to-pkg-ad-api-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-universe
+    target:
+      id: pkg-ad-api-msgs
+    label: import
+  - id: dep-pkg-autoware-universe-to-pkg-autoware-internal-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-autoware-universe
+    target:
+      id: pkg-autoware-internal-msgs
+    label: import
+  - id: dep-pkg-launch-to-pkg-autoware-core
+    type: uml:Dependency
+    source:
+      id: pkg-launch
+    target:
+      id: pkg-autoware-core
+    label: import
+  - id: dep-pkg-launch-to-pkg-autoware-universe
+    type: uml:Dependency
+    source:
+      id: pkg-launch
+    target:
+      id: pkg-autoware-universe
+  - id: dep-pkg-launch-to-pkg-autoware-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-launch
+    target:
+      id: pkg-autoware-msgs
+    label: import
+  - id: dep-pkg-launch-to-pkg-ad-api-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-launch
+    target:
+      id: pkg-ad-api-msgs
+    label: import
+  - id: dep-pkg-launch-to-pkg-autoware-internal-msgs
+    type: uml:Dependency
+    source:
+      id: pkg-launch
+    target:
+      id: pkg-autoware-internal-msgs
+    label: import

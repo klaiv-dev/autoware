@@ -1,0 +1,26 @@
+# Software Package Structure
+diagram:
+  id: diag-software-package-structure
+  name: Software Package Structure
+  type: uml:PackageDiagram
+  package: pkg-autoware-repo
+  elements:
+    - elementId: pkg-ad-api-msgs # AD API Msgs (Package)
+    - elementId: pkg-autoware-core # Autoware Core (Package)
+    - elementId: pkg-autoware-internal-msgs # Autoware Internal Msgs (Package)
+    - elementId: pkg-autoware-msgs # Autoware Msgs (Package)
+    - elementId: pkg-autoware-universe # Autoware Universe (Package)
+    - elementId: pkg-launch # Launch (Package)
+  relationships:
+    - dep-pkg-autoware-core-to-pkg-ad-api-msgs # Autoware Core → AD API Msgs (Dependency: "import")
+    - dep-pkg-autoware-core-to-pkg-autoware-internal-msgs # Autoware Core → Autoware Internal Msgs (Dependency: "import")
+    - dep-pkg-autoware-core-to-pkg-autoware-msgs # Autoware Core → Autoware Msgs (Dependency: "import")
+    - dep-pkg-autoware-universe-to-pkg-ad-api-msgs # Autoware Universe → AD API Msgs (Dependency: "import")
+    - dep-pkg-autoware-universe-to-pkg-autoware-core # Autoware Universe → Autoware Core (Dependency: "import")
+    - dep-pkg-autoware-universe-to-pkg-autoware-internal-msgs # Autoware Universe → Autoware Internal Msgs (Dependency: "import")
+    - dep-pkg-autoware-universe-to-pkg-autoware-msgs # Autoware Universe → Autoware Msgs (Dependency: "import")
+    - dep-pkg-launch-to-pkg-ad-api-msgs # Launch → AD API Msgs (Dependency: "import")
+    - dep-pkg-launch-to-pkg-autoware-core # Launch → Autoware Core (Dependency: "import")
+    - dep-pkg-launch-to-pkg-autoware-internal-msgs # Launch → Autoware Internal Msgs (Dependency: "import")
+    - dep-pkg-launch-to-pkg-autoware-msgs # Launch → Autoware Msgs (Dependency: "import")
+    - dep-pkg-launch-to-pkg-autoware-universe # Launch → Autoware Universe (Dependency)
