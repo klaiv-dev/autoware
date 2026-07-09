@@ -18,3 +18,4 @@ elements:
   dref-diag-software-package-structure: {x: 591, y: 479, width: 269.6090520409467, height: 140}
   dref-diag-localization-initialization: {x: 874, y: 478, width: 259.3724267408075, height: 140}
   dref-diag-set-route-engage: {x: 32, y: 633, width: 265.36496246361816, height: 140}
+  dref-diag-crosswalk-scenario-data-flow: {x: 311, y: 632, width: 267.311584896408, height: 140}

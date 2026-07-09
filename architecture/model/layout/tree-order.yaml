@@ -44,7 +44,7 @@ pkg-planning: 3
 pkg-software: 5
 pkg-software-planning: 1
 comp-autoware-behavior-velocity-planner: 3
-comp-crosswalk-module: 5
+comp-crosswalk-module: 6
 pkg-scenarios: 6
 cls-cross-walk-scenario-test: 1
 diag-system-to-software-allocation: 1
@@ -64,7 +64,7 @@ comp-walkwaz: 15
 comp-stop-line: 16
 diag-behavior-velocity-plugin-architecture: 2
 pkg-crosswalk: 17
-enum-collisionstate: 6
+enum-collisionstate: 7
 diag-crosswalk-module-internals: 4
 pkg-software-messages: 2
 diag-software-messages: 1
@@ -88,3 +88,4 @@ pkg-software-control: 6
 comp-operation-mode-transition-manager: 1
 comp-vehicle-cmd-gate: 2
 diag-set-route-engage: 3
+diag-crosswalk-scenario-data-flow: 5

@@ -1,0 +1,69 @@
+# Crosswalk Scenario Data Flow
+diagram:
+  id: diag-crosswalk-scenario-data-flow
+  name: Crosswalk Scenario Data Flow
+  type: sysml:SequenceDiagram
+  package: pkg-crosswalk
+  participants:
+    - elementId: blk-sensing # Sensing (Block)
+    - elementId: blk-perception # Perception (Block)
+    - elementId: blk-planning # Planning (Block)
+    - elementId: blk-control # Control (Block)
+    - elementId: blk-vehicle-interface # Vehicle Interface (Block)
+  interactions:
+    - id: int-009
+      type: fragment
+      fragmentType: loop
+      operands:
+        - interactions:
+            - id: int-001
+              type: message
+              from: blk-sensing
+              to: blk-perception
+              label: pointCloud
+              callType: async
+            - id: int-002
+              type: message
+              from: blk-perception
+              to: blk-perception
+              callType: async
+              label: detect
+            - id: int-003
+              type: message
+              from: blk-perception
+              to: blk-perception
+              callType: async
+              label: track
+            - id: int-004
+              type: message
+              from: blk-perception
+              to: blk-perception
+              callType: async
+              label: predict
+            - id: int-005
+              type: message
+              from: blk-perception
+              to: blk-planning
+              label: PredictedObjects
+              callType: async
+            - id: int-006
+              type: message
+              from: blk-planning
+              to: blk-planning
+              label: path with stop point
+              callType: async
+            - id: int-007
+              type: message
+              from: blk-planning
+              to: blk-control
+              label: decelerating trajectory
+              callType: async
+            - id: int-008
+              type: message
+              from: blk-control
+              to: blk-vehicle-interface
+              label: control command
+              callType: async
+          id: op-1
+          guard: every cycle
+  nextInteractionIdCounter: 10

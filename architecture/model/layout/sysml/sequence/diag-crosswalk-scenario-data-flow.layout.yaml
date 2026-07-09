@@ -1,0 +1,6 @@
+diagramId: diag-crosswalk-scenario-data-flow
+viewport: {zoom: 1, panX: 0, panY: 26}
+elements: {}
+messageGaps:
+  int-007: 1
+  int-001: 1
