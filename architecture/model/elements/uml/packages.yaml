@@ -28,3 +28,4 @@ packages:
   - {id: pkg-launch, name: Launch, type: "uml:Package", package: pkg-autoware-repo}
   - {id: pkg-software-system, name: Software System, type: "uml:Package", package: pkg-software}
   - {id: pkg-software-localization, name: Software Localization, type: "uml:Package", package: pkg-software}
+  - {id: pkg-software-control, name: Software Control, type: "uml:Package", package: pkg-software}

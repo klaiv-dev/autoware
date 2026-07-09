@@ -38,3 +38,5 @@ diagram:
       target: diag-software-package-structure
     - id: dref-diag-localization-initialization
       target: diag-localization-initialization
+    - id: dref-diag-set-route-engage
+      target: diag-set-route-engage
