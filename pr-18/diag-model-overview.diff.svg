@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1214.3724267408074" height="1478" viewBox="0 0 1214.3724267408074 1478"><rect x="0" y="0" width="1214.3724267408074" height="1478" fill="#ffffff"/><text x="16" y="30" font-family="sans-serif" font-size="14" font-weight="bold">Before</text><g transform="translate(25,55)"><defs><marker id='klaiv-arrow-open' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,1 L9,5 L1,9' fill='none' stroke='#666666' stroke-width='1.5' stroke-linejoin='round'/></marker><marker id='klaiv-arrow-filled' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,1 L9,5 L1,9 Z' fill='#666666'/></marker><marker id='klaiv-arrow-hollow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,1 L9,5 L1,9 Z' fill='#ffffff' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-diamond' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#ffffff' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-filled-diamond' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#666666'/></marker><marker id='klaiv-arrow-src-diamond' markerWidth='12' markerHeight='10' refX='1' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#ffffff' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-src-filled-diamond' markerWidth='12' markerHeight='10' refX='1' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#666666'/></marker><marker id='klaiv-arrow-src-circle' markerWidth='12' markerHeight='10' refX='1' refY='5' orient='auto'><circle cx='5' cy='5' r='4' fill='none' stroke='#666666' stroke-width='1.5'/><line x1='5' y1='1.5' x2='5' y2='8.5' stroke='#666666' stroke-width='1.5'/><line x1='1.5' y1='5' x2='8.5' y2='5' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-wedge' markerWidth='14' markerHeight='14' refX='7' refY='7' orient='auto'><polygon points='0,3 14,7 0,11' fill='#666666'/></marker></defs><style>text { font-family: sans-serif; }</style><g transform='translate(31,27)'><rect width='262' height='137' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3FA15C" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2E8248" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <ellipse cx="12.5" cy="14" rx="6.5" ry="4.2"></ellipse>
+  </g></g><text x='131' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Operating an Autonomous Vehicle</text></g><g transform='translate(311,27)'><rect width='262' height='138' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3FA15C" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2E8248" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <ellipse cx="12.5" cy="14" rx="6.5" ry="4.2"></ellipse>
+  </g></g><text x='131' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Developing and Testing Autoware</text></g><g transform='translate(588,26)'><rect width='269' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(107,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#D44E55" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#B83A41" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <line x1="8" y1="12.3" x2="11" y2="12.3"></line>
+  <line x1="8" y1="14.3" x2="16" y2="14.3"></line>
+  <line x1="8" y1="16" x2="16" y2="16"></line>
+  </g></g><text x='134.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Crosswalk Safety Requirements</text></g><g transform='translate(870,25)'><rect width='260' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(102,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='130' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Autoware System Decomposition</text></g><g transform='translate(310,176)'><rect width='263' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(104,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='131.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>System Interfaces</text></g><g transform='translate(591,176)'><rect width='263' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(104,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#6E59D2" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#5642B0" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10.5" width="11" height="7.5"></rect>
+  <rect x="5" y="12.5" width="3" height="2.3"></rect>
+  <rect x="16" y="14" width="3" height="2.3"></rect>
+  </g></g><text x='131.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Autoware Internal Structure</text></g><g transform='translate(31,178)'><rect width='263' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(104,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='131.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Logical Interfaces</text></g><g transform='translate(868,173)'><rect width='265' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(105,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#6E59D2" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#5642B0" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10.5" width="11" height="7.5"></rect>
+  <rect x="5" y="12.5" width="3" height="2.3"></rect>
+  <rect x="16" y="14" width="3" height="2.3"></rect>
+  </g></g><text x='132.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Perception Internals</text></g><g transform='translate(31,330)'><rect width='261.5716736796042' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#2F88CC" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#226DA8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="5.5" y="10" width="13" height="8"></rect>
+  <rect x="7.2" y="12" width="4.3" height="4.3"></rect>
+  <rect x="12.5" y="12" width="4.3" height="4.3"></rect>
+  </g></g><text x='130.7858368398021' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Ego Vehicle Composition</text></g><g transform='translate(308,330)'><rect width='265.5440397234496' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(105,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='132.7720198617248' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>System to Software Allocation</text></g><g transform='translate(587,329)'><rect width='271.5025887892177' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(108,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3D7EDB" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2C62B8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="9" y="10" width="8.5" height="8"></rect>
+  <rect x="6.5" y="11.8" width="3.5" height="2.2"></rect>
+  <rect x="6.5" y="14.8" width="3.5" height="2.2"></rect>
+  </g></g><text x='135.75129439460886' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Planning Pipeline</text></g><g transform='translate(871,326)'><rect width='259.4712041884817' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(102,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3D7EDB" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2C62B8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="9" y="10" width="8.5" height="8"></rect>
+  <rect x="6.5" y="11.8" width="3.5" height="2.2"></rect>
+  <rect x="6.5" y="14.8" width="3.5" height="2.2"></rect>
+  </g></g><text x='129.73560209424085' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Behavior Velocity Plugin Architecture</text></g><g transform='translate(31,482)'><rect width='262.68586387434556' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#5862D6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#4348B2" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <line x1="6.5" y1="12.8" x2="17.5" y2="12.8"></line>
+  </g></g><text x='131.34293193717278' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Crosswalk Module Internals</text></g><g transform='translate(309,479)'><rect width='267.5617269809189' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(106,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#5862D6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#4348B2" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <line x1="6.5" y1="12.8" x2="17.5" y2="12.8"></line>
+  </g></g><text x='133.78086349045944' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Software Messages</text></g><g transform='translate(591,479)'><rect width='269.6090520409467' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(107,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#E0973A" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#C27B26" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <path d="M6.5 11 V9 H11 V11"></path>
+  <rect x="6.5" y="11" width="11" height="7"></rect>
+  </g></g><text x='134.80452602047336' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Software Package Structure</text></g></g><text x="16" y="747" font-family="sans-serif" font-size="14" font-weight="bold">After</text><g transform="translate(25,772)"><defs><marker id='klaiv-arrow-open' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,1 L9,5 L1,9' fill='none' stroke='#666666' stroke-width='1.5' stroke-linejoin='round'/></marker><marker id='klaiv-arrow-filled' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,1 L9,5 L1,9 Z' fill='#666666'/></marker><marker id='klaiv-arrow-hollow' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,1 L9,5 L1,9 Z' fill='#ffffff' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-diamond' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#ffffff' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-filled-diamond' markerWidth='10' markerHeight='10' refX='8' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#666666'/></marker><marker id='klaiv-arrow-src-diamond' markerWidth='12' markerHeight='10' refX='1' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#ffffff' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-src-filled-diamond' markerWidth='12' markerHeight='10' refX='1' refY='5' orient='auto'><path d='M1,5 L5,1 L9,5 L5,9 Z' fill='#666666'/></marker><marker id='klaiv-arrow-src-circle' markerWidth='12' markerHeight='10' refX='1' refY='5' orient='auto'><circle cx='5' cy='5' r='4' fill='none' stroke='#666666' stroke-width='1.5'/><line x1='5' y1='1.5' x2='5' y2='8.5' stroke='#666666' stroke-width='1.5'/><line x1='1.5' y1='5' x2='8.5' y2='5' stroke='#666666' stroke-width='1.5'/></marker><marker id='klaiv-arrow-wedge' markerWidth='14' markerHeight='14' refX='7' refY='7' orient='auto'><polygon points='0,3 14,7 0,11' fill='#666666'/></marker></defs><style>text { font-family: sans-serif; }</style><g transform='translate(31,27)'><rect width='262' height='137' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3FA15C" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2E8248" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <ellipse cx="12.5" cy="14" rx="6.5" ry="4.2"></ellipse>
+  </g></g><text x='131' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Operating an Autonomous Vehicle</text></g><g transform='translate(311,27)'><rect width='262' height='138' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3FA15C" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2E8248" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <ellipse cx="12.5" cy="14" rx="6.5" ry="4.2"></ellipse>
+  </g></g><text x='131' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Developing and Testing Autoware</text></g><g transform='translate(588,26)'><rect width='269' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(107,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#D44E55" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#B83A41" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <line x1="8" y1="12.3" x2="11" y2="12.3"></line>
+  <line x1="8" y1="14.3" x2="16" y2="14.3"></line>
+  <line x1="8" y1="16" x2="16" y2="16"></line>
+  </g></g><text x='134.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Crosswalk Safety Requirements</text></g><g transform='translate(870,25)'><rect width='260' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(102,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='130' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Autoware System Decomposition</text></g><g transform='translate(310,176)'><rect width='263' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(104,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='131.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>System Interfaces</text></g><g transform='translate(591,176)'><rect width='263' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(104,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#6E59D2" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#5642B0" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10.5" width="11" height="7.5"></rect>
+  <rect x="5" y="12.5" width="3" height="2.3"></rect>
+  <rect x="16" y="14" width="3" height="2.3"></rect>
+  </g></g><text x='131.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Autoware Internal Structure</text></g><g transform='translate(31,178)'><rect width='263' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(104,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='131.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Logical Interfaces</text></g><g transform='translate(868,173)'><rect width='265' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(105,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#6E59D2" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#5642B0" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10.5" width="11" height="7.5"></rect>
+  <rect x="5" y="12.5" width="3" height="2.3"></rect>
+  <rect x="16" y="14" width="3" height="2.3"></rect>
+  </g></g><text x='132.5' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Perception Internals</text></g><g transform='translate(31,330)'><rect width='261.5716736796042' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#2F88CC" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#226DA8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="5.5" y="10" width="13" height="8"></rect>
+  <rect x="7.2" y="12" width="4.3" height="4.3"></rect>
+  <rect x="12.5" y="12" width="4.3" height="4.3"></rect>
+  </g></g><text x='130.7858368398021' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Ego Vehicle Composition</text></g><g transform='translate(308,330)'><rect width='265.5440397234496' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(105,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#8A52C6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#7140A8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <path d="M6.5 10 H17.5 V12.4 H6.5 Z" fill="#ffffff" stroke="none"></path>
+  </g></g><text x='132.7720198617248' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>System to Software Allocation</text></g><g transform='translate(587,329)'><rect width='271.5025887892177' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(108,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3D7EDB" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2C62B8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="9" y="10" width="8.5" height="8"></rect>
+  <rect x="6.5" y="11.8" width="3.5" height="2.2"></rect>
+  <rect x="6.5" y="14.8" width="3.5" height="2.2"></rect>
+  </g></g><text x='135.75129439460886' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Planning Pipeline</text></g><g transform='translate(871,326)'><rect width='259.4712041884817' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(102,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#3D7EDB" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#2C62B8" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="9" y="10" width="8.5" height="8"></rect>
+  <rect x="6.5" y="11.8" width="3.5" height="2.2"></rect>
+  <rect x="6.5" y="14.8" width="3.5" height="2.2"></rect>
+  </g></g><text x='129.73560209424085' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Behavior Velocity Plugin Architecture</text></g><g transform='translate(31,482)'><rect width='262.68586387434556' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(103,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#5862D6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#4348B2" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <line x1="6.5" y1="12.8" x2="17.5" y2="12.8"></line>
+  </g></g><text x='131.34293193717278' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Crosswalk Module Internals</text></g><g transform='translate(309,479)'><rect width='267.5617269809189' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(106,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#5862D6" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#4348B2" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="6.5" y="10" width="11" height="8"></rect>
+  <line x1="6.5" y1="12.8" x2="17.5" y2="12.8"></line>
+  </g></g><text x='133.78086349045944' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Software Messages</text></g><g transform='translate(591,479)'><rect width='269.6090520409467' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(107,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#E0973A" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#C27B26" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <path d="M6.5 11 V9 H11 V11"></path>
+  <rect x="6.5" y="11" width="11" height="7"></rect>
+  </g></g><text x='134.80452602047336' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Software Package Structure</text></g><g transform='translate(874,478)'><rect width='259.3724267408075' height='140' rx='8' fill='rgba(217,164,65,0.08)' stroke='#d9a441' stroke-width='1.5'/><g transform='translate(102,18) scale(2.3333333333333335)' fill='none'><path d="M2 3 H19.5 A2.5 2.5 0 0 1 22 5.5 V18.5 A2.5 2.5 0 0 1 19.5 21 H4.5 A2.5 2.5 0 0 1 2 18.5 V3 Z" fill="#E37B36" stroke="none"></path>
+  <path d="M2 3 H9 V6.5 L7 8.5 H2 Z" fill="#C56227" stroke="none"></path>
+  <g stroke="#ffffff" stroke-width="1.8" fill="none">
+  <rect x="7" y="9.5" width="3.5" height="2.2"></rect>
+  <line x1="8.75" y1="11.7" x2="8.75" y2="18.5"></line>
+  <rect x="15" y="9.5" width="3.5" height="2.2"></rect>
+  <line x1="16.75" y1="11.7" x2="16.75" y2="18.5"></line>
+  <line x1="8.75" y1="14.8" x2="16.75" y2="14.8"></line>
+  <path d="M15 13.5 L16.75 14.8 L15 16.1"></path>
+  </g></g><text x='129.68621337040375' y='98' text-anchor='middle' font-size='14' font-weight='600' fill='#222222'>Localization Initialization</text></g></g><line x1="16" y1="725" x2="1198.3724267408074" y2="725" stroke="#cccccc" stroke-width="1"/><g><rect x='1020.5724267408075' y='1454' width='185.79999999999998' height='20' rx='4' ry='4' fill='#f6f8fa' stroke='#d0d7de' stroke-width='1'/><g transform='translate(1028.5724267408075,1458) scale(0.25)'><path d='M24 4 L4 24 L24 24 Z' fill='#5DCAA5'/><path d='M4 24 L24 44 L24 24 Z' fill='#1D9E75'/><path d='M24 4 L44 24 L24 24 Z' fill='#9FE1CB'/><path d='M44 24 L24 44 L24 24 Z' fill='#5DCAA5'/></g><text x='1046.5724267408075' y='1468' font-size='11' font-family='sans-serif'><tspan fill='#24292f' font-weight='600'>Klaiv</tspan><tspan fill='#57606a'> · </tspan><tspan fill='#d97706' font-weight='600'>Preview Release</tspan></text></g></svg>
