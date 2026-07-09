@@ -21,6 +21,10 @@ components:
     package: pkg-software-planning
     tags:
       - core
+    operations:
+      - id: op-set-route
+        name: set_route
+        visibility: public
   - id: comp-behavior-path-planner
     name: Behavior Path Planner
     type: uml:Component
@@ -89,6 +93,12 @@ components:
       - id: op-initialize
         name: initialize
         visibility: public
+      - id: op-set-route-points
+        name: set_route_points
+        visibility: public
+      - id: op-change-to-autonomous
+        name: change_to_autonomous
+        visibility: public
   - id: comp-pose-initializer
     name: pose_initializer
     type: uml:Component
@@ -127,4 +137,24 @@ components:
         visibility: public
       - id: op-resetekf
         name: resetEKF
+        visibility: public
+  - id: comp-operation-mode-transition-manager
+    name: operation_mode_transition_manager
+    type: uml:Component
+    package: pkg-software-control
+    tags:
+      - universe
+    operations:
+      - id: op-change-to-autonomous
+        name: change_to_autonomous
+        visibility: public
+  - id: comp-vehicle-cmd-gate
+    name: vehicle_cmd_gate
+    type: uml:Component
+    package: pkg-software-control
+    tags:
+      - universe
+    operations:
+      - id: op-select-auto
+        name: select_AUTO
         visibility: public

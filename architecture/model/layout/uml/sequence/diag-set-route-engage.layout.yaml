@@ -1,5 +1,5 @@
-diagramId: diag-model-overview
-viewport: {zoom: 0.4754010776784968, panX: 230.3280528576624, panY: 48.11497305803758}
+diagramId: diag-set-route-engage
+viewport: {zoom: 0.7094124477147749, panX: 220.33417092175245, panY: 12.193968919981216}
 elements:
   dref-diag-operating-an-autonomous-vehicle: {x: 31, y: 27, width: 262, height: 137}
   dref-diag-developing-and-testing-autoware: {x: 311, y: 27, width: 262, height: 138}
@@ -18,3 +18,7 @@ elements:
   dref-diag-software-package-structure: {x: 591, y: 479, width: 269.6090520409467, height: 140}
   dref-diag-localization-initialization: {x: 874, y: 478, width: 259.3724267408075, height: 140}
   dref-diag-set-route-engage: {x: 32, y: 633, width: 265.36496246361816, height: 140}
+participantPositions:
+  comp-vehicle-cmd-gate:
+    x: 971
+messageGaps: {}

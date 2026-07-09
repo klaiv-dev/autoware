@@ -1,0 +1,76 @@
+# Set Route & Engage
+diagram:
+  id: diag-set-route-engage
+  name: Set Route & Engage
+  type: uml:SequenceDiagram
+  package: pkg-software-control
+  participants:
+    - elementId: blk-fleet-management-system # Fleet Management System (Block)
+    - elementId: comp-default-adapi # default_adapi (Component)
+    - elementId: comp-mission-planner # Mission Planner (Component)
+    - elementId: comp-operation-mode-transition-manager # operation_mode_transition_manager (Component)
+    - elementId: comp-vehicle-cmd-gate # vehicle_cmd_gate (Component)
+  interactions:
+    - id: int-001 # set_route_points()
+      type: message
+      from: blk-fleet-management-system
+      to: comp-default-adapi
+      operationId: op-set-route-points
+    - id: int-002
+      type: ref
+      diagramId: diag-localization-initialization
+      covers:
+        - comp-default-adapi
+    - id: int-003 # set_route()
+      type: message
+      from: comp-default-adapi
+      to: comp-mission-planner
+      operationId: op-set-route
+    - id: int-004
+      type: return
+      from: comp-mission-planner
+      to: comp-default-adapi
+      label: LaneletRoute
+    - id: int-010
+      type: return
+      from: comp-default-adapi
+      to: blk-fleet-management-system
+      label: SET
+    - id: int-009 # change_to_autonomous()
+      type: message
+      from: blk-fleet-management-system
+      to: comp-default-adapi
+      operationId: op-change-to-autonomous
+    - id: int-005 # change_to_autonomous()
+      type: message
+      from: comp-default-adapi
+      to: comp-operation-mode-transition-manager
+      operationId: op-change-to-autonomous
+    - id: int-008
+      type: fragment
+      fragmentType: opt
+      operands:
+        - interactions:
+            - id: int-006 # select_AUTO()
+              type: message
+              from: comp-operation-mode-transition-manager
+              to: comp-vehicle-cmd-gate
+              operationId: op-select-auto
+            - id: int-007
+              type: return
+              from: comp-vehicle-cmd-gate
+              to: comp-operation-mode-transition-manager
+              label: AUTONOMOUS
+            - id: int-011
+              type: return
+              from: comp-operation-mode-transition-manager
+              to: comp-default-adapi
+              label: AUTONOMOUS
+            - id: int-012
+              type: return
+              from: comp-default-adapi
+              to: blk-fleet-management-system
+              label: AUTONOMOUS
+          guard: engage checks pass
+          id: op-1
+  nextInteractionIdCounter: 13

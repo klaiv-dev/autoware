@@ -84,3 +84,7 @@ comp-pose-initializer: 2
 comp-ndt-scan-matcher: 3
 comp-ekf-localizer: 4
 diag-localization-initialization: 1
+pkg-software-control: 6
+comp-operation-mode-transition-manager: 1
+comp-vehicle-cmd-gate: 2
+diag-set-route-engage: 3
