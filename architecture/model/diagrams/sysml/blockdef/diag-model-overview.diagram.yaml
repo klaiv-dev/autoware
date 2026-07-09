@@ -40,3 +40,5 @@ diagram:
       target: diag-localization-initialization
     - id: dref-diag-set-route-engage
       target: diag-set-route-engage
+    - id: dref-diag-crosswalk-scenario-data-flow
+      target: diag-crosswalk-scenario-data-flow
