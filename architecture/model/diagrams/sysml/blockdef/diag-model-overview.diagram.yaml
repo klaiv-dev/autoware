@@ -36,3 +36,5 @@ diagram:
       target: diag-software-messages
     - id: dref-diag-software-package-structure
       target: diag-software-package-structure
+    - id: dref-diag-localization-initialization
+      target: diag-localization-initialization

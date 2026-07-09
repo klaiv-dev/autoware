@@ -1,5 +1,5 @@
 diagramId: diag-system-interfaces
-viewport: {zoom: 1, panX: 0, panY: -75}
+viewport: {zoom: 1, panX: 0, panY: -231}
 elements:
   ifblk-icontrolcmd: {x: 491, y: 252, width: 251, height: 102}
   ifblk-idetectedobjects: {x: 528, y: 426, width: 249, height: 80}

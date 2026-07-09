@@ -1,5 +1,5 @@
 diagramId: diag-autoware-system-decomposition
-viewport: {zoom: 0.7127710421230555, panX: -97.68030330832732, panY: -43.262714165633895}
+viewport: {zoom: 0.3168224441670926, panX: 235.34952046046743, panY: 87.56355264253705}
 elements:
   blk-ad-api: {x: 595, y: 14, width: 180, height: 80}
   blk-autoware: {x: 191, y: 2, width: 180, height: 80}

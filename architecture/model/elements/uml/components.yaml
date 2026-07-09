@@ -79,3 +79,52 @@ components:
     stereotype: plugin
     tags:
       - core
+  - id: comp-default-adapi
+    name: default_adapi
+    type: uml:Component
+    package: pkg-software-system
+    tags:
+      - core
+    operations:
+      - id: op-initialize
+        name: initialize
+        visibility: public
+  - id: comp-pose-initializer
+    name: pose_initializer
+    type: uml:Component
+    package: pkg-software-localization
+    tags:
+      - core
+    operations:
+      - id: op-initialize
+        name: initialize
+        visibility: public
+      - id: op-use-operator-pose
+        name: use_operator_pose
+        visibility: public
+      - id: op-estimate-pose-from-gnss
+        name: estimate_pose_from_GNSS
+        visibility: public
+  - id: comp-ndt-scan-matcher
+    name: ndt_scan_matcher
+    type: uml:Component
+    package: pkg-software-localization
+    tags:
+      - core
+    operations:
+      - id: op-ndt-align-srv
+        name: ndt_align_srv
+        visibility: public
+  - id: comp-ekf-localizer
+    name: ekf_localizer
+    type: uml:Component
+    package: pkg-software-localization
+    tags:
+      - core
+    operations:
+      - id: op-initialpose3d
+        name: initialPose3D
+        visibility: public
+      - id: op-resetekf
+        name: resetEKF
+        visibility: public
