@@ -1,0 +1,92 @@
+# Localization Initialization
+diagram:
+  id: diag-localization-initialization
+  name: Localization Initialization
+  type: uml:SequenceDiagram
+  package: pkg-software-localization
+  participants:
+    - elementId: actor-safety-operator # Safety Operator (Actor)
+    - elementId: comp-default-adapi # default_adapi (Component)
+    - elementId: comp-pose-initializer # pose_initializer (Component)
+    - elementId: comp-ndt-scan-matcher # ndt_scan_matcher (Component)
+    - elementId: comp-ekf-localizer # ekf_localizer (Component)
+  interactions:
+    - id: int-003 # initialize()
+      type: message
+      from: actor-safety-operator
+      to: comp-default-adapi
+      operationId: op-initialize
+    - id: int-004 # initialize()
+      type: message
+      from: comp-default-adapi
+      to: comp-pose-initializer
+      operationId: op-initialize
+    - id: int-022
+      type: fragment
+      fragmentType: alt
+      operands:
+        - interactions:
+            - id: int-005 # use_operator_pose()
+              type: message
+              from: comp-pose-initializer
+              to: comp-pose-initializer
+              operationId: op-use-operator-pose
+            - id: int-020
+              type: return
+              from: comp-pose-initializer
+              to: comp-pose-initializer
+          guard: pose provided by operator
+          id: op-1
+        - interactions:
+            - id: int-010 # estimate_pose_from_GNSS()
+              type: message
+              from: comp-pose-initializer
+              to: comp-pose-initializer
+              operationId: op-estimate-pose-from-gnss
+            - id: int-011
+              type: return
+              from: comp-pose-initializer
+              to: comp-pose-initializer
+          guard: GNSS auto
+          id: op-2
+    - id: int-012 # ndt_align_srv()
+      type: message
+      from: comp-pose-initializer
+      to: comp-ndt-scan-matcher
+      operationId: op-ndt-align-srv
+    - id: int-013
+      type: return
+      from: comp-ndt-scan-matcher
+      to: comp-pose-initializer
+      label: ALIGNED_POSE
+    - id: int-014 # initialPose3D()
+      type: message
+      from: comp-pose-initializer
+      to: comp-ekf-localizer
+      operationId: op-initialpose3d
+      callType: async
+    - id: int-015 # resetEKF()
+      type: message
+      from: comp-ekf-localizer
+      to: comp-ekf-localizer
+      operationId: op-resetekf
+    - id: int-016
+      type: return
+      from: comp-ekf-localizer
+      to: comp-ekf-localizer
+    - id: int-017
+      type: return
+      from: comp-ekf-localizer
+      to: comp-pose-initializer
+      label: INITIALIZED
+    - id: int-018
+      type: return
+      from: comp-pose-initializer
+      to: comp-default-adapi
+      label: INITIALIZED
+    - id: int-019
+      type: return
+      from: comp-default-adapi
+      to: actor-safety-operator
+      label: INITIALIZED
+  nextInteractionIdCounter: 23

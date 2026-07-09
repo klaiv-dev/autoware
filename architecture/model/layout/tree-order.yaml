@@ -77,3 +77,10 @@ pkg-autoware-core: 4
 pkg-autoware-universe: 5
 pkg-launch: 6
 diag-software-package-structure: 7
+pkg-software-system: 4
+pkg-software-localization: 5
+comp-default-adapi: 1
+comp-pose-initializer: 2
+comp-ndt-scan-matcher: 3
+comp-ekf-localizer: 4
+diag-localization-initialization: 1
