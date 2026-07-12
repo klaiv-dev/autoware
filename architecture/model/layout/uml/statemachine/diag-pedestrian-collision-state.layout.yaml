@@ -1,0 +1,39 @@
+diagramId: diag-pedestrian-collision-state
+viewport: {zoom: 0.6437820002216744, panX: 155.47816589204473, panY: 92.10888182938868}
+elements: {}
+edgeAnchors:
+  t-17: {routeMode: curved, curve: 52.70149606913019, source: {side: S, offset: 0.15568146595519933}}
+  t-19: {routeMode: curved, source: {side: S, offset: 0.23423423423423423}, curve: -48.9272191088684}
+  t-20: {routeMode: curved, source: {side: W, offset: 0.7359150707166938}, curve: -83.43053035716946, target: {side: S, offset: 0.7230602390184697}}
+  t-18: {routeMode: curved, curve: -62.85099505551985, target: {side: W, offset: 0.6339252397218326}}
+  t-21: {routeMode: curved, curve: -50.0373943659148, target: {side: W, offset: 0.43513514544512777}, source: {side: N, offset: 0.7638888888888888}}
+  t-22: {routeMode: curved, curve: -50.778044638858304, target: {side: N, offset: 0.7260767107867081}}
+  t-23: {routeMode: curved, curve: -90.94265160363038, target: {side: E, offset: 0.5992566739485128}}
+  t-24: {routeMode: curved, curve: 23.830152815504874, source: {side: N, offset: 0.3994517298312022}}
+smStatePositions:
+  ps-initial-2:
+    x: -212
+    "y": -65
+  s-yield:
+    x: -17
+    "y": -88
+    w: 294
+    h: 74
+  s-ego-pass-first:
+    x: 806
+    "y": -14
+    w: 222
+    h: 74
+  s-ego-pass-later:
+    x: -187
+    "y": 355
+    w: 244
+    h: 74
+  s-ignore:
+    x: 774
+    "y": 421
+    w: 392
+    h: 74
+  ps-choice:
+    x: 393
+    "y": 179

@@ -90,3 +90,4 @@ comp-vehicle-cmd-gate: 2
 diag-set-route-engage: 3
 diag-crosswalk-scenario-data-flow: 5
 diag-operation-mode: 4
+diag-pedestrian-collision-state: 8

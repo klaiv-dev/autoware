@@ -29,6 +29,7 @@ classes:
             multiplicity: 0..1
           - name: hasTrafficLight
             type: bool
+    linkedDiagram: diag-pedestrian-collision-state
   - id: cls-crosswalkmodule
     name: CrosswalkModule
     type: uml:Class

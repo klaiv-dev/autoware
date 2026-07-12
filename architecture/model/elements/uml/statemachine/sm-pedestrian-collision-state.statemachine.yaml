@@ -1,0 +1,75 @@
+statemachines:
+  - id: sm-pedestrian-collision-state
+    name: Pedestrian Collision State
+    type: uml:StateMachine
+    regions:
+      - id: rgn-pedestrian-collision-state
+        vertices:
+          - id: ps-initial-2
+            kind: pseudostate
+            pseudostateKind: initial
+          - id: s-yield
+            kind: state
+            name: YIELD
+            stateInvariant: "!(TTC + margin < TTV) && !(TTV + margin < TTC)"
+          - id: s-ego-pass-first
+            kind: state
+            name: EGO_PASS_FIRST
+            stateInvariant: TTC + ego_pass_first_margin < TTV
+          - id: s-ego-pass-later
+            kind: state
+            name: EGO_PASS_LATER
+            stateInvariant: TTV + ego_pass_later_margin < TTC
+          - id: s-ignore
+            kind: state
+            name: IGNORE
+            stateInvariant: object stopped, no intent to cross, off-path, or non-conflicting bike/motorcycle
+          - id: ps-choice
+            kind: pseudostate
+            pseudostateKind: choice
+        transitions:
+          - id: t-16
+            source: ps-initial-2
+            target: s-yield
+          - id: t-17
+            source: s-yield
+            target: ps-choice
+            triggers:
+              - kind: change
+                expr: when(collisionPoint updated)
+          - id: t-18
+            source: s-ego-pass-later
+            target: ps-choice
+            triggers:
+              - kind: change
+                expr: when(collisionPoint updated)
+          - id: t-19
+            source: s-ego-pass-first
+            target: ps-choice
+            triggers:
+              - kind: change
+                expr: when(collisionPoint updated)
+          - id: t-20
+            source: s-ignore
+            target: ps-choice
+            triggers:
+              - kind: change
+                expr: when(collisionPoint updated)
+          - id: t-21
+            source: ps-choice
+            target: s-ego-pass-first
+            guard: TTC + ego_pass_first_margin (+0.5 entering) < TTV
+          - id: t-22
+            source: ps-choice
+            target: s-ignore
+            guard: stopped && no-intent-to-cross && off-path] || [bike/motorcycle parallel to ego
+          - id: t-23
+            source: ps-choice
+            target: s-ego-pass-later
+            guard: TTV + ego_pass_later_margin (+0.5 entering) < TTC
+          - id: t-24
+            source: ps-choice
+            target: s-yield
+            guard: else
+    subject: cls-objectinfo
+    package: pkg-crosswalk
