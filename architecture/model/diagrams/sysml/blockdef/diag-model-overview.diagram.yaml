@@ -42,3 +42,5 @@ diagram:
       target: diag-set-route-engage
     - id: dref-diag-crosswalk-scenario-data-flow
       target: diag-crosswalk-scenario-data-flow
+    - id: dref-diag-operation-mode
+      target: diag-operation-mode

@@ -1,0 +1,121 @@
+statemachines:
+  - id: sm-operation-mode
+    name: Operation Mode
+    type: uml:StateMachine
+    regions:
+      - id: rgn-operation-mode
+        vertices:
+          - id: s-stop
+            kind: state
+            name: Stop
+            entry:
+              - disableAutowareControl()
+          - id: ps-initial
+            kind: pseudostate
+            pseudostateKind: initial
+          - id: s-engaging
+            kind: state
+            name: Engaging
+            exit:
+              - stopEngageChecks()
+          - id: s-autonomous
+            kind: state
+            name: Autonomous
+            entry:
+              - enableAutowareControl(); gate.select(AUTO)
+          - id: s-local
+            kind: state
+            name: Local
+            entry:
+              - gate.select(LOCAL)
+          - id: s-remote
+            kind: state
+            name: Remote
+            entry:
+              - gate.select(REMOTE)
+        transitions:
+          - id: t-1
+            source: ps-initial
+            target: s-stop
+          - id: t-2
+            source: s-stop
+            target: s-engaging
+            triggers:
+              - change_to_autonomous
+          - id: t-3
+            source: s-local
+            target: s-engaging
+            triggers:
+              - change_to_autonomous
+          - id: t-4
+            source: s-remote
+            target: s-engaging
+            triggers:
+              - change_to_autonomous
+          - id: t-5
+            source: s-engaging
+            target: s-autonomous
+            guard: dist_to_trajectory ≤ 1.5 m ∧ yaw_deviation ≤ 0.524 rad, stable 0.1 s
+          - id: t-6
+            source: s-engaging
+            target: s-stop
+            triggers:
+              - kind: any
+                label: after(10 s)
+            effect: "timeout: revert"
+          - id: t-7
+            source: s-autonomous
+            target: s-stop
+            effect: disable_autoware_control
+            triggers:
+              - kind: any
+                label: change_to_stop
+          - id: t-8
+            source: s-autonomous
+            target: s-local
+            triggers:
+              - kind: any
+                label: change_to_local
+          - id: t-9
+            source: s-autonomous
+            target: s-remote
+            triggers:
+              - kind: any
+                label: change_to_remote
+          - id: t-10
+            source: s-stop
+            target: s-local
+            triggers:
+              - kind: any
+                label: change_to_local
+          - id: t-11
+            source: s-stop
+            target: s-remote
+            triggers:
+              - kind: any
+                label: change_to_remote
+          - id: t-12
+            source: s-local
+            target: s-stop
+            triggers:
+              - kind: any
+                label: change_to_stop
+          - id: t-13
+            source: s-remote
+            target: s-stop
+            triggers:
+              - kind: any
+                label: change_to_stop
+          - id: t-14
+            source: s-local
+            target: s-remote
+            triggers:
+              - kind: any
+                label: change_to_remote
+          - id: t-15
+            source: s-remote
+            target: s-local
+            triggers:
+              - kind: any
+                label: change_to_local
+    package: pkg-software-control

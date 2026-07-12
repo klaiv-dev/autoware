@@ -1,0 +1,43 @@
+diagramId: diag-operation-mode
+viewport: {zoom: 0.4467154487872257, panX: 143.61224781596016, panY: 120.54810884825176}
+elements: {}
+edgeAnchors:
+  t-5: {target: {side: E, offset: 0.4135134928935283}}
+  t-4: {target: {side: E, offset: 0.4135134928935283}, routeMode: curved, curve: 175.1683729957076, source: {side: N, offset: 0.6789787657041448}}
+  t-9: {target: {side: S, offset: 0.5073037294721482}, routeMode: curved, curve: 115.62772942381733, source: {side: S, offset: 0.5483769817481803}}
+  t-6: {source: {side: N, offset: 0.35582313277799194}, target: {side: N, offset: 0.7574184987489281}, routeMode: curved, curve: 117.82062919118658}
+  t-8: {routeMode: curved, source: {side: S, offset: 0.9090922100152463}, target: {side: S, offset: 0.32592819579817844}, curve: 62.28748509390136}
+  t-15: {routeMode: curved, curve: -87.15161034144656, target: {side: S, offset: 0.6692782682621717}, source: {side: W, offset: 0.22342072084272385}}
+  t-7: {routeMode: curved, curve: -45.88438393043537}
+  t-14: {routeMode: curved, curve: -84.5075250821688, source: {side: E, offset: 0.8036396346050718}, target: {side: N, offset: 0.49763112186484476}}
+  t-11: {routeMode: curved, curve: 112.8701785850881, target: {side: W, offset: 0.975567394519183}, source: {side: S, offset: 0.7657487136666893}}
+  t-3: {routeMode: curved, curve: 23.58517633893988, source: {side: N, offset: 0.8738169497495424}, target: {side: S, offset: 0.8830849978583696}}
+  t-2: {routeMode: curved, curve: -76.9865057242098, target: {side: W, offset: 0.5131079128923633}}
+  t-12: {routeMode: curved, curve: 89.08604851515248, source: {side: N, offset: 0.16904574837608216}, target: {side: E, offset: 0.47617448369790394}}
+  t-13: {routeMode: curved, source: {side: W, offset: 0.4969286021796184}, curve: 45.669685308605324}
+smStatePositions:
+  s-initial:
+    x: 447
+    "y": 120
+  ps-initial:
+    x: 238
+    "y": -51
+  s-stop:
+    x: 317
+    "y": 66
+    w: 212
+    h: 74
+  s-engaging:
+    x: 928
+    "y": -86
+  s-autonomous:
+    x: 299
+    "y": 393
+    w: 256
+    h: 74
+  s-local:
+    x: 1052
+    "y": 167
+  s-remote:
+    x: 1154
+    "y": 511

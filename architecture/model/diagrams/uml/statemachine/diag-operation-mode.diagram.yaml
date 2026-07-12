@@ -1,0 +1,7 @@
+# Operation Mode
+diagram:
+  id: diag-operation-mode
+  name: Operation Mode
+  type: uml:StateMachineDiagram
+  package: pkg-software-control
+  machine: sm-operation-mode
