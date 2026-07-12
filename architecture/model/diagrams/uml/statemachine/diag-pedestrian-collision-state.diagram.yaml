@@ -1,0 +1,9 @@
+# Pedestrian Collision State
+diagram:
+  id: diag-pedestrian-collision-state
+  name: Pedestrian Collision State
+  type: uml:StateMachineDiagram
+  package: pkg-crosswalk
+  owner: cls-objectinfo
+  subject: cls-objectinfo
+  machine: sm-pedestrian-collision-state
