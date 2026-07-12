@@ -1,0 +1,36 @@
+diagramId: diag-mrm-state
+viewport: {zoom: 1, panX: 23, panY: -8}
+elements: {}
+edgeAnchors:
+  t-26: {routeMode: curved, curve: -44.72109004808356, target: {side: W, offset: 0.17027024965028506}, source: {side: E, offset: 0.3499999727521624}}
+  t-27: {routeMode: curved, curve: -46.97750582400739, target: {side: E, offset: 0.6714285441807338}}
+  t-28: {routeMode: curved, source: {side: S, offset: 0.8333333333333334}, target: {side: E, offset: 0.45714282989501953}}
+  t-30: {routeMode: curved, source: {side: S, offset: 0.4642857142857143}}
+  t-29: {routeMode: curved, curve: -18.75481825265573}
+smStatePositions:
+  ps-initial-3:
+    x: 68
+    "y": 95
+  s-n:
+    x: 189
+    "y": 82
+  s-normal:
+    x: 187
+    "y": 73
+  s-mrm:
+    x: 434
+    "y": 166
+  s-mrm-succeeded:
+    x: 263
+    "y": 292
+  s-mrm-failed:
+    x: 611
+    "y": 333
+  s-final:
+    x: 502
+    "y": 419
+  s-mrm-operating:
+    x: 585
+    "y": 103
+    w: 204
+    h: 74

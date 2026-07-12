@@ -1,0 +1,59 @@
+statemachines:
+  - id: sm-mrm-state
+    name: MRM State
+    type: uml:StateMachine
+    regions:
+      - id: rgn-mrm-state
+        vertices:
+          - id: ps-initial-3
+            kind: pseudostate
+            pseudostateKind: initial
+          - id: s-normal
+            kind: state
+            name: NORMAL
+          - id: s-mrm-operating
+            kind: state
+            name: MRM_OPERATING
+            entry:
+              - executeSelectedMrm( )
+          - id: s-mrm-succeeded
+            kind: state
+            name: MRM_SUCCEEDED
+          - id: s-mrm-failed
+            kind: state
+            name: MRM_FAILED
+          - id: s-final
+            kind: finalState
+        transitions:
+          - id: t-25
+            source: ps-initial-3
+            target: s-normal
+          - id: t-26
+            source: s-normal
+            target: s-mrm-operating
+            triggers:
+              - kind: any
+                label: emergency detected
+          - id: t-27
+            source: s-mrm-operating
+            target: s-mrm-succeeded
+            triggers:
+              - kind: any
+                label: behavior completed
+          - id: t-28
+            source: s-mrm-operating
+            target: s-mrm-failed
+            triggers:
+              - kind: any
+                label: behavior failed
+          - id: t-29
+            source: s-mrm-succeeded
+            target: s-normal
+            triggers:
+              - kind: any
+                label: not emergency
+          - id: t-30
+            source: s-mrm-failed
+            target: s-final
+    subject: blk-safety-system
+    package: pkg-subsystems

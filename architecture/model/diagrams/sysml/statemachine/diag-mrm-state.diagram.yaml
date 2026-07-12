@@ -1,0 +1,9 @@
+# MRM State
+diagram:
+  id: diag-mrm-state
+  name: MRM State
+  type: sysml:StateMachineDiagram
+  package: pkg-subsystems
+  subject: blk-safety-system
+  machine: sm-mrm-state
+  owner: blk-safety-system
