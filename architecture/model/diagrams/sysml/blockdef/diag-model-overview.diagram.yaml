@@ -44,3 +44,7 @@ diagram:
       target: diag-crosswalk-scenario-data-flow
     - id: dref-diag-operation-mode
       target: diag-operation-mode
+    - id: dref-diag-pedestrian-collision-state
+      target: diag-pedestrian-collision-state
+    - id: dref-diag-mrm-state
+      target: diag-mrm-state
