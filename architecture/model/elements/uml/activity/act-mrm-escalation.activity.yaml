@@ -1,0 +1,41 @@
+activities:
+  - id: act-mrm-escalation
+    name: MRM Escalation
+    type: uml:Activity
+    subject: blk-safety-system
+    package: pkg-subsystems
+    partitions:
+      - {id: pt-comp-mrm-handler, represents: comp-mrm-handler}
+      - {id: pt-comp-mrm-comfortable-stop-operator, represents: comp-mrm-comfortable-stop-operator}
+      - {id: pt-comp-mrm-emergency-stop-operator, represents: comp-mrm-emergency-stop-operator}
+      - {id: pt-comp-vehicle-cmd-gate, represents: comp-vehicle-cmd-gate}
+    nodes:
+      - {id: act-initial-2, name: "", type: initial, partition: pt-comp-mrm-handler}
+      - {id: act-failure-detected, name: Failure detected, type: action, partition: pt-comp-mrm-handler}
+      - {id: act-pull-over-available, name: "pull over available?", type: decision, partition: pt-comp-mrm-handler}
+      - {id: act-comfortable-stop-available, name: "comfortable stop available?", type: decision, partition: pt-comp-mrm-handler}
+      - {id: act-execute-pull-over, name: Execute pull over, type: action, partition: pt-comp-mrm-handler}
+      - {id: act-execute-comfortable-stop, name: Execute comfortable stop, type: action, partition: pt-comp-mrm-comfortable-stop-operator}
+      - {id: act-execute-emergency-stop, name: Execute emergency stop, type: action, partition: pt-comp-mrm-emergency-stop-operator}
+      - {id: act-fork, name: "", type: fork, partition: pt-comp-mrm-comfortable-stop-operator}
+      - {id: act-publish-mrm-command, name: Publish MRM command, type: action, partition: pt-comp-vehicle-cmd-gate}
+      - {id: act-notify-ad-api-mrmstate, name: Notify AD API (MrmState), type: action, partition: pt-comp-mrm-handler}
+      - {id: act-join, name: "", type: join, partition: pt-comp-mrm-handler}
+      - {id: act-final-4, name: "", type: final, partition: pt-comp-mrm-handler}
+      - {id: act-merge, name: "", type: merge, partition: pt-comp-mrm-comfortable-stop-operator}
+    flows:
+      - {id: f-17, from: act-initial-2, to: act-failure-detected}
+      - {id: f-18, from: act-failure-detected, to: act-pull-over-available}
+      - {id: f-19, from: act-pull-over-available, to: act-execute-pull-over, guard: available}
+      - {id: f-20, from: act-pull-over-available, to: act-comfortable-stop-available, guard: not available}
+      - {id: f-21, from: act-comfortable-stop-available, to: act-execute-comfortable-stop, guard: available}
+      - {id: f-22, from: act-comfortable-stop-available, to: act-execute-emergency-stop, guard: else}
+      - {id: f-26, from: act-fork, to: act-publish-mrm-command}
+      - {id: f-27, from: act-fork, to: act-notify-ad-api-mrmstate}
+      - {id: f-28, from: act-publish-mrm-command, to: act-join}
+      - {id: f-29, from: act-notify-ad-api-mrmstate, to: act-join}
+      - {id: f-30, from: act-join, to: act-final-4}
+      - {id: f-25, from: act-execute-pull-over, to: act-merge}
+      - {id: f-24, from: act-execute-comfortable-stop, to: act-merge}
+      - {id: f-23, from: act-execute-emergency-stop, to: act-merge}
+      - {id: f-31, from: act-merge, to: act-fork}

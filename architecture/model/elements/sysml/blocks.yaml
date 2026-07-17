@@ -194,7 +194,7 @@ blocks:
         name: vectorMap
         kind: proxy
         typeRef: ifblk-imap
-  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-subsystems, stereotype: subsystem, linkedDiagram: diag-mrm-state}
+  - {id: blk-safety-system, name: Safety System, type: "sysml:Block", package: pkg-subsystems, stereotype: subsystem, linkedDiagram: diag-mrm-escalation}
   - {id: blk-ad-api, name: AD API, type: "sysml:Block", package: pkg-subsystems, stereotype: subsystem}
   - id: blk-ego-vehicle
     name: Ego Vehicle

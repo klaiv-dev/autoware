@@ -1,0 +1,9 @@
+# MRM Escalation
+diagram:
+  id: diag-mrm-escalation
+  name: MRM Escalation
+  type: sysml:ActivityDiagram
+  package: pkg-subsystems
+  owner: blk-safety-system
+  activity: act-mrm-escalation
+  orientation: vertical

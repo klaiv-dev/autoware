@@ -1,0 +1,74 @@
+diagramId: diag-mrm-escalation
+viewport: {zoom: 0.6487744371485072, panX: -15.261867498231823, panY: -188.93301741450966}
+elements: {}
+edgeAnchors:
+  f-22: {target: {side: W, offset: 0.19922589880566358}, source: {side: E, offset: 0.49321828089352837}, curve: -62.12455187409931}
+  f-25: {routeMode: curved, curve: -59.50981111035422, target: {side: N, offset: 0.4618534873229578}, source: {side: E, offset: 0.3700871489471898}}
+  f-24: {source: {side: E, offset: 0.4887205467087649}, curve: -1.518450232801574, target: {side: W, offset: 0.45833237501214324}}
+  f-23: {routeMode: curved, curve: -23.281684118010787, target: {side: E, offset: 0.4262205467087649}, source: {side: W, offset: 0.45474052789982267}}
+  f-26: {routeMode: curved, target: {side: W, offset: 0.42042139336903733}}
+  f-27: {routeMode: curved, target: {side: E, offset: 0.3932242833913098}, curve: -36.24345323163422, source: {side: S, offset: 0.14494458748318542}}
+  f-28: {routeMode: curved, curve: 45.919537435828744}
+  f-21: {source: {side: S, offset: 0.469671616713162}}
+actNodePositions:
+  act-initial-2:
+    x: 107
+    "y": 82
+  act-failure-detected:
+    x: 44
+    "y": 156
+  act-pull-over-available:
+    x: 41
+    "y": 266
+    w: 151
+    h: 67
+  act-comfortable-stop-available:
+    x: 32
+    "y": 402
+    w: 169
+    h: 102
+  act-execute-pull-over:
+    x: 286
+    "y": 279
+  act-execute-comfortable-stop:
+    x: 464
+    "y": 560
+    w: 171
+    h: 48
+  act-execute-emergency-stop:
+    x: 1309
+    "y": 466
+    w: 172
+    h: 48
+  act-fork:
+    x: 735
+    "y": 683
+  act-publish-mrm-command:
+    x: 1020
+    "y": 822
+    w: 169
+    h: 48
+  act-notify-ad-api-mrmstate:
+    x: 37
+    "y": 746
+    w: 195
+    h: 48
+  act-join:
+    x: 65
+    "y": 936
+  act-final-4:
+    x: 122
+    "y": 1047
+  act-merge:
+    x: 732
+    "y": 563
+actLaneSizes:
+  pt-comp-mrm-comfortable-stop-operator: 529
+  pt-comp-vehicle-cmd-gate: 265
+  pt-comp-mrm-handler: 430
+  pt-comp-mrm-emergency-stop-operator: 273
+actPartitionOrder:
+  - pt-comp-mrm-handler
+  - pt-comp-mrm-comfortable-stop-operator
+  - pt-comp-vehicle-cmd-gate
+  - pt-comp-mrm-emergency-stop-operator
