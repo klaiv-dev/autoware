@@ -1,5 +1,5 @@
 diagramId: diag-model-overview
-viewport: {zoom: 0.900805023511982, panX: -30.47009324679493, panY: -540.890314192796}
+viewport: {zoom: 0.33584071471627835, panX: 311.5781721072355, panY: 51.60398213209304}
 elements:
   dref-diag-operating-an-autonomous-vehicle: {x: 31, y: 27, width: 262, height: 137}
   dref-diag-developing-and-testing-autoware: {x: 311, y: 27, width: 262, height: 138}
@@ -23,3 +23,4 @@ elements:
   dref-diag-pedestrian-collision-state: {x: 875, y: 629, width: 257.70285714285717, height: 140.8753737142857}
   dref-diag-mrm-state: {x: 34, y: 789, width: 265.76575970352155, height: 140}
   dref-diag-vehicle-deployment: {x: 313, y: 789, width: 266.6070885862482, height: 140}
+  dref-diag-crosswalk-yield-decision: {x: 596, y: 789, width: 266.37568099597064, height: 140}

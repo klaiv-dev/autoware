@@ -1,0 +1,68 @@
+diagramId: diag-crosswalk-yield-decision
+viewport: {zoom: 0.34500000693581323, panX: 338.0325047753074, panY: 44.129999680952594}
+elements: {}
+edgeAnchors:
+  f-11: {routeMode: curved, curve: -56.699719828979156, source: {side: W, offset: 0.48695649962494336}, target: {side: S, offset: 0.5239506609270429}}
+  f-12: {target: {side: W, offset: 0.5124999682108561}, source: {side: E, offset: 0.48695649962494336}, curve: 112.99742358438739}
+  f-14: {routeMode: curved, curve: -112.46014282489892, target: {side: S, offset: 0.25200967198722485}, source: {side: W, offset: 0.5508252319313254}}
+actNodePositions:
+  act-initial:
+    x: 414
+    "y": 46
+  act-intersect-ego-path-with-crosswalk-polygon:
+    x: 278
+    "y": 122
+    w: 289
+    h: 48
+  act-ego-path-intersects-crosswalk:
+    x: 308
+    "y": 215
+    w: 230
+    h: 88
+  act-apply-occlusion-slow-down:
+    x: 307
+    "y": 373
+    w: 232
+    h: 48
+  act-compute-attention-area:
+    x: 311
+    "y": 469
+    w: 225
+    h: 48
+  act-final:
+    x: 668
+    "y": 247
+  act-red-signal-for-pedestrians:
+    x: 327
+    "y": 568
+    w: 195
+    h: 79
+  act-ttc-margin-ttv:
+    x: 35
+    "y": 571
+    w: 169
+    h: 65
+  act-ttv-margin-ttc:
+    x: 30
+    "y": 729
+    w: 176
+    h: 69
+  act-insert-zero-velocity-stop-point:
+    x: 315
+    "y": 738
+    w: 223
+    h: 48
+  act-plan-go:
+    x: -264
+    "y": 582
+  act-rtc-gate-operator-cleared:
+    x: 321
+    "y": 845
+    w: 208
+    h: 81
+  act-final-2:
+    x: -374
+    "y": 596
+  act-final-3:
+    x: 733
+    "y": 882
