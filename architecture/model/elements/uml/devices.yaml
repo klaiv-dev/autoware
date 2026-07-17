@@ -1,0 +1,4 @@
+devices:
+  - {id: dev-ad-computer, name: AD Computer, type: "uml:Device", package: pkg-deployment, description: Jetson AGX Orin-class ECU}
+  - {id: dev-dbw-controller, name: DBW Controller, type: "uml:Device", package: pkg-deployment}
+  - {id: dev-remote-operations-center, name: Remote Operations Center, type: "uml:Device", package: pkg-deployment}

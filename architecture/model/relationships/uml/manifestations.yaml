@@ -1,4 +1,19 @@
-# Klaiv relationship file — manifestations
-# Add entries below. Each entry must have: id, type, source, target.
-
-manifestations: []
+manifestations:
+  - id: manif-art-autoware-universe-cuda-image-to-comp-crosswalk-module
+    type: uml:Manifestation
+    source:
+      id: art-autoware-universe-cuda-image
+    target:
+      id: comp-crosswalk-module
+  - id: manif-art-autoware-universe-cuda-image-to-comp-autoware-behavior-velocity-planner
+    type: uml:Manifestation
+    source:
+      id: art-autoware-universe-cuda-image
+    target:
+      id: comp-autoware-behavior-velocity-planner
+  - id: manif-art-autoware-universe-cuda-image-to-comp-vehicle-cmd-gate
+    type: uml:Manifestation
+    source:
+      id: art-autoware-universe-cuda-image
+    target:
+      id: comp-vehicle-cmd-gate

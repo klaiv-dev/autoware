@@ -1,1 +1,31 @@
-deployments: []
+deployments:
+  - id: dply-art-autoware-universe-cuda-image-to-execenv-docker-runtime
+    type: uml:Deployment
+    source:
+      id: art-autoware-universe-cuda-image
+    target:
+      id: execenv-docker-runtime
+  - id: dply-art-launch-config-to-execenv-docker-runtime
+    type: uml:Deployment
+    source:
+      id: art-launch-config
+    target:
+      id: execenv-docker-runtime
+  - id: dply-art-lanelet2-map-osm-to-execenv-docker-runtime
+    type: uml:Deployment
+    source:
+      id: art-lanelet2-map-osm
+    target:
+      id: execenv-docker-runtime
+  - id: dply-art-ml-models-to-execenv-docker-runtime
+    type: uml:Deployment
+    source:
+      id: art-ml-models
+    target:
+      id: execenv-docker-runtime
+  - id: dply-art-pointcloud-map-pcd-to-execenv-docker-runtime
+    type: uml:Deployment
+    source:
+      id: art-pointcloud-map-pcd
+    target:
+      id: execenv-docker-runtime

@@ -48,3 +48,5 @@ diagram:
       target: diag-pedestrian-collision-state
     - id: dref-diag-mrm-state
       target: diag-mrm-state
+    - id: dref-diag-vehicle-deployment
+      target: diag-vehicle-deployment

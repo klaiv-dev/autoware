@@ -1,0 +1,30 @@
+# Vehicle Deployment
+diagram:
+  id: diag-vehicle-deployment
+  name: Vehicle Deployment
+  type: uml:DeploymentDiagram
+  package: pkg-deployment
+  elements:
+    - elementId: art-autoware-universe-cuda-image # autoware:universe-cuda image (Artifact)
+    - elementId: art-lanelet2-map-osm # lanelet2 map .osm (Artifact)
+    - elementId: art-launch-config # launch config (Artifact)
+    - elementId: art-ml-models # ML models (Artifact)
+    - elementId: art-pointcloud-map-pcd # pointcloud map .pcd (Artifact)
+    - elementId: comp-autoware-behavior-velocity-planner # Behavior Velocity Planner (Component)
+    - elementId: comp-crosswalk-module # Crosswalk Module (Component)
+    - elementId: comp-vehicle-cmd-gate # vehicle_cmd_gate (Component)
+    - elementId: dev-ad-computer # AD Computer (Device)
+    - elementId: dev-dbw-controller # DBW Controller (Device)
+    - elementId: dev-remote-operations-center # Remote Operations Center (Device)
+    - elementId: execenv-docker-runtime # Docker Runtime (ExecutionEnvironment)
+  relationships:
+    - dply-art-autoware-universe-cuda-image-to-execenv-docker-runtime # autoware:universe-cuda image → Docker Runtime (Deployment)
+    - manif-art-autoware-universe-cuda-image-to-comp-autoware-behavior-velocity-planner # autoware:universe-cuda image → Behavior Velocity Planner (Manifestation)
+    - manif-art-autoware-universe-cuda-image-to-comp-crosswalk-module # autoware:universe-cuda image → Crosswalk Module (Manifestation)
+    - manif-art-autoware-universe-cuda-image-to-comp-vehicle-cmd-gate # autoware:universe-cuda image → vehicle_cmd_gate (Manifestation)
+    - dply-art-lanelet2-map-osm-to-execenv-docker-runtime # lanelet2 map .osm → Docker Runtime (Deployment)
+    - dply-art-launch-config-to-execenv-docker-runtime # launch config → Docker Runtime (Deployment)
+    - dply-art-ml-models-to-execenv-docker-runtime # ML models → Docker Runtime (Deployment)
+    - dply-art-pointcloud-map-pcd-to-execenv-docker-runtime # pointcloud map .pcd → Docker Runtime (Deployment)
+    - iflow-dev-ad-computer-to-dev-dbw-controller # AD Computer → DBW Controller (InformationFlow)
+    - iflow-dev-ad-computer-to-dev-remote-operations-center # AD Computer → Remote Operations Center (InformationFlow)
