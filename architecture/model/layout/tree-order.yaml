@@ -94,3 +94,4 @@ diag-pedestrian-collision-state: 8
 diag-mrm-state: 4
 pkg-deployment: 7
 diag-vehicle-deployment: 1
+diag-crosswalk-yield-decision: 8

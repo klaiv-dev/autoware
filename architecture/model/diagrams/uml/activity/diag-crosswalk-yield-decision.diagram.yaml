@@ -1,0 +1,7 @@
+# Crosswalk Yield Decision
+diagram:
+  id: diag-crosswalk-yield-decision
+  name: Crosswalk Yield Decision
+  type: uml:ActivityDiagram
+  package: pkg-crosswalk
+  activity: act-crosswalk-yield-decision

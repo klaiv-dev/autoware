@@ -1,0 +1,38 @@
+activities:
+  - id: act-crosswalk-yield-decision
+    name: Crosswalk Yield Decision
+    type: uml:Activity
+    package: pkg-crosswalk
+    partitions: []
+    nodes:
+      - {id: act-initial, name: "", type: initial}
+      - {id: act-intersect-ego-path-with-crosswalk-polygon, name: Intersect ego path with crosswalk polygon, type: action}
+      - {id: act-ego-path-intersects-crosswalk, name: "ego path intersects crosswalk?", type: decision}
+      - {id: act-apply-occlusion-slow-down, name: Apply occlusion slow-down, type: action}
+      - {id: act-compute-attention-area, name: Compute attention area, type: action}
+      - {id: act-final, name: "", type: final}
+      - {id: act-red-signal-for-pedestrians, name: "red signal for pedestrians?", type: decision}
+      - {id: act-ttc-margin-ttv, name: "TTC + margin < TTV?", type: decision}
+      - {id: act-ttv-margin-ttc, name: "TTV + margin < TTC?", type: decision}
+      - {id: act-insert-zero-velocity-stop-point, name: Insert zero-velocity stop point, type: action}
+      - {id: act-plan-go, name: Plan go, type: action}
+      - {id: act-rtc-gate-operator-cleared, name: "RTC gate: operator cleared?", type: decision}
+      - {id: act-final-2, name: "", type: final}
+      - {id: act-final-3, name: "", type: final}
+    flows:
+      - {id: f-1, from: act-initial, to: act-intersect-ego-path-with-crosswalk-polygon}
+      - {id: f-2, from: act-intersect-ego-path-with-crosswalk-polygon, to: act-ego-path-intersects-crosswalk}
+      - {id: f-3, from: act-ego-path-intersects-crosswalk, to: act-final, guard: no intersection}
+      - {id: f-4, from: act-ego-path-intersects-crosswalk, to: act-apply-occlusion-slow-down, guard: intersects}
+      - {id: f-5, from: act-apply-occlusion-slow-down, to: act-compute-attention-area}
+      - {id: f-6, from: act-compute-attention-area, to: act-red-signal-for-pedestrians}
+      - {id: f-7, from: act-red-signal-for-pedestrians, to: act-insert-zero-velocity-stop-point, guard: red (yield)}
+      - {id: f-8, from: act-red-signal-for-pedestrians, to: act-ttc-margin-ttv, guard: no red}
+      - {id: f-9, from: act-ttc-margin-ttv, to: act-plan-go, guard: yes (ego pass first)}
+      - {id: f-10, from: act-ttc-margin-ttv, to: act-ttv-margin-ttc, guard: no}
+      - {id: f-11, from: act-ttv-margin-ttc, to: act-plan-go, guard: yes (ego pass later)}
+      - {id: f-12, from: act-ttv-margin-ttc, to: act-insert-zero-velocity-stop-point, guard: no (yield)}
+      - {id: f-13, from: act-insert-zero-velocity-stop-point, to: act-rtc-gate-operator-cleared}
+      - {id: f-14, from: act-rtc-gate-operator-cleared, to: act-plan-go, guard: cleared (operator override)}
+      - {id: f-15, from: act-plan-go, to: act-final-2}
+      - {id: f-16, from: act-rtc-gate-operator-cleared, to: act-final-3, guard: not cleared (stop applied)}
