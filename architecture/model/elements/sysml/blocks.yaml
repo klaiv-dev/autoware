@@ -219,6 +219,19 @@ blocks:
         typeRef: blk-autoware-runtime
         aggregation: composite
     linkedDiagram: diag-ego-vehicle-composition
+    attributes:
+      - id: att-vehiclemodel
+        name: vehicleModel
+        visibility: public
+        type: string
+      - id: att-wheelbase
+        name: wheelBase
+        visibility: public
+        type: uint
+      - id: att-vehicleid
+        name: vehicleId
+        visibility: public
+        type: string
   - id: blk-sensor-kit
     name: Sensor Kit
     type: sysml:Block
@@ -255,10 +268,74 @@ blocks:
         typeRef: ifblk-ipointcloud-2
   - {id: blk-lidar, name: LIDAR, type: "sysml:Block", package: pkg-system-decomposition}
   - {id: blk-camera, name: Camera, type: "sysml:Block", package: pkg-system-decomposition}
-  - {id: blk-gnss, name: GNSS, type: "sysml:Block", package: pkg-system-decomposition}
-  - {id: blk-imu, name: IMU, type: "sysml:Block", package: pkg-system-decomposition}
-  - {id: blk-vls-128, name: VLS-128, type: "sysml:Block", package: pkg-system-decomposition}
-  - {id: blk-vlp-16, name: VLP-16, type: "sysml:Block", package: pkg-system-decomposition}
+  - id: blk-gnss
+    name: GNSS
+    type: sysml:Block
+    package: pkg-system-decomposition
+    attributes:
+      - id: att-vendor
+        name: vendor
+        visibility: public
+        type: string
+      - id: att-model
+        name: model
+        visibility: public
+        type: string
+      - id: att-frameid
+        name: frameId
+        visibility: public
+        type: string
+  - id: blk-imu
+    name: IMU
+    type: sysml:Block
+    package: pkg-system-decomposition
+    attributes:
+      - id: att-vendor
+        name: vendor
+        visibility: public
+        type: string
+      - id: att-model
+        name: model
+        visibility: public
+        type: string
+      - id: att-frameid
+        name: frameId
+        visibility: public
+        type: string
+  - id: blk-vls-128
+    name: VLS-128
+    type: sysml:Block
+    package: pkg-system-decomposition
+    attributes:
+      - id: att-mountposition
+        name: mountPosition
+        visibility: public
+        type: string
+      - id: att-frameid
+        name: frameId
+        visibility: public
+        type: string
+      - id: att-ipaddress
+        name: ipAddress
+        visibility: public
+        type: string
+  - id: blk-vlp-16
+    name: VLP-16
+    type: sysml:Block
+    package: pkg-system-decomposition
+    attributes:
+      - id: att-mountposition
+        name: mountPosition
+        visibility: public
+        type: string
+      - id: att-frameid
+        name: frameId
+        visibility: public
+        type: string
+      - id: att-ipaddress
+        name: ipAddress
+        visibility: public
+        type: string
   - id: blk-trajectory
     name: Trajectory
     type: sysml:Block

@@ -1,0 +1,9 @@
+diagramId: diag-sample-vehicle-configuration
+viewport: {zoom: 1, panX: 218, panY: -36}
+elements:
+  inst-leftlidar: {x: 37, y: 297, width: 180, height: 102}
+  inst-rightlidar: {x: 227, y: 298, width: 180, height: 102}
+  inst-samplevehicle: {x: 226, y: 49, width: 180, height: 102}
+  inst-tamagawaimu: {x: 604, y: 300, width: 180, height: 102}
+  inst-toplidar: {x: -154, y: 296, width: 180, height: 102}
+  inst-ubloxgnss: {x: 416, y: 300, width: 180, height: 102}
