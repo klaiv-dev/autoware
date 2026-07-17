@@ -52,3 +52,5 @@ diagram:
       target: diag-vehicle-deployment
     - id: dref-diag-crosswalk-yield-decision
       target: diag-crosswalk-yield-decision
+    - id: dref-diag-mrm-escalation
+      target: diag-mrm-escalation

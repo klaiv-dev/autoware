@@ -158,3 +158,6 @@ components:
       - id: op-select-auto
         name: select_AUTO
         visibility: public
+  - {id: comp-mrm-emergency-stop-operator, name: mrm_emergency_stop_operator, type: "uml:Component", package: pkg-software-control}
+  - {id: comp-mrm-handler, name: mrm_handler, type: "uml:Component", package: pkg-software-control}
+  - {id: comp-mrm-comfortable-stop-operator, name: mrm_comfortable_stop_operator, type: "uml:Component", package: pkg-software-control}
