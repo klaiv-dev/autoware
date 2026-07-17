@@ -1,5 +1,73 @@
-# Klaiv element file — instances
-# Add entries below. Each entry must have: id, name, type.
-# See the bundled UML profile for allowed types and required fields.
-
-instances: []
+instances:
+  - id: inst-toplidar
+    name: topLidar
+    type: uml:InstanceSpecification
+    package: pkg-ego-vehicle
+    classifierId: blk-vls-128
+    slots:
+      - definingFeature: att-mountposition
+        value: top
+      - definingFeature: att-frameid
+        value: velodyne_top
+      - definingFeature: att-ipaddress
+        value: 192.168.1.201
+  - id: inst-leftlidar
+    name: leftLidar
+    type: uml:InstanceSpecification
+    package: pkg-ego-vehicle
+    classifierId: blk-vlp-16
+    slots:
+      - definingFeature: att-mountposition
+        value: left
+      - definingFeature: att-frameid
+        value: velodyne_left
+      - definingFeature: att-ipaddress
+        value: 192.168.1.202
+  - id: inst-rightlidar
+    name: rightLidar
+    type: uml:InstanceSpecification
+    package: pkg-ego-vehicle
+    classifierId: blk-vlp-16
+    slots:
+      - definingFeature: att-mountposition
+        value: right
+      - definingFeature: att-frameid
+        value: velodyne_right
+      - definingFeature: att-ipaddress
+        value: 192.168.1.203
+  - id: inst-ubloxgnss
+    name: ubloxGnss
+    type: uml:InstanceSpecification
+    package: pkg-ego-vehicle
+    classifierId: blk-gnss
+    slots:
+      - definingFeature: att-vendor
+        value: u-blox
+      - definingFeature: att-model
+        value: ZED-F9P
+      - definingFeature: att-frameid
+        value: gnss_link
+  - id: inst-tamagawaimu
+    name: tamagawaIMU
+    type: uml:InstanceSpecification
+    package: pkg-ego-vehicle
+    classifierId: blk-imu
+    slots:
+      - definingFeature: att-vendor
+        value: Tamagawa
+      - definingFeature: att-model
+        value: TAG264
+      - definingFeature: att-frameid
+        value: imu_link
+  - id: inst-samplevehicle
+    name: sampleVehicle
+    type: uml:InstanceSpecification
+    package: pkg-ego-vehicle
+    classifierId: blk-ego-vehicle
+    slots:
+      - definingFeature: att-vehiclemodel
+        value: sample_vehicle
+      - definingFeature: att-wheelbase
+        value: "2.75"
+      - definingFeature: att-vehicleid
+        value: SV-001

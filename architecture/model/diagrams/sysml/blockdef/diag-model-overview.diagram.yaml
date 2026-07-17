@@ -54,3 +54,5 @@ diagram:
       target: diag-crosswalk-yield-decision
     - id: dref-diag-mrm-escalation
       target: diag-mrm-escalation
+    - id: dref-diag-sample-vehicle-configuration
+      target: diag-sample-vehicle-configuration

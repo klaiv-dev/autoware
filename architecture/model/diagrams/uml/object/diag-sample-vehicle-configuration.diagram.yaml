@@ -1,0 +1,19 @@
+# Sample Vehicle Configuration
+diagram:
+  id: diag-sample-vehicle-configuration
+  name: Sample Vehicle Configuration
+  type: uml:ObjectDiagram
+  package: pkg-ego-vehicle
+  elements:
+    - elementId: inst-leftlidar # leftLidar (InstanceSpecification)
+    - elementId: inst-rightlidar # rightLidar (InstanceSpecification)
+    - elementId: inst-samplevehicle # sampleVehicle (InstanceSpecification)
+    - elementId: inst-tamagawaimu # tamagawaIMU (InstanceSpecification)
+    - elementId: inst-toplidar # topLidar (InstanceSpecification)
+    - elementId: inst-ubloxgnss # ubloxGnss (InstanceSpecification)
+  relationships:
+    - assoc-inst-leftlidar-to-inst-samplevehicle # leftLidar → sampleVehicle (Association)
+    - assoc-inst-rightlidar-to-inst-samplevehicle # rightLidar → sampleVehicle (Association)
+    - assoc-inst-tamagawaimu-to-inst-samplevehicle # tamagawaIMU → sampleVehicle (Association)
+    - assoc-inst-toplidar-to-inst-samplevehicle # topLidar → sampleVehicle (Association)
+    - assoc-inst-ubloxgnss-to-inst-samplevehicle # ubloxGnss → sampleVehicle (Association)

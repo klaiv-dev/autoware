@@ -95,3 +95,33 @@ associations:
       id: cls-crosswalkmodule
     target:
       id: cls-objectinfo
+  - id: assoc-inst-toplidar-to-inst-samplevehicle
+    type: uml:Association
+    source:
+      id: inst-toplidar
+    target:
+      id: inst-samplevehicle
+  - id: assoc-inst-leftlidar-to-inst-samplevehicle
+    type: uml:Association
+    source:
+      id: inst-leftlidar
+    target:
+      id: inst-samplevehicle
+  - id: assoc-inst-rightlidar-to-inst-samplevehicle
+    type: uml:Association
+    source:
+      id: inst-rightlidar
+    target:
+      id: inst-samplevehicle
+  - id: assoc-inst-ubloxgnss-to-inst-samplevehicle
+    type: uml:Association
+    source:
+      id: inst-ubloxgnss
+    target:
+      id: inst-samplevehicle
+  - id: assoc-inst-tamagawaimu-to-inst-samplevehicle
+    type: uml:Association
+    source:
+      id: inst-tamagawaimu
+    target:
+      id: inst-samplevehicle
