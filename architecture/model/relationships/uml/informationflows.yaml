@@ -1,4 +1,16 @@
-# Klaiv relationship file — informationflows
-# Add entries below. Each entry must have: id, type, source, target.
-
-informationflows: []
+informationflows:
+  - id: iflow-dev-ad-computer-to-dev-dbw-controller
+    type: uml:InformationFlow
+    source:
+      id: dev-ad-computer
+    target:
+      id: dev-dbw-controller
+    conveyed:
+      - blk-controlcmd
+  - id: iflow-dev-ad-computer-to-dev-remote-operations-center
+    type: uml:InformationFlow
+    source:
+      id: dev-ad-computer
+    target:
+      id: dev-remote-operations-center
+    stereotype: DDS

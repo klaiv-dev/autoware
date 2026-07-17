@@ -92,3 +92,5 @@ diag-crosswalk-scenario-data-flow: 5
 diag-operation-mode: 4
 diag-pedestrian-collision-state: 8
 diag-mrm-state: 4
+pkg-deployment: 7
+diag-vehicle-deployment: 1

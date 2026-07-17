@@ -29,3 +29,4 @@ packages:
   - {id: pkg-software-system, name: Software System, type: "uml:Package", package: pkg-software}
   - {id: pkg-software-localization, name: Software Localization, type: "uml:Package", package: pkg-software}
   - {id: pkg-software-control, name: Software Control, type: "uml:Package", package: pkg-software}
+  - {id: pkg-deployment, name: Deployment, type: "uml:Package"}
