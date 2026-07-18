@@ -1,0 +1,15 @@
+topicflows:
+  - id: topic-rosnode-behavior-velocity-planner-to-rosnode-motion-velocity-planner
+    type: custom:TopicFlow
+    source:
+      id: rosnode-behavior-velocity-planner
+    target:
+      id: rosnode-motion-velocity-planner
+    label: …/behavior_planning/path
+  - id: topic-rosnode-motion-velocity-planner-to-rosnode-velocity-smoother
+    type: custom:TopicFlow
+    source:
+      id: rosnode-motion-velocity-planner
+    target:
+      id: rosnode-velocity-smoother
+    label: …/lane_driving/trajectory

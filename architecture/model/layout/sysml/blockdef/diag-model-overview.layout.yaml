@@ -1,5 +1,5 @@
 diagramId: diag-model-overview
-viewport: {zoom: 0.28804554658777576, panX: 339.35609273244387, panY: 52.7988613353056}
+viewport: {zoom: 0.2877725176336641, panX: 339.5150917024638, panY: 52.805687059158366}
 elements:
   dref-diag-operating-an-autonomous-vehicle: {x: 31, y: 27, width: 262, height: 137}
   dref-diag-developing-and-testing-autoware: {x: 311, y: 27, width: 262, height: 138}
@@ -26,3 +26,4 @@ elements:
   dref-diag-crosswalk-yield-decision: {x: 596, y: 789, width: 266.37568099597064, height: 140}
   dref-diag-mrm-escalation: {x: 878, y: 789, width: 255.70409182289075, height: 140}
   dref-diag-sample-vehicle-configuration: {x: 312, y: 939, width: 267.6163711250008, height: 140}
+  dref-diag-planning-ros-graph: {x: 596, y: 940, width: 268.5186102496003, height: 140}

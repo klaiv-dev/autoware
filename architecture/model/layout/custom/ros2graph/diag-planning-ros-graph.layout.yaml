@@ -1,0 +1,6 @@
+diagramId: diag-planning-ros-graph
+viewport: {zoom: 1.0349537178322121, panX: -212.19282778987179, panY: 205.10173787011038}
+elements:
+  rosnode-behavior-velocity-planner: {x: 263, y: 51, width: 180, height: 80}
+  rosnode-motion-velocity-planner: {x: 619, y: 50, width: 180, height: 80}
+  rosnode-velocity-smoother: {x: 947, y: 53, width: 180, height: 80}

@@ -1,7 +1,23 @@
 version: "1.0"
 name: custom
-elementTypes: []
-relationshipTypes: []
+elementTypes:
+  - id: custom:Ros2Node
+    displayName: "ROS 2 Node"
+    idPrefix: rosnode
+    fileName: ros2nodes
+    extends: uml:Component      # → renders as a component box (resolveShapeKind), IS-A Component
+    keyword: ros2Node           # shows «ros2Node» in the header when no stereotype is set
+relationshipTypes:
+  - id: custom:TopicFlow
+    displayName: "Topic Flow"
+    idPrefix: topic
+    fileName: topicflows
+    extends: uml:InformationFlow
+    lineStyle: solid
+    arrowhead: open
+    endpoints:
+      sourceTypes: [custom:Ros2Node]
+      targetTypes: [custom:Ros2Node]
 stereotypeExtensions:
   - elementTypeId: sysml:Requirement
     stereotypes:
@@ -11,3 +27,10 @@ stereotypeExtensions:
       - externalSystem
       - system
       - logical
+diagramTypes:
+  - id: custom:Ros2GraphDiagram
+    displayName: "ROS 2 Graph"
+    folderName: ros2graph
+    extends: uml:ComponentDiagram
+    allowedElementTypes: [custom:Ros2Node]
+    allowedRelationshipTypes: [custom:TopicFlow]

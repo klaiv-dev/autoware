@@ -1,0 +1,4 @@
+ros2nodes:
+  - {id: rosnode-behavior-velocity-planner, name: behavior_velocity_planner, type: "custom:Ros2Node", package: pkg-planning-ros-graph}
+  - {id: rosnode-motion-velocity-planner, name: motion_velocity_planner, type: "custom:Ros2Node", package: pkg-planning-ros-graph}
+  - {id: rosnode-velocity-smoother, name: velocity_smoother, type: "custom:Ros2Node", package: pkg-planning-ros-graph}

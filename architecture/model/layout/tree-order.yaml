@@ -100,3 +100,5 @@ comp-mrm-handler: 6
 comp-mrm-comfortable-stop-operator: 7
 diag-mrm-escalation: 4
 diag-sample-vehicle-configuration: 5
+pkg-planning-ros-graph: 7
+diag-planning-ros-graph: 1

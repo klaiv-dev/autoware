@@ -56,3 +56,5 @@ diagram:
       target: diag-mrm-escalation
     - id: dref-diag-sample-vehicle-configuration
       target: diag-sample-vehicle-configuration
+    - id: dref-diag-planning-ros-graph
+      target: diag-planning-ros-graph

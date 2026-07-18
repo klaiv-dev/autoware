@@ -1,0 +1,13 @@
+# Planning ROS Graph
+diagram:
+  id: diag-planning-ros-graph
+  name: Planning ROS Graph
+  type: custom:Ros2GraphDiagram
+  package: pkg-planning-ros-graph
+  elements:
+    - elementId: rosnode-behavior-velocity-planner # behavior_velocity_planner (Ros2Node)
+    - elementId: rosnode-motion-velocity-planner # motion_velocity_planner (Ros2Node)
+    - elementId: rosnode-velocity-smoother # velocity_smoother (Ros2Node)
+  relationships:
+    - topic-rosnode-behavior-velocity-planner-to-rosnode-motion-velocity-planner # behavior_velocity_planner → motion_velocity_planner (TopicFlow: "…/behavior_planning/path")
+    - topic-rosnode-motion-velocity-planner-to-rosnode-velocity-smoother # motion_velocity_planner → velocity_smoother (TopicFlow: "…/lane_driving/trajectory")
