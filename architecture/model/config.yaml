@@ -1,1 +1,10 @@
 # Klaiv project configuration
+trace:
+  standard: iso26262        # iso26262 | do178c | iec62304 | en50716 | none
+  granularity: classes      # classes | methods
+  systemToSoftware: off     # off | required
+  severity:
+    broken: warning         # off | warning | error
+    suspect: warning
+    stray: warning
+    forwardGap: warning

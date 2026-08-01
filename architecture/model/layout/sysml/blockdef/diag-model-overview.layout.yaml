@@ -1,5 +1,5 @@
 diagramId: diag-model-overview
-viewport: {zoom: 0.2877725176336641, panX: 339.5150917024638, panY: 52.805687059158366}
+viewport: {zoom: 0.2877725176336641, panX: 339.5150917024638, panY: 30.805687059158366}
 elements:
   dref-diag-operating-an-autonomous-vehicle: {x: 31, y: 27, width: 262, height: 137}
   dref-diag-developing-and-testing-autoware: {x: 311, y: 27, width: 262, height: 138}

@@ -1,0 +1,141 @@
+# Klaiv trace data (links + regions)
+links:
+  - element: act-crosswalk-yield-decision
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.cpp
+    symbol: CrosswalkModule::modifyPathVelocity
+    fingerprint: sha256:0a77e83556d162c2564cfcee94294572a51f020d4382ca4a117d294c9954f876
+    contract: "bool CrosswalkModule :: modifyPathVelocity ( PathWithLaneId * path )"
+  - element: blk-pointcloud
+    kind: marker
+    file: src/universe/autoware_universe/sensing/autoware_pointcloud_preprocessor/include/autoware/pointcloud_preprocessor/filter.hpp
+    symbol: src/universe/autoware_universe/sensing/autoware_pointcloud_preprocessor/include/autoware/pointcloud_preprocessor/filter.hpp:Filter
+    fingerprint: sha256:6297fe386fb21d80319af6827a537e517f7785fab8498e12247c54820266622b
+    contract: "class Filter : public rclcpp :: Node"
+  - element: blk-safety-system
+    kind: marker
+    file: src/universe/autoware_universe/system/autoware_mrm_handler/include/autoware/mrm_handler/mrm_handler_core.hpp
+    symbol: src/universe/autoware_universe/system/autoware_mrm_handler/include/autoware/mrm_handler/mrm_handler_core.hpp:MrmHandler
+    fingerprint: sha256:d456918b67a7c6fdf74fe5efca2ffe1141efe8aee48f63e5891080d650a3a7be
+    contract: "class MrmHandler : public rclcpp::Node"
+  - element: cls-collisionpoint
+    kind: marker
+    file: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/include/autoware/behavior_velocity_crosswalk_module/util.hpp
+    symbol: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/include/autoware/behavior_velocity_crosswalk_module/util.hpp:CollisionPoint
+    fingerprint: sha256:d7156e68664bb0a9131fc4fce8c2914f9827aa17e8643af4fa91620e60259581
+    contract: struct CollisionPoint
+  - element: cls-crosswalkmodule
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/manager.hpp
+    symbol: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/manager.hpp:CrosswalkModulePlugin
+    fingerprint: sha256:4b38373ac56defb3807cdba81c70b8d2b64218ea13068ea61c46e061a925a061
+    contract: "class CrosswalkModulePlugin : public PluginWrapper < CrosswalkModuleManager >"
+  - element: cls-crosswalkmodule
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.cpp
+    symbol: CrosswalkModule::calcStopPose
+    fingerprint: sha256:af6fc5767d560008d7bce31b15424d6119a09e70af7950b15696b372b23a22df
+    contract: "std :: optional < geometry_msgs :: msg :: Pose > CrosswalkModule :: calcStopPose ("
+  - element: cls-crosswalkmodule
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.cpp
+    symbol: CrosswalkModule::checkStopForCrosswalkUsers
+    fingerprint: sha256:41b9ac585d4a42d92ce00a55cb4f6b0bf57d1d4ad0e9090118895188c30c1dc8
+    contract: "std :: optional < StopPoseWithObjectUuids > CrosswalkModule :: checkStopForCrosswalkUsers ("
+  - element: cls-crosswalkmodule
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.cpp
+    symbol: CrosswalkModule::modifyPathVelocity
+    fingerprint: sha256:0a77e83556d162c2564cfcee94294572a51f020d4382ca4a117d294c9954f876
+    contract: "bool CrosswalkModule :: modifyPathVelocity ( PathWithLaneId * path )"
+  - element: cls-crosswalkmodule
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.hpp
+    symbol: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.hpp:CrosswalkModule
+    fingerprint: sha256:c5ec24c8bc41cfc067314b69fd5a6734d629a643df0444fea0ab7df8d6cdff3f
+    contract: "class CrosswalkModule : public SceneModuleInterfaceWithRTC"
+  - element: cls-objectinfo
+    kind: marker
+    file: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_intersection_module/include/autoware/behavior_velocity_intersection_module/object_manager.hpp
+    symbol: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_intersection_module/include/autoware/behavior_velocity_intersection_module/object_manager.hpp:ObjectInfo
+    fingerprint: sha256:8b3a44732a4cccbb6ee46b06ab3042d772e7ff26a80fb5ad8c8ed522582098d1
+    contract: class ObjectInfo
+  - element: cls-scenemoduleinterfacewithrtc
+    kind: marker
+    file: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_rtc_interface/include/autoware/behavior_velocity_rtc_interface/scene_module_interface_with_rtc.hpp
+    symbol: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_rtc_interface/include/autoware/behavior_velocity_rtc_interface/scene_module_interface_with_rtc.hpp:SceneModuleInterfaceWithRTC
+    fingerprint: sha256:4832ddd84529227ace51c04371a2f254b86f45a8eb12d2de767504d5f0e33724
+    contract: "class SceneModuleInterfaceWithRTC : public SceneModuleInterface"
+  - element: comp-mrm-handler
+    kind: marker
+    file: src/universe/autoware_universe/system/autoware_mrm_handler/include/autoware/mrm_handler/mrm_handler_core.hpp
+    symbol: src/universe/autoware_universe/system/autoware_mrm_handler/include/autoware/mrm_handler/mrm_handler_core.hpp:MrmHandler
+    fingerprint: sha256:d456918b67a7c6fdf74fe5efca2ffe1141efe8aee48f63e5891080d650a3a7be
+    contract: "class MrmHandler : public rclcpp::Node"
+  - element: comp-operation-mode-transition-manager
+    kind: marker
+    file: src/universe/autoware_universe/control/autoware_operation_mode_transition_manager/src/node.hpp
+    symbol: src/universe/autoware_universe/control/autoware_operation_mode_transition_manager/src/node.hpp:OperationModeTransitionManager
+    fingerprint: sha256:c576f64dacb3d08c78234b906ccd392899aa51f2a148976b4173703317699627
+    contract: "class OperationModeTransitionManager : public rclcpp :: Node"
+  - element: enum-collisionstate
+    kind: marker
+    file: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/include/autoware/behavior_velocity_crosswalk_module/util.hpp
+    symbol: >-
+      src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/include/autoware/behavior_velocity_crosswalk_module/util.hpp:CollisionState
+    fingerprint: sha256:f9b0f2e4a43ab70703b2544cdd6a8db5c214fed587a30ccfcde967e4950cf49f
+    contract: enum class CollisionState { YIELD , EGO_PASS_FIRST , EGO_PASS_LATER , IGNORE } ;
+  - element: iface-plugininterface
+    kind: marker
+    file: >-
+      src/core/autoware_core/planning/behavior_velocity_planner/autoware_behavior_velocity_planner_common/include/autoware/behavior_velocity_planner_common/plugin_interface.hpp
+    symbol: >-
+      src/core/autoware_core/planning/behavior_velocity_planner/autoware_behavior_velocity_planner_common/include/autoware/behavior_velocity_planner_common/plugin_interface.hpp:PluginInterface
+    fingerprint: sha256:6f31e73a4e58e001a6d28cc21be9b771c1e88ffb3b5e8e25eafe21329a0b6c28
+    contract: class PluginInterface
+  - element: ifblk-icontrolcmd
+    kind: marker
+    file: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/control.hpp
+    symbol: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/control.hpp:ControlCommand
+    fingerprint: sha256:10e712f091b5c5252881434883a50e389b184fd26d64708dbba833636fda3061
+    contract: struct ControlCommand
+  - element: ifblk-ikinematicstate
+    kind: marker
+    file: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/localization.hpp
+    symbol: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/localization.hpp:KinematicState
+    fingerprint: sha256:766ce2f0b5717c675249d91bff83afae66de801bb73f2a77cfcf50d00d3f449d
+    contract: struct KinematicState
+  - element: ifblk-imap
+    kind: marker
+    file: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/map.hpp
+    symbol: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/map.hpp:VectorMap
+    fingerprint: sha256:01bd83c11605d31d7fe048bb9aac31f05093a273cb816e946ff029dcca261e8c
+    contract: struct VectorMap
+  - element: ifblk-ipredictedobjects
+    kind: marker
+    file: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/perception.hpp
+    symbol: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/perception.hpp:ObjectRecognition
+    fingerprint: sha256:dd1ad49fd1e9b2bcf0327e2bf5faee091cd50c10f7a1a6398eefe0719cb90c75
+    contract: struct ObjectRecognition
+  - element: ifblk-itrajectory
+    kind: marker
+    file: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/planning.hpp
+    symbol: src/core/autoware_core/common/autoware_component_interface_specs/include/autoware/component_interface_specs/planning.hpp:Trajectory
+    fingerprint: sha256:d828ff1d9790a07a9058dd0a44dbd3eb9453008b1e61945cdaa407c10799bc96
+    contract: struct Trajectory
+  - element: sm-pedestrian-collision-state
+    kind: marker
+    file: src/universe/autoware_universe/planning/behavior_velocity_planner/autoware_behavior_velocity_crosswalk_module/src/scene_crosswalk.hpp
+    symbol: CrosswalkModule::ObjectInfo::transitState
+    fingerprint: sha256:7d373edb2a5faf6b69e471bda123d7adc838a45a008937cabcb3c6a59188f205
+    contract: void transitState (
+regions: []
